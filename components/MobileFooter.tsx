@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import { useState, useEffect } from 'react'
 
 const links = [
   { icon: '/images/tild3364-6330-4262-a132-636137613838__call.svg', label: 'Call', href: 'tel:+4915140365107' },
@@ -8,6 +11,14 @@ const links = [
 ]
 
 export default function MobileFooter() {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > window.innerHeight * 0.55)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
     <>
       <nav style={{
@@ -18,6 +29,10 @@ export default function MobileFooter() {
         backdropFilter: 'blur(8px)',
         WebkitBackdropFilter: 'blur(8px)',
         borderTop: '1px solid rgba(255,255,255,0.1)',
+        opacity: scrolled ? 1 : 0,
+        transform: scrolled ? 'translateY(0)' : 'translateY(100%)',
+        transition: 'opacity 0.4s, transform 0.4s',
+        pointerEvents: scrolled ? 'auto' : 'none',
       }} className="ptc-mobile-footer">
         {links.map((link, i) => (
           <a key={i} href={link.href}
