@@ -1,0 +1,255 @@
+{
+  "cookieBanner": { "title": "Wir verwenden Cookies", "text": "Um Ihre Erfahrung zu verbessern und unseren Traffic zu analysieren. Ihre Daten bleiben privat.", "accept": "Akzeptieren", "decline": "Ablehnen" },
+  "nav": { "jets": "Jets", "yachts": "Yachten", "villas": "Villen", "concierge": "Concierge", "back": "← Zur Startseite", "navigationTitle": "Navigation", "privacyPolicy": "Datenschutzrichtlinie", "cookiePolicy": "Cookie-Richtlinie" },
+  "header": { "tagline": "Weltweite exklusive Reisen & Concierge-Services" },
+  "hero": {
+    "tagline": "Weltweite Reise- & Concierge-Services",
+    "title": "Private Travel Club",
+    "subtitle": "Erstklassige Unterkünfte – Yachten – Jets"
+  },
+  "intro": {
+    "title": "Über uns",
+    "body": "Private Travel Club ist ein weltweites Reise- und Concierge-Unternehmen, das erstklassige Dienstleistungen für die anspruchsvollsten Kunden der Welt erbringt. Die langjährige Erfahrung unseres Teams und unsere weltweiten Partnerschaften ermöglichen es uns, jeden Ihrer Wünsche zu erfüllen:",
+    "items": [
+      "Planung exklusiver und luxuriöser Reisen",
+      "Villen, Chalets, Schlösser, Apartments & Hotels",
+      "Yachtcharter und Privatjets",
+      "Premium-Transfers mit Auto und Hubschrauber",
+      "Concierge-Services"
+    ]
+  },
+  "gallery": {
+    "title": "Exklusive & Luxuriöse Reisen",
+    "body": "Entdecken Sie mit uns die außergewöhnlichsten und exklusivsten Orte der Welt. Ob Indischer Ozean, Karibik, Emirate oder Europa — wir finden die besten Lösungen für Ihre Reise. Jede Reise wird zu einem unvergesslichen Erlebnis. Denn Sie haben es verdient!"
+  },
+  "services": {
+    "villas": {
+      "title": "Villen, Chalets, Schlösser, Apartments & Hotels",
+      "description": "Ein Schloss in Italien? Ein Chalet in Frankreich? Oder eine Villa auf den Malediven oder in Griechenland? Übernachten Sie an den besten Adressen weltweit und genießen Sie Ihre Zeit!"
+    },
+    "yachts": {
+      "title": "Yachtcharter & Privatjets",
+      "description": "Denken Sie an einen Yachtcharter? Ausgezeichnete Wahl! Von der Charter über die Route bis zum täglichen Menü — wir planen alles für Sie! Brauchen Sie einen Privatjet? Ob privat, Gruppen- oder Firmencharter — wir organisieren das für Sie!"
+    },
+    "transfers": {
+      "title": "Premium-Transfers mit Auto & Hubschrauber",
+      "description": "Zug zum Flugzeug? Nicht für Sie! Steigen Sie ein, lehnen Sie sich zurück und genießen Sie alle Vorteile eines Premium-Transfers, einschließlich VIP-Spur am Flughafen. Oder keine Lust auf Stau? Der Hubschrauber macht es möglich!"
+    },
+    "concierge": {
+      "title": "Concierge-Services",
+      "description": "Sie lieben die exklusivsten Weine? Ihr bester Freund heiratet und Sie möchten das Paar mit einem außergewöhnlichen Geschenk überraschen? Oder mit Freunden aus der VIP-Loge anfeuern? Wir erfüllen (fast) alle Ihre Wünsche!"
+    }
+  },
+  "whyus": {
+    "title": "Wir schaffen Mehrwert und einzigartige Erlebnisse",
+    "body": "Unser Portfolio und unsere Expertise decken alle Ihre Reise- und Concierge-Bedürfnisse vollständig ab.",
+    "col1": [
+      "Individueller Ansatz für jeden Ihrer Wünsche",
+      "Professionalität und Seriosität",
+      "Langjährige Erfahrung in allen Bereichen",
+      "Wettbewerbsfähige Preise und exzellenter Service"
+    ],
+    "col2": [
+      "Erreichbarkeit 24/7/365",
+      "Schnelle Bereitstellung aller relevanten Informationen",
+      "Keine Mitgliedsgebühren",
+      "Vertraulichkeit und Diskretion"
+    ],
+    "contactsTitle": "Kontakt",
+    "address": "Sudetenstraße 12, 96250 Ebensfeld, Deutschland",
+    "email": "office@private-travel-club.com",
+    "phone": "+49 151 40365107",
+    "phoneTel": "tel:+4915140365107",
+    "whatsapp": "+49 151 40365107",
+    "whatsappLink": "https://wa.me/4915140365107",
+    "instagram": "@private_travel_club_",
+    "instagramLink": "https://www.instagram.com/private_travel_club_",
+    "mapSrc": "https://maps.google.com/maps?q=Sudetenstra%C3%9Fe+12%2C+96250+Ebensfeld%2C+Germany&hl=de&z=15&output=embed"
+  },
+  "form": {
+    "namePlaceholder": "Ihr Name",
+    "nameLabel": "Ihr Name",
+    "phoneLabel": "Ihre Telefonnummer",
+    "submit": "Absenden",
+    "sending": "Wird gesendet...",
+    "success": "Vielen Dank!",
+    "successSub": "Wir werden uns in Kürze bei Ihnen melden.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+  },
+  "jetsPage": {
+    "tagline": "Private Travel Club",
+    "metaDescription": "Privatjet-Charter weltweit — jedes Ziel, Ihr Zeitplan. Business, Familie oder Firmenflüge. Persönlicher Manager & VIP-Bodenservice, 24/7.",
+    "title": "Privatjet-Charter",
+    "subtitle": "Ob Geschäftsreise, Familienurlaub oder Firmenveranstaltung — wir organisieren Privatflüge ganz nach Ihren Wünschen.",
+    "cta": "Plan My Trip",
+    "featuresTitle": "Warum privat mit uns fliegen",
+    "featuresSub": "Wir kümmern uns um jeden Aspekt Ihres Privatflugs, damit Sie sich auf das Wesentliche konzentrieren können. Jeder Flug wird persönlich geplant — nur für Sie.",
+    "galleryTitle": "Unsere Flotte",
+    "contactTitle": "Plan My Trip",
+    "contactSub": "Teilen Sie uns Ihre Details mit und wir erstellen innerhalb weniger Stunden einen vollständig personalisierten VIP-Flugplan.",
+    "features": [
+      { "title": "Jedes Ziel", "text": "Über 40.000 Flughäfen weltweit — einschließlich solcher, die für Linienflüge nicht erreichbar sind." },
+      { "title": "Komplette Planung", "text": "Von Route und Zeitplan bis zu Catering und Bodentransfers — wir kümmern uns um jedes Detail." },
+      { "title": "Flottenvielfalt", "text": "Leichte Jets für Kurzstrecken, schwere Jets für Interkontinentalflüge und alles dazwischen." },
+      { "title": "Privatsphäre & Komfort", "text": "Ihr Zeitplan, Ihre Regeln. Keine Warteschlangen, keine Massen — nur Sie und Ihre Begleitung." },
+      { "title": "VIP-Bodenservice", "text": "Private Terminals, Schnellkontrolle, Limousine direkt zum Flugzeug." },
+      { "title": "24/7-Support", "text": "Unser Team ist rund um die Uhr erreichbar für jede Anfrage oder kurzfristige Änderung." }
+    ]
+  },
+  "villasPage": {
+    "tagline": "Private Travel Club",
+    "metaDescription": "Luxusvillen, Chalets & Schlösser weltweit. Malediven, Toskana, Zermatt, Santorin — handverlesene Objekte mit vollständigem Concierge-Service.",
+    "title": "Villen, Chalets & Hotels",
+    "subtitle": "Ein Schloss in Italien? Ein Chalet in Frankreich? Eine Villa auf den Malediven? Übernachten Sie an den besten Adressen weltweit.",
+    "cta": "Curate My Stay",
+    "featuresTitle": "Was wir anbieten",
+    "featuresSub": "Von intimen Villen bis zu großen Anwesen — jede Unterkunft wird persönlich nach Ihren Wünschen, Ihrem Geschmack und Lebensstil ausgewählt.",
+    "galleryTitle": "Unsere Unterkünfte",
+    "contactTitle": "Curate My Stay",
+    "contactSub": "Teilen Sie uns Ihr Ziel, Ihre Daten und Vorlieben mit — Ihr persönlicher Manager wählt die perfekte Unterkunft aus und arrangiert jedes Detail.",
+    "features": [
+      { "title": "Villen & private Residenzen", "text": "Strandvillen auf den Malediven, Felsrückzugsorte auf Santorini oder Landhäuser in der Toskana." },
+      { "title": "Chalets & Bergresorts", "text": "Erstklassige Chalets in Zermatt, Courchevel, St. Moritz und darüber hinaus — ski-in/ski-out." },
+      { "title": "Schlösser & historische Anwesen", "text": "Erleben Sie die Pracht eines privaten Schlosses in Italien, Frankreich oder Schottland." },
+      { "title": "Luxushotels & Suiten", "text": "Präsidentensuiten und exklusive Hotelresidenzen an den besten Adressen weltweit." },
+      { "title": "Vollständiger Concierge", "text": "Privatkoch, Personal, Transfer, Aktivitäten — alles vor Ihrer Ankunft organisiert." },
+      { "title": "Maßgeschneiderte Aufenthalte", "text": "Jedes Detail abgestimmt auf Ihre Vorlieben. Dauer, Lage, Stil und Budget — wir übernehmen alles." }
+    ]
+  },
+  "conciergePage": {
+    "tagline": "Private Travel Club",
+    "metaDescription": "Premium-Concierge-Service weltweit — exklusive Events, Fine Dining, Luxusgeschenke, VIP-Airport-Service und Lifestyle-Management. 24/7/365.",
+    "title": "Concierge-Services",
+    "subtitle": "Sie lieben exklusive Weine? Planen Sie ein unvergessliches Geschenk? Oder möchten Sie Ihr Team aus der VIP-Loge anfeuern? Wir erfüllen (fast) jeden Wunsch.",
+    "cta": "Access Concierge",
+    "featuresTitle": "Was wir für Sie tun können",
+    "featuresSub": "Ihr persönlicher Concierge-Manager kümmert sich um jedes Detail — vom Außergewöhnlichen bis zum Alltäglichen.",
+    "galleryTitle": "Luxuserlebnisse",
+    "contactTitle": "Access Concierge",
+    "contactSub": "Beschreiben Sie Ihren Wunsch — Ihr persönlicher Manager kümmert sich darum und hält Sie über jeden Schritt informiert.",
+    "features": [
+      { "title": "Exklusive Events & Tickets", "text": "Formel 1, Wimbledon, Champions-League-Finale, Galas und Premieren — wir besorgen die besten Plätze." },
+      { "title": "Fine Dining & Reservierungen", "text": "Tische in Michelin-Stern-Restaurants, private Speisesäle und kulinarische Erlebnisse weltweit." },
+      { "title": "Luxusgeschenke & Überraschungen", "text": "Seltene Weine, maßgefertigter Schmuck, Blumen und außergewöhnliche Geschenkpakete." },
+      { "title": "VIP-Flughafen & Lounge-Zugang", "text": "Private Terminals, beschleunigte Einwanderung, Premium-Lounges und Begrüßungsservice." },
+      { "title": "Lifestyle-Management", "text": "Personal Shopping, Hausverwaltung, Arzttermine, Schulanmeldung — wir übernehmen den Alltag." },
+      { "title": "Last-Minute-Anfragen", "text": "Keine Anfrage ist zu komplex oder zu kurzfristig. Unser Team arbeitet 24/7/365." }
+    ]
+  },
+  "yachtsPage": {
+    "tagline": "Private Travel Club",
+    "metaDescription": "Luxus-Yachtcharter — Mittelmeer, Karibik, Indischer Ozean. Route, Crew und Catering — wir planen jedes Detail Ihrer privaten Seereise.",
+    "title": "Yachtcharter",
+    "subtitle": "Vom Mittelmeer bis zur Karibik — wir planen Ihr perfektes Yacht-Erlebnis: Route, Crew und tägliches Menü.",
+    "cta": "Tailor My Cruise",
+    "featuresTitle": "Warum mit uns chartern",
+    "featuresSub": "Wir kümmern uns persönlich um jedes Detail Ihres Yachtcharters — damit Sie einfach an Bord gehen und das Meer genießen können.",
+    "galleryTitle": "Unsere Yachten",
+    "contactTitle": "Tailor My Cruise",
+    "contactSub": "Teilen Sie uns Ihr Ziel und Ihre Daten mit — Ihr persönlicher Manager erstellt ein maßgeschneidertes VIP-Charter-Angebot.",
+    "features": [
+      { "title": "Komplette Routenplanung", "text": "Von Ziel und Reiseroute bis zu täglichen Stopps und Aktivitäten — wir planen die gesamte Reise." },
+      { "title": "Professionelle Crew", "text": "Erfahrene Kapitäne, Stewards, Köche und Hostessen — alle geprüft und handverlesen." },
+      { "title": "Individuelles Catering", "text": "Gourmet-Menüs abgestimmt auf Ihre Vorlieben, Ernährungsanforderungen und besondere Anlässe." },
+      { "title": "Jedes Ziel", "text": "Mittelmeer, Karibik, Indischer Ozean, Adria — wohin Sie auch segeln möchten, wir machen es möglich." },
+      { "title": "Tender & Wasserattraktionen", "text": "Jetskis, Schlauchboote, Tauch- und Schnorchelausrüstung — alles für den Wasserspaß inklusive." },
+      { "title": "24/7-Support", "text": "Unser Team ist vor und während des Charters rund um die Uhr erreichbar." }
+    ]
+  },
+  "cookies": {
+    "title": "Cookie-Richtlinie",
+    "sections": [
+      {
+        "heading": "1. Was sind Cookies",
+        "body": ["Cookies sind kleine Textdateien, die beim Besuch einer Website auf Ihrem Gerät gespeichert werden. Sie helfen der Website, Ihre Einstellungen zu speichern und Ihr Browsererlebnis zu verbessern."]
+      },
+      {
+        "heading": "2. Von uns verwendete Cookies",
+        "body": [
+          "Technische Cookies — für den ordnungsgemäßen Betrieb der Website unerlässlich. Ohne sie würde die Website nicht korrekt funktionieren. Beispiel: Speicherung Ihrer Cookie-Einwilligungsentscheidung.",
+          "Analytische Cookies — helfen uns zu verstehen, wie Besucher mit der Website interagieren (besuchte Seiten, Verweildauer, Fehler). Die Daten werden anonym erhoben und ausschließlich zur Verbesserung der Website verwendet.",
+          "Marketing-Cookies — werden verwendet, um relevante Inhalte anzuzeigen und die Effektivität unserer Kommunikation zu messen. Sie werden nur bei Ihrer Zustimmung aktiviert."
+        ]
+      },
+      {
+        "heading": "3. Cookies von Drittanbietern",
+        "body": ["Unsere Website kann Dienste von Drittanbietern (z. B. Google Analytics) nutzen, die eigene Cookies setzen. Diese unterliegen der Datenschutzrichtlinie des jeweiligen Drittanbieters. Wir haben keine Kontrolle über Cookies von Drittanbietern."]
+      },
+      {
+        "heading": "4. Cookie-Verwaltung",
+        "body": [
+          "Sie können Cookies jederzeit über Ihre Browsereinstellungen verwalten oder deaktivieren. Die meisten Browser ermöglichen das Blockieren oder Löschen von Cookies. Bitte beachten Sie, dass das Deaktivieren von Cookies die Funktionalität dieser Website beeinträchtigen kann.",
+          "Sie können Ihre Einwilligung auch jederzeit widerrufen, indem Sie den lokalen Speicher oder die Cookies Ihres Browsers löschen."
+        ]
+      },
+      {
+        "heading": "5. Kontakt",
+        "body": ["Bei Fragen zur Verwendung von Cookies kontaktieren Sie uns bitte unter: office@private-travel-club.com."]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "sections": [
+      {
+        "heading": "1. Allgemeine Bestimmungen",
+        "body": [
+          "Diese Datenschutzrichtlinie (nachfolgend – Richtlinie) wurde von Private Travel Club herausgegeben, das durch zwei juristische Einheiten tätig ist: IE Ebert Tatiana Nikolaevna (ОГРН 1027700067328, ИНН 772972873029, Anschrift: Michurinski Prospekt 9, Geb. 4, Büro 129, Moskau, Russland) sowie das europäische Büro: Sudetenstraße 12, 96250 Ebensfeld, Deutschland (nachfolgend zusammen – das Unternehmen, wir).",
+          "Diese Richtlinie regelt die Erhebung, Verarbeitung, Speicherung und den Schutz personenbezogener Daten der Nutzer der Website private-travel-club.com gemäß der EU-Datenschutz-Grundverordnung 2016/679 (DSGVO) und dem russischen Bundesgesetz Nr. 152-FZ vom 27.07.2006 über personenbezogene Daten.",
+          "Durch die Nutzung dieser Website und das Absenden des Kontaktformulars bestätigen Sie, dass Sie diese Richtlinie gelesen haben und der Verarbeitung Ihrer personenbezogenen Daten zustimmen."
+        ]
+      },
+      {
+        "heading": "2. Erhobene Daten",
+        "body": [
+          "Von Ihnen direkt übermittelte Daten: Name und Telefonnummer aus dem Kontaktformular; sonstige Informationen, die Sie uns per E-Mail oder in Nachrichten mitteilen.",
+          "Automatisch erfasste technische Daten: IP-Adresse, Browsertyp und -version, Gerätetyp, besuchte Seiten, Verweildauer und Cookie-Kennungen gemäß Abschnitt 5 dieser Richtlinie.",
+          "Besondere Kategorien personenbezogener Daten (Zahlungskarteninformationen, Ausweisdokumente, Gesundheitsdaten) werden ohne Ihre ausdrückliche gesonderte Einwilligung nicht erhoben."
+        ]
+      },
+      {
+        "heading": "3. Zwecke der Datenverarbeitung",
+        "body": [
+          "Wir verarbeiten Ihre Daten, um: Anfragen zu beantworten und Leistungen in den Bereichen Luxusreiseplanung, Villen- und Chaletcharter, Yachtcharter, Privatjet-Charter und Concierge-Service zu erbringen; individuelle Angebote zu erstellen und zu übermitteln; unsere Website und Servicequalität zu verbessern; gesetzliche Verpflichtungen zu erfüllen.",
+          "Daten werden ausschließlich im erforderlichen Umfang verarbeitet. Eine automatisierte Entscheidungsfindung oder Profilerstellung erfolgt nicht ohne Ihre ausdrückliche Einwilligung."
+        ]
+      },
+      {
+        "heading": "4. Rechtsgrundlage der Verarbeitung",
+        "body": [
+          "Für Nutzer aus der EU/EWR (DSGVO): Art. 6 Abs. 1 lit. a – Einwilligung; lit. b – Vertragserfüllung bzw. vorvertragliche Maßnahmen; lit. c – rechtliche Verpflichtung; lit. f – berechtigte Interessen des Unternehmens.",
+          "Für Nutzer aus Russland (152-FZ): Verarbeitung auf Grundlage Ihrer Einwilligung gemäß Art. 9 des Bundesgesetzes Nr. 152-FZ sowie weiterer gesetzlich vorgesehener Grundlagen."
+        ]
+      },
+      {
+        "heading": "5. Cookies",
+        "body": [
+          "Unsere Website verwendet Cookies zur Sicherstellung der Funktionalität, Verhaltensanalyse und Verbesserung der Nutzererfahrung. Verwendete Typen: technische (unerlässlich), funktionale (Personalisierung) sowie analytische/Marketing-Cookies.",
+          "Sie können Cookies jederzeit über Ihre Browsereinstellungen verwalten oder deaktivieren. Weitere Informationen finden Sie in unserer Cookie-Richtlinie."
+        ]
+      },
+      {
+        "heading": "6. Datenspeicherung und -schutz",
+        "body": [
+          "Über das Kontaktformular übermittelte Daten werden an die E-Mail-Adresse des Unternehmens weitergeleitet und in keiner Datenbank gespeichert. Technische Daten (IP-Adressen, Protokolle) werden vom Hosting-Anbieter (Vercel Inc.) gemäß dessen Datenschutzrichtlinie verarbeitet.",
+          "Wir treffen geeignete technische und organisatorische Maßnahmen zum Schutz Ihrer Daten vor unbefugtem Zugriff, Verlust oder Offenlegung. Der Zugang ist auf befugtes Personal beschränkt. Eine Weitergabe an Dritte erfolgt nur soweit dies zur Leistungserbringung (z. B. Partnerhotels, Charteranbieter) oder gesetzlich erforderlich ist."
+        ]
+      },
+      {
+        "heading": "7. Ihre Rechte",
+        "body": [
+          "Nutzer aus der EU/EWR (DSGVO): Recht auf Auskunft, Berichtigung, Löschung (Recht auf Vergessenwerden), Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruch sowie Beschwerde bei der zuständigen Aufsichtsbehörde — Bayerisches Landesamt für Datenschutzaufsicht (BayLDA), Promenade 27, 91522 Ansbach.",
+          "Nutzer aus Russland (152-FZ, Art. 14–17): Recht auf Auskunft, Berichtigung, Sperrung oder Löschung personenbezogener Daten sowie Widerruf der Einwilligung; Beschwerderecht bei Roskomnadzor (rkn.gov.ru).",
+          "Zur Ausübung Ihrer Rechte wenden Sie sich an: office@private-travel-club.com. Antwortfrist: 10 Werktage (30 Kalendertage bei Anfragen nach 152-FZ)."
+        ]
+      },
+      {
+        "heading": "8. Schlussbestimmungen",
+        "body": [
+          "Diese Richtlinie gilt für alle Nutzer der Website und wurde in Übereinstimmung mit der DSGVO und dem russischen Bundesgesetz Nr. 152-FZ erstellt. Das Unternehmen behält sich das Recht vor, sie jederzeit zu ändern; die aktuelle Fassung wird auf dieser Seite veröffentlicht.",
+          "Kontakt: office@private-travel-club.com | IE Ebert T.N., Michurinski Prospekt 9, Geb. 4, Büro 129, Moskau, Russland | Sudetenstraße 12, 96250 Ebensfeld, Deutschland."
+        ]
+      }
+    ]
+  }
+}

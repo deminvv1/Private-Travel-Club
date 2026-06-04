@@ -1,0 +1,17 @@
+{
+  "name": "Private Travel Club",
+  "short_name": "PTC",
+  "description": "Exclusive worldwide travel and concierge services",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "/images/tildacopy.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'PTCSans';
+  font-style: normal;
+  font-weight: 250 1000;
+  font-display: swap;
+  src: url('/fonts/ptc-sans.woff2') format('woff2');
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PTCSans', Arial, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+
+img { display: block; max-width: 100%; }
+
+h1, h2, h3, p { margin: 0; }
+
+
+button {
+  border-radius: 10px;
+}
+
+/* @media (max-width: 768px) {
+  .ptc-hdr-logo {
+    left:1px !important; 
+  }
+} */
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .ptc-intro-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .ptc-whyus-benefits,
+  .ptc-whyus-contacts {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .ptc-gallery-grid,
+  .ptc-svc-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  /* extra bottom padding so MobileFooter doesn't cover content */
+  main > section:last-of-type,
+  main > div:last-of-type {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ptc-gallery-grid,
+  .ptc-svc-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.ptc-hdr-nav{
+  z-index: 2;
+}
