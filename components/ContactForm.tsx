@@ -25,6 +25,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
   const [search, setSearch] = useState('')
   const [open, setOpen] = useState(false)
   const [status, setStatus] = useState<'idle' | 'loading' | 'ok' | 'error'>('idle')
+  const [phoneError, setPhoneError] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
   const searchRef = useRef<HTMLInputElement>(null)
 
@@ -55,6 +56,11 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    if (phone.replace(/\D/g, '').length < 5) {
+      setPhoneError(true)
+      return
+    }
+    setPhoneError(false)
     setStatus('loading')
     try {
       const res = await fetch('/api/contact', {
@@ -100,7 +106,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
       {/* Phone */}
       <label htmlFor="contact-phone" style={{ ...labelStyle, marginTop: 24 }}>{t.phoneLabel}</label>
       <div style={{ position: 'relative', display: 'flex', alignItems: 'center',
-        borderBottom: '1px solid rgba(255,255,255,0.3)', paddingBottom: 8, marginBottom: 32 }}>
+        borderBottom: `1px solid ${phoneError ? '#ff6b6b' : 'rgba(255,255,255,0.3)'}`, paddingBottom: 8, marginBottom: phoneError ? 8 : 32 }}>
 
         {/* Country trigger */}
         <button type="button" onClick={() => setOpen(v => !v)}
@@ -120,7 +126,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
 
         <input
           id="contact-phone"
-          type="tel" value={phone} onChange={e => setPhone(e.target.value)}
+          type="tel" value={phone} onChange={e => { setPhone(e.target.value); setPhoneError(false) }}
           placeholder="(000) 000-00-00" required
           style={{ background: 'none', border: 'none', outline: 'none',
             color: 'rgba(255,255,255,0.5)', fontFamily: 'PTCSans, Arial, sans-serif',
@@ -197,6 +203,13 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
           </div>
         )}
       </div>
+
+      {phoneError && (
+        <p style={{ marginBottom: 24, fontFamily: 'PTCSans, Arial, sans-serif',
+          fontSize: 12, color: '#ff6b6b' }}>
+          {t.phoneError}
+        </p>
+      )}
 
       {/* Submit */}
       <button type="submit" disabled={status === 'loading'}

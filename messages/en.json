@@ -74,6 +74,7 @@
     "sending": "Sending...",
     "success": "Thank you!",
     "successSub": "We will contact you shortly.",
+    "phoneError": "Please enter a valid phone number (at least 5 digits).",
     "error": "Something went wrong. Please try again.",
     "privacyConsentPre": "By clicking the button, you agree to our ",
     "privacyConsentLink": "Privacy Policy",
