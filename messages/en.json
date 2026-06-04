@@ -74,7 +74,10 @@
     "sending": "Sending...",
     "success": "Thank you!",
     "successSub": "We will contact you shortly.",
-    "error": "Something went wrong. Please try again."
+    "error": "Something went wrong. Please try again.",
+    "privacyConsentPre": "By clicking the button, you agree to our ",
+    "privacyConsentLink": "Privacy Policy",
+    "privacyConsentPost": "."
   },
   "jetsPage": {
     "tagline": "Private Travel Club",

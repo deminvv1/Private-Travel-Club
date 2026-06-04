@@ -74,7 +74,10 @@
     "sending": "Wird gesendet...",
     "success": "Vielen Dank!",
     "successSub": "Wir werden uns in Kürze bei Ihnen melden.",
-    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "privacyConsentPre": "Mit dem Klick auf die Schaltfläche stimmen Sie unserer ",
+    "privacyConsentLink": "Datenschutzerklärung",
+    "privacyConsentPost": " zu."
   },
   "jetsPage": {
     "tagline": "Private Travel Club",

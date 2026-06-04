@@ -74,7 +74,10 @@
     "sending": "Отправка...",
     "success": "Спасибо!",
     "successSub": "Мы свяжемся с вами в ближайшее время.",
-    "error": "Что-то пошло не так. Пожалуйста, попробуйте ещё раз."
+    "error": "Что-то пошло не так. Пожалуйста, попробуйте ещё раз.",
+    "privacyConsentPre": "Нажимая кнопку, вы соглашаетесь с ",
+    "privacyConsentLink": "Политикой конфиденциальности",
+    "privacyConsentPost": "."
   },
   "jetsPage": {
     "tagline": "Private Travel Club",

@@ -213,6 +213,16 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
         {status === 'loading' ? t.sending : t.submit}
       </button>
 
+      <p style={{ marginTop: 10, fontFamily: 'PTCSans, Arial, sans-serif',
+        fontSize: 11, color: 'rgba(255,255,255,0.4)', textAlign: 'center', lineHeight: '1.5' }}>
+        {t.privacyConsentPre}
+        <a href={`/${locale}/privacy`} target="_blank" rel="noopener noreferrer"
+          style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'underline' }}>
+          {t.privacyConsentLink}
+        </a>
+        {t.privacyConsentPost}
+      </p>
+
       {status === 'error' && (
         <p style={{ marginTop: 12, fontFamily: 'PTCSans, Arial, sans-serif',
           fontSize: 13, color: '#ff6b6b', textAlign: 'center' }}>
