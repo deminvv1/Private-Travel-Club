@@ -194,9 +194,9 @@
       {
         "heading": "1. General Provisions",
         "body": [
-          "This Privacy Policy (hereinafter – the Policy) is issued by Private Travel Club operating through two entities: IE Ebert Tatiana Nikolaevna (ОГРН 1027700067328, ИНН 772972873029, address: Michurinsky Prospect 9, bldg. 4, office 129, Moscow, Russia) and its European office at Sudetenstraße 12, 96250 Ebensfeld, Germany (hereinafter collectively – the Company, we, us).",
-          "This Policy defines how we collect, process, store and protect personal data of users (hereinafter – Users) of the website private-travel-club.com. It complies with EU Regulation 2016/679 (GDPR) and Russian Federal Law No. 152-FZ of 27 July 2006 'On Personal Data'.",
-          "By submitting a contact form or otherwise using this website, you confirm that you have read this Policy and consent to the processing of your personal data as described herein."
+          "This Privacy Policy (hereinafter – the Policy) defines how we collect, process, store and protect personal data of users (hereinafter – Users) of the website private-travel-club.com.",
+          "The website is operated by Tatiana Ebert (address: Sudetenstraße 12, 96250 Ebensfeld, Germany), hereinafter referred to as the \"Company\", \"we\", \"us\", also registered in Russia as sole trader IE Ebert Tatiana Nikolaevna (OGRNIP 320774600263749, INN 772972873029, registered office address: Michurinsky Prospect 9, bldg. 4, office 129, Moscow, Russia).",
+          "This Policy complies with EU Regulation 2016/679 (GDPR) and Russian Federal Law No. 152-FZ of 27 July 2006 'On Personal Data'. By submitting a contact form or otherwise using this website, you confirm that you have read this Policy and consent to the processing of your personal data as described herein."
         ]
       },
       {
@@ -218,7 +218,7 @@
         "heading": "4. Legal Basis for Processing",
         "body": [
           "For EU/EEA users (GDPR): processing is based on Art. 6(1)(a) – your consent; Art. 6(1)(b) – necessity for pre-contractual measures; Art. 6(1)(c) – compliance with a legal obligation; Art. 6(1)(f) – legitimate interests of the Company.",
-          "For users in Russia (152-FZ): processing is based on your consent in accordance with Art. 9 of Federal Law No. 152-FZ, as well as on other grounds provided for by the law."
+          "For users in Russia (152-FZ): processing is based on your consent in accordance with Art. 9 of Federal Law No. 152-FZ, as well as on execution of a contract initiated by the data subject."
         ]
       },
       {
@@ -229,17 +229,18 @@
         ]
       },
       {
-        "heading": "6. Data Storage and Protection",
+        "heading": "6. Data Storage, Localisation and Protection",
         "body": [
-          "Personal data submitted via the contact form is transmitted to the Company's email inbox and is not stored in any database. Technical data (IP addresses, logs) is retained by the hosting provider (Vercel Inc.) in accordance with their privacy policy.",
-          "We implement appropriate technical and organisational security measures to protect your data. Access is restricted to authorised personnel only. We do not sell or transfer personal data to third parties except where required to deliver our services or comply with law."
+          "In compliance with Russian Federal Law No. 152-FZ, the primary collection, recording, systematisation, accumulation, and storage of personal data of citizens of the Russian Federation are carried out using databases located within the territory of the Russian Federation.",
+          "Once legally collected in the Russian Federation, data may be transferred to the Company's European office via cross-border transfer mechanisms in strict accordance with applicable laws (GDPR and 152-FZ) for the sole purpose of processing travel requests. Technical data (IP addresses, logs) may be processed by the infrastructure provider (Vercel Inc.) in accordance with its security standards.",
+          "We implement appropriate technical and organisational security measures to protect your data. Access is restricted to authorised personnel only. Personal data is retained for no longer than necessary to fulfil the stated purposes, unless a longer retention period is required by law."
         ]
       },
       {
         "heading": "7. Your Rights",
         "body": [
           "Under GDPR (EU/EEA users): right of access, rectification, erasure ('right to be forgotten'), restriction of processing, data portability, objection to processing, and the right to lodge a complaint with a supervisory authority — Bayerisches Landesamt für Datenschutzaufsicht (BayLDA), Promenade 27, 91522 Ansbach, Germany.",
-          "Under 152-FZ (users in Russia): right to obtain information about the processing of your personal data, to request correction or deletion, to withdraw consent, and to lodge a complaint with Roskomnadzor (Federal Service for Supervision of Communications, Information Technology and Mass Media).",
+          "Under 152-FZ (users in Russia): right to obtain information about the processing of your personal data, to request correction or deletion, to withdraw consent, and to lodge a complaint with Roskomnadzor.",
           "To exercise any of these rights, contact us at office@private-travel-club.com. We will respond within 10 business days (30 calendar days for requests under 152-FZ)."
         ]
       },

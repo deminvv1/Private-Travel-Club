@@ -1,6 +1,6 @@
 {
   "cookieBanner": { "title": "Wir verwenden Cookies", "text": "Um Ihre Erfahrung zu verbessern und unseren Traffic zu analysieren. Ihre Daten bleiben privat.", "accept": "Akzeptieren", "decline": "Ablehnen" },
-  "nav": { "jets": "Jets", "yachts": "Yachten", "villas": "Villen", "concierge": "Concierge", "back": "← Zur Startseite", "navigationTitle": "Navigation", "privacyPolicy": "Datenschutzrichtlinie", "cookiePolicy": "Cookie-Richtlinie" },
+  "nav": { "jets": "Jets", "yachts": "Yachten", "villas": "Villen", "concierge": "Concierge", "back": "← Zur Startseite", "navigationTitle": "Navigation", "privacyPolicy": "Datenschutzerklärung", "cookiePolicy": "Cookie-Richtlinie" },
   "header": { "tagline": "Weltweite exklusive Reisen & Concierge-Services" },
   "hero": {
     "tagline": "Weltweite Reise- & Concierge-Services",
@@ -189,21 +189,21 @@
     ]
   },
   "privacy": {
-    "title": "Datenschutzrichtlinie",
+    "title": "Datenschutzerklärung",
     "sections": [
       {
         "heading": "1. Allgemeine Bestimmungen",
         "body": [
-          "Diese Datenschutzrichtlinie (nachfolgend – Richtlinie) wurde von Private Travel Club herausgegeben, das durch zwei juristische Einheiten tätig ist: IE Ebert Tatiana Nikolaevna (ОГРН 1027700067328, ИНН 772972873029, Anschrift: Michurinski Prospekt 9, Geb. 4, Büro 129, Moskau, Russland) sowie das europäische Büro: Sudetenstraße 12, 96250 Ebensfeld, Deutschland (nachfolgend zusammen – das Unternehmen, wir).",
-          "Diese Richtlinie regelt die Erhebung, Verarbeitung, Speicherung und den Schutz personenbezogener Daten der Nutzer der Website private-travel-club.com gemäß der EU-Datenschutz-Grundverordnung 2016/679 (DSGVO) und dem russischen Bundesgesetz Nr. 152-FZ vom 27.07.2006 über personenbezogene Daten.",
-          "Durch die Nutzung dieser Website und das Absenden des Kontaktformulars bestätigen Sie, dass Sie diese Richtlinie gelesen haben und der Verarbeitung Ihrer personenbezogenen Daten zustimmen."
+          "Diese Datenschutzerklärung (nachfolgend – Erklärung) regelt die Erhebung, Verarbeitung, Speicherung und den Schutz personenbezogener Daten der Nutzer (nachfolgend – Nutzer) der Website private-travel-club.com.",
+          "Die Website wird betrieben von Tatiana Ebert (Anschrift: Sudetenstraße 12, 96250 Ebensfeld, Deutschland; nachfolgend – das Unternehmen, wir), die in Russland auch als Einzelunternehmerin eingetragen ist: IE Ebert Tatiana Nikolaevna (OGRNIP 320774600263749, INN 772972873029, Anschrift: Michurinski Prospekt 9, Geb. 4, Büro 129, Moskau, Russland).",
+          "Diese Erklärung entspricht der EU-Datenschutz-Grundverordnung 2016/679 (DSGVO) und dem russischen Bundesgesetz Nr. 152-FZ vom 27.07.2006 über personenbezogene Daten. Durch die Nutzung dieser Website und das Absenden des Kontaktformulars bestätigen Sie, dass Sie diese Erklärung gelesen haben und der Verarbeitung Ihrer personenbezogenen Daten zustimmen."
         ]
       },
       {
         "heading": "2. Erhobene Daten",
         "body": [
           "Von Ihnen direkt übermittelte Daten: Name und Telefonnummer aus dem Kontaktformular; sonstige Informationen, die Sie uns per E-Mail oder in Nachrichten mitteilen.",
-          "Automatisch erfasste technische Daten: IP-Adresse, Browsertyp und -version, Gerätetyp, besuchte Seiten, Verweildauer und Cookie-Kennungen gemäß Abschnitt 5 dieser Richtlinie.",
+          "Automatisch erfasste technische Daten: IP-Adresse, Browsertyp und -version, Gerätetyp, besuchte Seiten, Verweildauer und Cookie-Kennungen gemäß Abschnitt 5 dieser Erklärung.",
           "Besondere Kategorien personenbezogener Daten (Zahlungskarteninformationen, Ausweisdokumente, Gesundheitsdaten) werden ohne Ihre ausdrückliche gesonderte Einwilligung nicht erhoben."
         ]
       },
@@ -218,21 +218,22 @@
         "heading": "4. Rechtsgrundlage der Verarbeitung",
         "body": [
           "Für Nutzer aus der EU/EWR (DSGVO): Art. 6 Abs. 1 lit. a – Einwilligung; lit. b – Vertragserfüllung bzw. vorvertragliche Maßnahmen; lit. c – rechtliche Verpflichtung; lit. f – berechtigte Interessen des Unternehmens.",
-          "Für Nutzer aus Russland (152-FZ): Verarbeitung auf Grundlage Ihrer Einwilligung gemäß Art. 9 des Bundesgesetzes Nr. 152-FZ sowie weiterer gesetzlich vorgesehener Grundlagen."
+          "Für Nutzer aus Russland (152-FZ): Verarbeitung auf Grundlage Ihrer Einwilligung gemäß Art. 9 des Bundesgesetzes Nr. 152-FZ sowie zur Erfüllung eines vom Betroffenen initiierten Vertrags."
         ]
       },
       {
         "heading": "5. Cookies",
         "body": [
-          "Unsere Website verwendet Cookies zur Sicherstellung der Funktionalität, Verhaltensanalyse und Verbesserung der Nutzererfahrung. Verwendete Typen: technische (unerlässlich), funktionale (Personalisierung) sowie analytische/Marketing-Cookies.",
+          "Unsere Website verwendet Cookies — kleine Textdateien auf Ihrem Gerät — zur Sicherstellung der Funktionalität, Verhaltensanalyse und Verbesserung der Nutzererfahrung. Verwendete Typen: technische (unerlässlich), funktionale (Personalisierung) sowie analytische/Marketing-Cookies.",
           "Sie können Cookies jederzeit über Ihre Browsereinstellungen verwalten oder deaktivieren. Weitere Informationen finden Sie in unserer Cookie-Richtlinie."
         ]
       },
       {
-        "heading": "6. Datenspeicherung und -schutz",
+        "heading": "6. Datenspeicherung, -lokalisierung und -schutz",
         "body": [
-          "Über das Kontaktformular übermittelte Daten werden an die E-Mail-Adresse des Unternehmens weitergeleitet und in keiner Datenbank gespeichert. Technische Daten (IP-Adressen, Protokolle) werden vom Hosting-Anbieter (Vercel Inc.) gemäß dessen Datenschutzrichtlinie verarbeitet.",
-          "Wir treffen geeignete technische und organisatorische Maßnahmen zum Schutz Ihrer Daten vor unbefugtem Zugriff, Verlust oder Offenlegung. Der Zugang ist auf befugtes Personal beschränkt. Eine Weitergabe an Dritte erfolgt nur soweit dies zur Leistungserbringung (z. B. Partnerhotels, Charteranbieter) oder gesetzlich erforderlich ist."
+          "Gemäß dem russischen Bundesgesetz Nr. 152-FZ erfolgen die primäre Erhebung, Erfassung, Systematisierung, Akkumulierung und Speicherung personenbezogener Daten russischer Staatsangehöriger ausschließlich in Datenbanken auf dem Territorium der Russischen Föderation.",
+          "Nach rechtmäßiger Erhebung in Russland können die Daten zum Zweck der Bearbeitung von Reiseanfragen gemäß den geltenden Gesetzen (DSGVO und 152-FZ) an das europäische Büro des Unternehmens übermittelt werden. Technische Daten (IP-Adressen, Protokolle) können vom Infrastrukturanbieter (Vercel Inc.) gemäß seinen Sicherheitsstandards verarbeitet werden.",
+          "Wir treffen geeignete technische und organisatorische Maßnahmen zum Schutz Ihrer Daten vor unbefugtem Zugriff, Verlust oder Offenlegung. Der Zugang ist auf befugtes Personal beschränkt. Personenbezogene Daten werden nicht länger gespeichert als für die genannten Zwecke erforderlich, sofern keine gesetzliche Aufbewahrungspflicht besteht."
         ]
       },
       {
@@ -246,7 +247,7 @@
       {
         "heading": "8. Schlussbestimmungen",
         "body": [
-          "Diese Richtlinie gilt für alle Nutzer der Website und wurde in Übereinstimmung mit der DSGVO und dem russischen Bundesgesetz Nr. 152-FZ erstellt. Das Unternehmen behält sich das Recht vor, sie jederzeit zu ändern; die aktuelle Fassung wird auf dieser Seite veröffentlicht.",
+          "Diese Erklärung gilt für alle Nutzer der Website. Das Unternehmen behält sich das Recht vor, sie jederzeit zu ändern; die aktuelle Fassung wird auf dieser Seite veröffentlicht.",
           "Kontakt: office@private-travel-club.com | IE Ebert T.N., Michurinski Prospekt 9, Geb. 4, Büro 129, Moskau, Russland | Sudetenstraße 12, 96250 Ebensfeld, Deutschland."
         ]
       }
