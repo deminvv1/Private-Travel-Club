@@ -80,8 +80,7 @@ export const metadata: Metadata = {
     ],
     apple: '/images/icon.svg',
   },
-  manifest: '/manifest.webmanifest',
-  verification: GOOGLE_VERIFICATION.length > 0 ? { google: GOOGLE_VERIFICATION } : {},
+verification: GOOGLE_VERIFICATION.length > 0 ? { google: GOOGLE_VERIFICATION } : {},
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
