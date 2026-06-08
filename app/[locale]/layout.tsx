@@ -4,6 +4,8 @@ export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'ru' }, { locale: 'de' }]
 }
 
+export const dynamicParams = false
+
 export default async function LocaleLayout({
   children,
   params,
