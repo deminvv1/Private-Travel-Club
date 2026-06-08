@@ -94,7 +94,7 @@ export default async function CookiesPage({ params }: { params: Promise<{ locale
           col1={t.whyus.col1}
           col2={t.whyus.col2}
           contactsTitle={t.whyus.contactsTitle}
-          address={t.whyus.address}
+          // address={t.whyus.address}
           email={t.whyus.email}
           phone={t.whyus.phone}
           phoneTel={t.whyus.phoneTel}
