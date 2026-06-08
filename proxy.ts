@@ -10,6 +10,11 @@ function detectLocale(pathname: string): string {
 
 export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname
+
+  if (pathname === '/sitemap.xml') {
+    return NextResponse.rewrite(new URL('/api/sitemap', request.url))
+  }
+
   const locale = detectLocale(pathname)
 
   const hasNonDefaultLocale = LOCALES.filter(l => l !== DEFAULT_LOCALE).some(
