@@ -15,6 +15,10 @@ export function proxy(request: NextRequest) {
     return NextResponse.rewrite(new URL('/api/sitemap', request.url))
   }
 
+  if (pathname === '/robots.txt') {
+    return NextResponse.next()
+  }
+
   const locale = detectLocale(pathname)
 
   const hasNonDefaultLocale = LOCALES.filter(l => l !== DEFAULT_LOCALE).some(
