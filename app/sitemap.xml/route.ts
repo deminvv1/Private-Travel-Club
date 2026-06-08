@@ -15,21 +15,40 @@ export const revalidate = 86400
 export async function GET() {
   const lastmod = new Date().toISOString().split('T')[0]
 
-  const urls = pages.map(({ path, priority, changeFreq }) => {
+  const urls = pages.flatMap(({ path, priority, changeFreq }) => {
     const enUrl = path ? `${SITE_URL}${path}` : SITE_URL
     const ruUrl = `${SITE_URL}/ru${path}`
     const deUrl = `${SITE_URL}/de${path}`
-    return `
+
+    const alternates = `
+    <xhtml:link rel="alternate" hreflang="x-default" href="${enUrl}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="${enUrl}"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="${ruUrl}"/>
+    <xhtml:link rel="alternate" hreflang="de" href="${deUrl}"/>`
+
+    return [
+      `
   <url>
     <loc>${enUrl}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>${changeFreq}</changefreq>
-    <priority>${priority}</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="${enUrl}"/>
-    <xhtml:link rel="alternate" hreflang="en" href="${enUrl}"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="${ruUrl}"/>
-    <xhtml:link rel="alternate" hreflang="de" href="${deUrl}"/>
-  </url>`
+    <priority>${priority}</priority>${alternates}
+  </url>`,
+      `
+  <url>
+    <loc>${ruUrl}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changeFreq}</changefreq>
+    <priority>${priority}</priority>${alternates}
+  </url>`,
+      `
+  <url>
+    <loc>${deUrl}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changeFreq}</changefreq>
+    <priority>${priority}</priority>${alternates}
+  </url>`,
+    ]
   }).join('')
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
