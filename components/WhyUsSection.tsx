@@ -7,7 +7,6 @@ interface WhyUsSectionProps {
   col1: string[]
   col2: string[]
   contactsTitle: string
-  address: string
   email: string
   phone: string
   phoneTel: string
@@ -21,7 +20,7 @@ interface WhyUsSectionProps {
 
 export default function WhyUsSection({
   title, body, col1, col2, contactsTitle,
-  address, email, phone, phoneTel,
+  email, phone, phoneTel,
   whatsapp, whatsappLink, instagram, instagramLink,
   locale, nav,
 }: WhyUsSectionProps) {
@@ -94,7 +93,6 @@ export default function WhyUsSection({
               {contactsTitle}
             </h3>
             <p style={{ ...textStyle, marginBottom: 4 }}>Private Travel Club</p>
-            <p style={{ ...textStyle, marginBottom: 4 }}>{address}</p>
             <a href={`mailto:${email}`} style={{
               ...textStyle, color: '#7aa3d4',
               borderBottom: '1px solid rgba(122,163,212,0.3)', transition: 'color 0.2s',

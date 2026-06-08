@@ -89,7 +89,6 @@ export default async function HomePage({
           col1={t.whyus.col1}
           col2={t.whyus.col2}
           contactsTitle={t.whyus.contactsTitle}
-          address={t.whyus.address}
           email={t.whyus.email}
           phone={t.whyus.phone}
           phoneTel={t.whyus.phoneTel}
