@@ -112,7 +112,6 @@ export default async function VillasPage({ params }: { params: Promise<{ locale:
                   col1={translations.whyus.col1}
                   col2={translations.whyus.col2}
                   contactsTitle={translations.whyus.contactsTitle}
-                  address={translations.whyus.address}
                   email={translations.whyus.email}
                   phone={translations.whyus.phone}
                   phoneTel={translations.whyus.phoneTel}

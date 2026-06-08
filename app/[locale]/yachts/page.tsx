@@ -25,7 +25,7 @@ const gallery = [
   { src: '/images/Premium-yacht.webp', alt: 'Premium-yacht deck — Private Travel Club yacht rental' },
 ]
 
-const OVERLAY = 'linear-gradient(to bottom, rgba(31,75,133,1) 0%, rgba(31,75,133,0.65) 50%, rgba(31,75,133,1) 100%)'
+const OVERLAY = 'linear-gradient(to bottom, rgba(31,75,133,1) 0%, rgba(31,75,133,0.75) 50%, rgba(31,75,133,1) 100%)'
 
 export default async function YachtsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -118,7 +118,6 @@ export default async function YachtsPage({ params }: { params: Promise<{ locale:
                   col1={translations.whyus.col1}
                   col2={translations.whyus.col2}
                   contactsTitle={translations.whyus.contactsTitle}
-                  address={translations.whyus.address}
                   email={translations.whyus.email}
                   phone={translations.whyus.phone}
                   phoneTel={translations.whyus.phoneTel}

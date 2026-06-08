@@ -186,7 +186,7 @@ export default async function ConciergePage({
               position: "absolute",
               inset: 0,
               zIndex: 1,
-              backgroundImage: OVERLAY,
+              background: "linear-gradient(to bottom, rgba(31,75,133,1) 0%, rgba(31,75,133,1) 50%, rgba(31,75,133,1) 100%)",
             }}
           />
           <div
@@ -455,7 +455,6 @@ export default async function ConciergePage({
           col1={translations.whyus.col1}
           col2={translations.whyus.col2}
           contactsTitle={translations.whyus.contactsTitle}
-          address={translations.whyus.address}
           email={translations.whyus.email}
           phone={translations.whyus.phone}
           phoneTel={translations.whyus.phoneTel}
