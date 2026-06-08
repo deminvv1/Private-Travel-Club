@@ -68,6 +68,10 @@
   "form": {
     "namePlaceholder": "Ваше имя",
     "nameLabel": "Ваше имя",
+    "emailLabel": "Электронная почта",
+    "emailPlaceholder": "ваш@email.com",
+    "directionLabel": "Направление",
+    "directionPlaceholder": "Куда хотите поехать?",
     "phoneLabel": "Ваш телефон",
     "submit": "Отправить",
     "sending": "Отправка...",

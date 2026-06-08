@@ -68,6 +68,10 @@
   "form": {
     "namePlaceholder": "Ihr Name",
     "nameLabel": "Ihr Name",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "ihre@email.de",
+    "directionLabel": "Reiseziel",
+    "directionPlaceholder": "Wohin möchten Sie reisen?",
     "phoneLabel": "Ihre Telefonnummer",
     "submit": "Absenden",
     "sending": "Wird gesendet...",

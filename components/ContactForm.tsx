@@ -20,6 +20,8 @@ function getDefaultCountry(locale: string): Country {
 export default function ContactForm({ locale = 'en' }: { locale?: string }) {
   const t = getT(locale).form
   const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [direction, setDirection] = useState('')
   const [phone, setPhone] = useState('')
   const [selected, setSelected] = useState<Country>(() => getDefaultCountry(locale))
   const [search, setSearch] = useState('')
@@ -66,7 +68,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, phone: selected.dial + ' ' + phone, country: selected.name, _honey: '' }),
+        body: JSON.stringify({ name, email, direction, phone: selected.dial + ' ' + phone, country: selected.name, _honey: '' }),
       })
       setStatus(res.ok ? 'ok' : 'error')
     } catch {
@@ -97,8 +99,30 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
       <input
         id="contact-name"
         type="text" value={name} onChange={e => setName(e.target.value)}
-        placeholder={t.namePlaceholder} required
-        style={inputStyle}
+        placeholder={t.namePlaceholder}
+        style={{ ...inputStyle, marginBottom: 32 }}
+        onFocus={e => (e.target.style.borderBottomColor = 'rgba(255,255,255,0.9)')}
+        onBlur={e => (e.target.style.borderBottomColor = 'rgba(255,255,255,0.3)')}
+      />
+
+      {/* Email */}
+      <label htmlFor="contact-email" style={labelStyle}>{t.emailLabel}</label>
+      <input
+        id="contact-email"
+        type="email" value={email} onChange={e => setEmail(e.target.value)}
+        placeholder={t.emailPlaceholder}
+        style={{ ...inputStyle, marginBottom: 32 }}
+        onFocus={e => (e.target.style.borderBottomColor = 'rgba(255,255,255,0.9)')}
+        onBlur={e => (e.target.style.borderBottomColor = 'rgba(255,255,255,0.3)')}
+      />
+
+      {/* Direction */}
+      <label htmlFor="contact-direction" style={labelStyle}>{t.directionLabel}</label>
+      <input
+        id="contact-direction"
+        type="text" value={direction} onChange={e => setDirection(e.target.value)}
+        placeholder={t.directionPlaceholder}
+        style={{ ...inputStyle, marginBottom: 32 }}
         onFocus={e => (e.target.style.borderBottomColor = 'rgba(255,255,255,0.9)')}
         onBlur={e => (e.target.style.borderBottomColor = 'rgba(255,255,255,0.3)')}
       />

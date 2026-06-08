@@ -45,36 +45,48 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    const { name, phone, country, _honey } = await req.json()
+    const { name, email, direction, phone, country, _honey } = await req.json()
 
     // Honeypot: боты заполняют скрытые поля — тихо игнорируем
     if (_honey) return NextResponse.json({ ok: true })
 
-    if (!name?.trim() || !phone?.trim()) {
-      return NextResponse.json({ error: 'Name and phone are required' }, { status: 400 })
+    if (!phone?.trim()) {
+      return NextResponse.json({ error: 'Phone is required' }, { status: 400 })
     }
 
-    const safeName    = name.trim().slice(0, 100)
-    const safePhone   = phone.trim().slice(0, 30)
-    const safeCountry = (country ?? '').trim().slice(0, 60)
+    const safeName      = (name ?? '').trim().slice(0, 100)
+    const safeEmail     = (email ?? '').trim().slice(0, 100)
+    const safeDirection = (direction ?? '').trim().slice(0, 200)
+    const safePhone     = phone.trim().slice(0, 30)
+    const safeCountry   = (country ?? '').trim().slice(0, 60)
 
     await transporter.sendMail({
       from: `"Private Travel Club" <${process.env.SMTP_USER}>`,
       to: 'tatianaeberthptcsearch@gmail.com',
       subject: '📩 New contact request — Private Travel Club',
       text: [
-        `Name:    ${safeName}`,
-        `Phone:   ${safePhone}`,
-        `Country: ${safeCountry}`,
-        `Time:    ${new Date().toISOString()}`,
+        `Name:        ${safeName || '—'}`,
+        `Email:       ${safeEmail || '—'}`,
+        `Destination: ${safeDirection || '—'}`,
+        `Phone:       ${safePhone}`,
+        `Country:     ${safeCountry}`,
+        `Time:        ${new Date().toISOString()}`,
       ].join('\n'),
       html: `
         <div style="font-family:Arial,sans-serif;max-width:480px;padding:24px;border:1px solid #e0e0e0;border-radius:8px">
           <h2 style="margin:0 0 16px;color:#1f4b85">New contact request</h2>
           <table style="border-collapse:collapse;width:100%">
             <tr>
-              <td style="padding:8px 12px;background:#f5f7fa;font-weight:600;width:90px">Name</td>
-              <td style="padding:8px 12px">${safeName}</td>
+              <td style="padding:8px 12px;background:#f5f7fa;font-weight:600;width:110px">Name</td>
+              <td style="padding:8px 12px">${safeName || '—'}</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;background:#f5f7fa;font-weight:600">Email</td>
+              <td style="padding:8px 12px">${safeEmail ? `<a href="mailto:${safeEmail}">${safeEmail}</a>` : '—'}</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;background:#f5f7fa;font-weight:600">Destination</td>
+              <td style="padding:8px 12px">${safeDirection || '—'}</td>
             </tr>
             <tr>
               <td style="padding:8px 12px;background:#f5f7fa;font-weight:600">Phone</td>
