@@ -113,7 +113,7 @@
     "featuresSub": "From intimate villas to grand estates — every property is personally curated to match your exact wishes, taste and lifestyle.",
     "galleryTitle": "Our properties",
     "contactTitle": "Curate My Stay",
-    "contactSub": "Tell us your destination, dates and preferences — your personal manager will handpick the perfect property and arrange every detail personally.",
+    "contactSub": "Tell us your destination and preferences — your personal manager will handpick the perfect property and arrange every detail personally.",
     "features": [
       { "title": "Villas & private residences", "text": "Beachfront villas in the Maldives, cliffside retreats in Santorini, or countryside estates in Tuscany — we find it for you." },
       { "title": "Chalets & mountain retreats", "text": "World-class chalets in Zermatt, Courchevel, St. Moritz and beyond — ski-in/ski-out or secluded in nature." },
@@ -153,7 +153,7 @@
     "featuresSub": "We handle every detail of your yacht charter personally — so you step on board and simply enjoy the sea.",
     "galleryTitle": "Our yachts",
     "contactTitle": "Tailor My Cruise",
-    "contactSub": "Share your destination and dates — your personal manager will prepare a bespoke VIP charter proposal within a few hours.",
+    "contactSub": "Share your destination — your personal manager will prepare a bespoke VIP charter proposal within a few hours.",
     "features": [
       { "title": "Full route planning", "text": "From destination and itinerary to daily stops and activities — we plan the entire voyage for you." },
       { "title": "Professional crew", "text": "Experienced captains, stewards, chefs and hostesses — all vetted and hand-selected for your trip." },
