@@ -6,13 +6,6 @@ const nextConfig = {
       { protocol: 'https', hostname: 'flagcdn.com' },
     ],
   },
-  async rewrites() {
-    return {
-      beforeFiles: [
-        { source: '/sitemap.xml', destination: '/api/sitemap' },
-      ],
-    }
-  },
   async headers() {
     return [
       {
