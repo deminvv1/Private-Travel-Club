@@ -5,7 +5,6 @@ import IntroSection from '@/components/IntroSection'
 import ServiceSection from '@/components/ServiceSection'
 import GalleryStrip from '@/components/GalleryStrip'
 import WhyUsSection from '@/components/WhyUsSection'
-import MapSection from '@/components/MapSection'
 import MobileFooter from '@/components/MobileFooter'
 import BackToTop from '@/components/BackToTop'
 import { getT, isValidLocale, DEFAULT_LOCALE, buildAlternates } from '@/lib/i18n'
@@ -47,7 +46,7 @@ const servicePhotos = {
 }
 
 const serviceBgs = {
-  villas: '/images/Luxury-yacht.webp',
+  villas: '/images/Premium-villas.webp',
   yachts: '/images/Premium-yacht.webp',
   transfers: '/images/Premium-concierge.webp',
   concierge: '/images/tild6638-6537-4132-a666-383131626462__istock-964566894.webp',
@@ -101,7 +100,6 @@ export default async function HomePage({
           locale={lang}
           nav={t.nav}
         />
-        <MapSection src={t.whyus.mapSrc} />
       </main>
       <MobileFooter />
       <BackToTop />
