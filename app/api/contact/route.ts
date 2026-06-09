@@ -1,6 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
 
+// Экранирование HTML-символов перед вставкой в письмо
+function esc(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+}
+
+const EMAIL_RE = /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/
+
 export const runtime = 'nodejs'
 
 // In-memory rate limiter: max 5 requests per IP per 10 minutes
@@ -33,6 +45,12 @@ const transporter = nodemailer.createTransport({
 
 export async function POST(req: NextRequest) {
   try {
+    // Принимаем только JSON
+    const ct = req.headers.get('content-type') ?? ''
+    if (!ct.includes('application/json')) {
+      return NextResponse.json({ error: 'Unsupported Media Type' }, { status: 415 })
+    }
+
     const ip =
       req.headers.get('x-forwarded-for')?.split(',')[0].trim() ??
       req.headers.get('x-real-ip') ??
@@ -60,6 +78,11 @@ export async function POST(req: NextRequest) {
     const safePhone     = phone.trim().slice(0, 30)
     const safeCountry   = (country ?? '').trim().slice(0, 60)
 
+    // Базовая проверка формата email (если указан)
+    if (safeEmail && !EMAIL_RE.test(safeEmail)) {
+      return NextResponse.json({ error: 'Invalid email' }, { status: 400 })
+    }
+
     await transporter.sendMail({
       from: `"Private Travel Club" <${process.env.SMTP_USER}>`,
       to: 'tatianaeberthptcsearch@gmail.com',
@@ -78,23 +101,23 @@ export async function POST(req: NextRequest) {
           <table style="border-collapse:collapse;width:100%">
             <tr>
               <td style="padding:8px 12px;background:#f5f7fa;font-weight:600;width:110px">Name</td>
-              <td style="padding:8px 12px">${safeName || '—'}</td>
+              <td style="padding:8px 12px">${esc(safeName) || '—'}</td>
             </tr>
             <tr>
               <td style="padding:8px 12px;background:#f5f7fa;font-weight:600">Email</td>
-              <td style="padding:8px 12px">${safeEmail ? `<a href="mailto:${safeEmail}">${safeEmail}</a>` : '—'}</td>
+              <td style="padding:8px 12px">${safeEmail ? `<a href="mailto:${esc(safeEmail)}">${esc(safeEmail)}</a>` : '—'}</td>
             </tr>
             <tr>
               <td style="padding:8px 12px;background:#f5f7fa;font-weight:600">Destination</td>
-              <td style="padding:8px 12px">${safeDirection || '—'}</td>
+              <td style="padding:8px 12px">${esc(safeDirection) || '—'}</td>
             </tr>
             <tr>
               <td style="padding:8px 12px;background:#f5f7fa;font-weight:600">Phone</td>
-              <td style="padding:8px 12px">${safePhone}</td>
+              <td style="padding:8px 12px">${esc(safePhone)}</td>
             </tr>
             <tr>
               <td style="padding:8px 12px;background:#f5f7fa;font-weight:600">Country</td>
-              <td style="padding:8px 12px">${safeCountry}</td>
+              <td style="padding:8px 12px">${esc(safeCountry)}</td>
             </tr>
           </table>
           <p style="margin:16px 0 0;font-size:12px;color:#999">

@@ -1,0 +1,120 @@
+{
+  "slug": "french-riviera",
+  "lang": "en",
+  "name": "French Riviera",
+  "seoTitle": "French Riviera Luxury Travel & Villas | Private Travel Club",
+  "seoDescription": "Private villas, yacht charters and bespoke concierge on the French Riviera. No membership fees, 24/7 service, total discretion. Plan your Côte d'Azur escape today.",
+  "canonicalPath": "/destinations/french-riviera",
+  "heroHeading": "The French Riviera, Privately and Without Compromise",
+  "heroSubheading": "The Côte d'Azur receives more sunshine hours than almost anywhere else in continental Europe — yet the truly privileged version of it is rarely seen from a hotel lobby. Pine-scented hillsides above Cannes, private moorings in Antibes, vine-covered terraces in Èze: these are pleasures reserved for those who know exactly what to ask for. Private Travel Club arranges every element — villa, yacht, helicopter, table — so that the Riviera you experience is personal, unhurried and entirely your own.",
+  "heroImage": "https://images.unsplash.com/photo-1734108489076-ff5f5a8f8a67?w=1920&q=80&auto=format&fit=crop",
+  "heroImageAlt": "Azure coastline of the French Riviera with luxury villas and yachts",
+  "whyUsHeading": "Why Choose Private Travel Club for the French Riviera",
+  "whyUsBody": "We have spent years cultivating relationships with the Riviera's most discreet villa owners, the finest superyacht captains in Antibes, and the maîtres d' who keep the best tables for those they trust. There are no membership fees — only a genuine commitment to your preferences, available around the clock, every day of the year. Your itinerary is never templated. From a last-minute helicopter from Nice to a private terrace dinner above Monaco, every detail is handled with the quiet efficiency you would expect from a concierge who has been there many times.",
+  "experiencesHeading": "What to See and Do on the French Riviera",
+  "experiences": [
+    {
+      "title": "Private Superyacht Charter from Antibes",
+      "body": "Antibes harbour is one of the great superyacht capitals of the world, and departing from it on a vessel arranged entirely for you is a different proposition altogether. Spend a morning anchored in the crystal shallows off the Îles de Lérins, swim to a sandbar visible from no road, and lunch aboard as the chef prepares whatever was gathered at the market that morning. Afternoons can drift toward Saint-Tropez or the quieter anchorages of the Estérel coast. Your captain knows where the crowds do not go — and we know which captain to call.",
+      "image": "https://images.unsplash.com/photo-1720346502521-0ad5347142a0?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Superyacht anchored off the French Riviera coastline near Antibes"
+    },
+    {
+      "title": "Monaco Grand Prix in a Private Suite",
+      "body": "The Monaco Grand Prix is one of the few sporting events where the spectacle extends far beyond the circuit. The narrowest streets in Formula One, the hairpin at the harbour, the tunnel exit — all of it best appreciated from a position that is genuinely elevated. We arrange exclusive hospitality suites, private terraces overlooking the circuit, and yacht berths in Port Hercule so you watch the race from the water with a Champagne in hand. Transfers by helicopter from the Côte d'Azur, paddock access coordination, private dinners with the principality's best tables — all managed for you.",
+      "image": "https://images.unsplash.com/photo-1697579669344-4bd379bd38b8?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Monaco harbour with yachts and the Monte Carlo skyline"
+    },
+    {
+      "title": "Michelin Dining and Private Cellar Experiences in Cannes",
+      "body": "The stretch between Cannes and Menton contains a concentration of Michelin-starred restaurants per kilometre that rivals anywhere in France. We go further than a reservation: private tasting menus prepared exclusively for your party, kitchen tours with chefs who do not routinely open their doors, and cellar visits in the Bellet vineyards above Nice — an appellation so small it is rarely encountered outside the region itself. A private sommelier can accompany your evening, or we arrange for a master of wine to lead a focused tasting in the privacy of your villa. Every meal is a considered event, not a booking.",
+      "image": "https://images.unsplash.com/photo-1776934121312-e256a6339bc1?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Elegant private villa terrace dinner overlooking the French Riviera at dusk"
+    },
+    {
+      "title": "Helicopter Transfers Across the Côte d'Azur",
+      "body": "The French Riviera is at its most beautiful from 500 metres — and most efficiently navigated that way too. A helicopter from Nice to Saint-Tropez takes twelve minutes and removes entirely the summer road congestion that can turn a twenty-kilometre journey into two hours. We arrange on-demand flights departing from helipads at Nice Côte d'Azur, Cannes Mandelieu, and private estates, with consistent crews who understand that punctuality and discretion are not optional. The same aircraft can connect you to Monaco, the Italian border, or a yacht anchored offshore. It is the only honest way to move along this coast in July and August.",
+      "image": "https://images.unsplash.com/photo-1777684862302-7c0973a30095?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Private helicopter flying over the azure waters of the French Riviera"
+    },
+    {
+      "title": "Exclusive Villa Life in the Hinterland of Grasse",
+      "body": "Behind the coastal ribbon of hotels and beach clubs lies a different Riviera entirely — stone bastides set among lavender fields and olive groves above Grasse, the perfume capital of the world. Villas here offer swimming pools without the crowds, terraces with panoramic views from the Alps to the sea, and a silence that the coast simply cannot provide. We source properties that are not available on booking platforms: estates managed by their owners, staffed by long-standing housekeepers, with wine cellars and kitchen gardens already stocked to your specification. Grasse itself offers private perfume atelier experiences, creating a bespoke scent under a master perfumer.",
+      "image": "https://images.unsplash.com/photo-1588608544853-b9c8e046ae51?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Provençal villa with lavender fields and sea views in the hills above the French Riviera"
+    }
+  ],
+  "regionsHeading": "Best of the French Riviera",
+  "regions": [
+    {
+      "name": "Cannes and the Esterel Coast",
+      "body": "Cannes is the most internationally fluent stretch of the Riviera — the Film Festival, the Croisette, the islands offshore — but its real pleasures are more private than the red carpet suggests. The Estérel massif to the west offers dramatic red-rock coastline largely untouched by development. Yacht anchorages here are genuinely secluded, accessible only by sea. The town itself rewards those with the right introductions: private beach clubs, invitation-only casino rooms, and villas in the hills above La Californie with views that justify every euro of their asking price.",
+      "image": "https://images.unsplash.com/photo-1697528868416-230373ee1397?w=900&q=80&auto=format&fit=crop",
+      "imageAlt": "Cannes coastline with palm trees and luxury yachts in the Croisette bay"
+    },
+    {
+      "name": "Monaco and Cap Ferrat",
+      "body": "Monaco is not merely a city-state — it is a way of operating, where discretion is constitutional and the infrastructure for private travel is unsurpassed. Cap Ferrat, the peninsula immediately east, is where the true estates sit: walled, gardened, and almost entirely absent from the internet. Somerset Maugham called it a sunny place for shady people; today it remains a haven for those who prefer their privacy guaranteed by geography as much as by gates. The Hôtel du Cap-Eden-Roc nearby sets the benchmark against which all other Riviera hospitality is measured.",
+      "image": "https://images.unsplash.com/photo-1722515177482-7367c55fce19?w=900&q=80&auto=format&fit=crop",
+      "imageAlt": "Monaco coastline at sunset viewed from the sea with Monte Carlo in the background"
+    },
+    {
+      "name": "Saint-Tropez and the Gulf of Saint-Tropez",
+      "body": "Saint-Tropez retains something that most of the Riviera has surrendered: the feeling, on the right morning in the right light, that the world has not entirely caught up yet. The village itself is best seen at six in the morning or late September, when the crowds thin and the quality of the light becomes extraordinary. The Gulf provides some of the finest sailing water on the Mediterranean, and the villas on the Ramatuelle peninsula — hidden behind vineyards — represent the quiet summit of what this coast offers to those who know where to look.",
+      "image": "https://images.unsplash.com/photo-1685450127565-d07f2377fbc2?w=900&q=80&auto=format&fit=crop",
+      "imageAlt": "Saint-Tropez harbour with colourful buildings and sailing yachts in the Gulf of Saint-Tropez"
+    }
+  ],
+  "servicesHeading": "Our Services on the French Riviera",
+  "services": [
+    {
+      "title": "Private Villa Rentals",
+      "body": "We access villas that do not appear on rental platforms — owner-managed estates on Cap Ferrat, hillside bastides above Grasse, Ramatuelle properties within walking distance of Pampelonne. Full staff, chef, and security arrangements included as standard. Available from three nights.",
+      "icon": "villa"
+    },
+    {
+      "title": "Superyacht Charters",
+      "body": "From day charters out of Antibes to two-week voyages from Monaco to Corsica, we match your party to the right vessel and the right crew. Every charter is fully crewed, provisioned to your dietary specifications, and routed by a captain who knows these waters intimately.",
+      "icon": "yacht"
+    },
+    {
+      "title": "Private Jet and Helicopter",
+      "body": "Direct flights into Nice Côte d'Azur or Cannes Mandelieu, with onward helicopter to any helipad on the Riviera. We coordinate positioning flights, ground transfers, and same-day departures. No handling queues, no shared lounges — only a car on the apron.",
+      "icon": "jet"
+    },
+    {
+      "title": "24/7 Riviera Concierge",
+      "body": "Restaurant reservations at fully-booked establishments, last-minute supercars, private beach access, event tickets, and anything else the Riviera can offer. One contact, available at any hour, who has done this before and knows exactly who to call.",
+      "icon": "concierge"
+    }
+  ],
+  "faqsHeading": "Frequently Asked Questions about the French Riviera",
+  "faqs": [
+    {
+      "question": "How much does a private villa on the French Riviera cost per week?",
+      "answer": "Villa rental prices on the French Riviera vary considerably by location, season, and level of staffing. A well-appointed villa in the hills above Cannes or in Ramatuelle typically ranges from €15,000 to €80,000 per week in high season; trophy properties on Cap Ferrat or Cap d'Antibes can exceed €200,000 per week. Private Travel Club accesses off-market estates not listed publicly, often with more competitive pricing than comparable listed properties. We provide transparent costings with no hidden service markups."
+    },
+    {
+      "question": "What is the best time of year to visit the French Riviera for luxury travel?",
+      "answer": "May, June and September offer the finest combination of warm weather, manageable crowds, and availability at the best restaurants and venues. July and August deliver the most vibrant social calendar — Monaco Grand Prix excepted, which falls in late May — but also the highest prices and heaviest coastal traffic. For villa stays and yacht charters, June is widely considered the sweet spot: the sea is warm, the light is extraordinary, and the most sought-after properties are still accessible."
+    },
+    {
+      "question": "Is there a private island to rent near the French Riviera?",
+      "answer": "The Îles de Lérins — Sainte-Marguerite and Saint-Honorat — lie minutes offshore from Cannes and can be reached by private tender or helicopter. While the islands themselves are not available for exclusive private rental, exclusive use of their adjacent waters for yacht anchorage is entirely possible. For true island privacy, we often suggest combining a Riviera villa with a chartered superyacht, which effectively creates your own mobile private island throughout the stay."
+    },
+    {
+      "question": "How do I get from Nice airport to Saint-Tropez privately?",
+      "answer": "The most efficient option is a helicopter transfer from Nice Côte d'Azur directly to the Saint-Tropez helipad — the flight takes approximately 25 minutes and eliminates the summer road journey entirely, which can take two to three hours by car in peak season. We arrange the helicopter to meet your aircraft on the apron and coordinate luggage handling so there is no gap between your private jet landing and your onward connection. A private car transfer is also available for those who prefer it."
+    },
+    {
+      "question": "Can Private Travel Club arrange Monaco Grand Prix hospitality and accommodation?",
+      "answer": "Yes. Monaco Grand Prix weekend is one of the most logistically complex events on the Riviera, and we manage the full picture: circuit-side hospitality suites, superyacht berths in Port Hercule with views of the harbour chicane, helicopter transfers from the Côte d'Azur, priority restaurant reservations in Monaco for race week, and villa accommodation within convenient reach. We advise planning at least six months ahead for Grand Prix weekend, as the best berths and suites are allocated well in advance."
+    },
+    {
+      "question": "What luxury yacht charter options are available from Antibes or Cannes?",
+      "answer": "Antibes is one of Europe's principal superyacht bases, meaning availability of well-maintained, professionally crewed vessels is consistently strong. Charters range from classic day boats for twelve guests to 60-metre superyachts with a crew of ten. Popular itineraries run from Antibes to the Îles de Lérins, eastward to Monaco and the Italian Ligurian coast, or westward to Saint-Tropez and the Estérel. Private Travel Club matches you to vessels suited to your party size, preferences, and intended route, with full provisioning and concierge support throughout."
+    }
+  ],
+  "ctaHeading": "Plan Your Private French Riviera Experience",
+  "ctaSubtext": "The most sought-after villas, berths and tables on the Côte d'Azur are secured quietly and early — contact us now and we will handle every detail. No membership fees, no obligation: only a conversation with someone who knows this coast as well as you know your own home."
+}

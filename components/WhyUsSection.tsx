@@ -81,9 +81,64 @@ export default function WhyUsSection({
         </div>
 
         <div style={{
-          display: 'grid', gridTemplateColumns: '1fr 1fr 1fr',
+          display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr',
           gap: 'clamp(32px,5vw,80px)', alignItems: 'start',
         }} className="ptc-whyus-contacts">
+          <nav style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <p style={{
+              fontFamily: 'PTCSans, Arial, sans-serif',
+              fontSize: 'clamp(22px,2.5vw,34px)',
+              fontWeight: 700, fontStyle: 'italic',
+              color: '#fff'
+            }}>
+              {locale === 'ru' ? 'Услуги' : locale === 'de' ? 'Leistungen' : 'Services'}
+            </p>
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="ptc-footer-nav-link" style={{
+                fontFamily: 'PTCSans, Arial, sans-serif',
+                fontSize: 13, fontWeight: 500,
+                letterSpacing: '2px', textTransform: 'uppercase',
+                color: 'rgba(255,255,255,0.55)',
+                textDecoration: 'none',
+                transition: 'color 0.2s',
+              }}>
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
+          <nav style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <p style={{
+              fontFamily: 'PTCSans, Arial, sans-serif',
+              fontSize: 'clamp(22px,2.5vw,34px)',
+              fontWeight: 700, fontStyle: 'italic',
+              color: '#fff', marginBottom: 4,
+            }}>
+              {locale === 'ru' ? 'Направления' : locale === 'de' ? 'Reiseziele' : 'Destinations'}
+            </p>
+            {[
+              { slug: 'maldives',       en: 'Maldives',        ru: 'Мальдивы',       de: 'Malediven' },
+              { slug: 'greece',         en: 'Greece',          ru: 'Греция',         de: 'Griechenland' },
+              { slug: 'italy',          en: 'Italy',           ru: 'Италия',         de: 'Italien' },
+              { slug: 'dubai',          en: 'Dubai',           ru: 'Дубай',          de: 'Dubai' },
+              { slug: 'french-riviera', en: 'French Riviera',  ru: 'Лазурный берег', de: 'Côte d\'Azur' },
+              { slug: 'switzerland',    en: 'Switzerland',     ru: 'Швейцария',      de: 'Schweiz' },
+              { slug: 'seychelles',     en: 'Seychelles',      ru: 'Сейшелы',        de: 'Seychellen' },
+              { slug: 'cappadocia',     en: 'Cappadocia',      ru: 'Каппадокия',     de: 'Kappadokien' },
+            ].map(({ slug, en, ru, de }) => (
+              <Link key={slug} href={`/${locale}/destinations/${slug}`} className="ptc-footer-nav-link" style={{
+                fontFamily: 'PTCSans, Arial, sans-serif',
+                fontSize: 13, fontWeight: 500,
+                letterSpacing: '2px', textTransform: 'uppercase',
+                color: 'rgba(255,255,255,0.55)',
+                textDecoration: 'none',
+                transition: 'color 0.2s',
+              }}>
+                {locale === 'ru' ? ru : locale === 'de' ? de : en}
+              </Link>
+            ))}
+          </nav>
+
           <div>
             <h3 style={{
               fontFamily: 'PTCSans, Arial, sans-serif',
@@ -119,29 +174,6 @@ export default function WhyUsSection({
               </a>
             ))}
           </div>
-
-          <nav style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-            <p style={{
-              fontFamily: 'PTCSans, Arial, sans-serif',
-              fontSize: 'clamp(22px,2.5vw,34px)',
-              fontWeight: 700, fontStyle: 'italic',
-              color: '#fff'
-            }}>
-              {nav.navigationTitle}
-            </p>
-            {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="ptc-footer-nav-link" style={{
-                fontFamily: 'PTCSans, Arial, sans-serif',
-                fontSize: 13, fontWeight: 500,
-                letterSpacing: '2px', textTransform: 'uppercase',
-                color: 'rgba(255,255,255,0.55)',
-                textDecoration: 'none',
-                transition: 'color 0.2s',
-              }}>
-                {link.label}
-              </Link>
-            ))}
-          </nav>
         </div>
 
         <div style={{

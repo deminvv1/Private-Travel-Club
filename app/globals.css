@@ -1,3 +1,6 @@
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
+
 @font-face {
   font-family: 'PTCSans';
   font-style: normal;
@@ -69,4 +72,17 @@ button {
 
 .ptc-hdr-nav{
   z-index: 2;
+}
+
+
+.to-transparent {
+  background: linear-gradient(180deg, rgba(10, 18, 45, 0.75) 0%, rgba(10, 18, 45, 0.8) 50%, rgba(10, 18, 45, 0.8) 100%);
+}
+
+.border-stone-200 {
+  border-radius: 10px !important;
+}
+
+.justify-center {
+  border-radius: 10px;
 }

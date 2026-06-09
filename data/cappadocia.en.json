@@ -1,0 +1,120 @@
+{
+  "slug": "cappadocia",
+  "lang": "en",
+  "name": "Cappadocia, Turkey",
+  "seoTitle": "Luxury Cappadocia Travel & Private Experiences | PTC",
+  "seoDescription": "Private Cappadocia travel crafted for discerning guests — balloon flights, cave villas, helicopter charters & 24/7 concierge. No membership fees. Contact us today.",
+  "canonicalPath": "/destinations/cappadocia",
+  "heroHeading": "Cappadocia: Where the Earth Became Art",
+  "heroSubheading": "Thirty million years of volcanic eruption and wind sculpted Cappadocia into a landscape that defies every expectation — fairy chimneys rising from rust-red valleys, entire cities carved into soft tuff stone, and the silence of a high plateau broken only by the whisper of a balloon burner at dawn. This is Turkey at its most otherworldly, and at its most intimate. For the traveller who seeks something genuinely unrepeatable — a private cave suite, a charter over the rose valleys at first light, a table set among ancient frescoes — Cappadocia rewards those who arrive prepared.",
+  "heroImage": "https://images.unsplash.com/photo-1674941237715-6f4f9a58636a?w=1920&q=80&auto=format&fit=crop",
+  "heroImageAlt": "Hot air balloons drifting over the fairy chimneys of Cappadocia at sunrise",
+  "whyUsHeading": "Why Choose Private Travel Club for Cappadocia",
+  "whyUsBody": "Cappadocia rewards those who move through it on their own terms. Private Travel Club secures the cave suite that never appears online, arranges exclusive balloon flights departing before the crowds lift off, and places a dedicated concierge at your side from the moment your private jet touches down at Nevşehir Kapadokya Airport. We charge no membership fees — ever. Our team is available around the clock, every day of the year, and every itinerary is built for one party only: yours. Your preferences, your pace, your complete privacy.",
+  "experiencesHeading": "What to See and Do in Cappadocia",
+  "experiences": [
+    {
+      "title": "Private Hot Air Balloon Charter at Dawn",
+      "body": "The standard group balloon is a fine spectacle. A private charter over the Göreme Valley is something else entirely. Your balloon lifts before the first commercial craft leaves the ground, carrying you and your guests alone across the Rose Valley, the Sword Valley, and the ancient rock-cut churches of the Open Air Museum below. Your pilot navigates to order — hovering low over the chimneys, ascending to watch the light change across forty kilometres of plateau. A private champagne breakfast is laid on landing. Flights are arranged through operators holding full CAA certification, with fully customisable departure windows.",
+      "image": "https://images.unsplash.com/photo-1559925906-3da1c5807d61?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Private hot air balloon floating over the fairy chimneys of Göreme Valley, Cappadocia"
+    },
+    {
+      "title": "Exclusive Cave Dining in Uçhisar",
+      "body": "Cappadocia's cuisine is deeply regional — slow-cooked clay pot lamb, hand-rolled mantı, the honey of Ürgüp, wines from volcanic Öküzgözü grapes grown at 1,200 metres elevation. Private Travel Club arranges exclusive dinners set within centuries-old cave chambers, staffed by private chefs and served without other guests present. Tables can be positioned at the summit of Uçhisar Castle for an unobstructed panorama across the valleys at dusk, or inside a candlelit tuff cellar below one of the region's boutique estates. Menus are composed to brief: dietary requirements, wine preferences, occasion.",
+      "image": "https://images.unsplash.com/photo-1609932937042-56e6bdd7a41b?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Candlelit cave dining room carved into volcanic tuff rock in Cappadocia"
+    },
+    {
+      "title": "Helicopter Survey of the Three Valleys",
+      "body": "The Rose, Red, and Ihlara Valleys run for kilometres through the Cappadocian plateau, and much of their finest detail is invisible from the ground. A private helicopter charter — arranged through our preferred operator based at Nevşehir — covers all three in under ninety minutes, with the pilot briefed to your specific interests: Byzantine fresco churches hidden in valley walls, the underground city of Derinkuyu, the ancient caravanserai along the Silk Road corridor. The aircraft holds up to five passengers in full comfort. Door-off photography flights are available on request for those wishing to capture the landscape without glass between lens and light.",
+      "image": "https://images.unsplash.com/photo-1701616857654-8c56b923d80c?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Helicopter flying over the volcanic valleys and rock formations of Cappadocia"
+    },
+    {
+      "title": "Private Guided Tour of Derinkuyu Underground City",
+      "body": "Beneath the Cappadocian plain lies one of the ancient world's most astonishing feats of engineering: Derinkuyu, an underground city carved to a depth of eighty-five metres, capable of sheltering twenty thousand people from invasion. Private Travel Club arranges after-hours access with a specialist archaeologist guide — no queues, no other visitors, torchlight and silence in the stables, wine cellars, churches, and meeting halls carved entirely from stone. The experience is profound and slightly disorienting, which is precisely the point. A private transfer in a chauffeured vehicle is included from your accommodation.",
+      "image": "https://images.unsplash.com/photo-1647955950700-e74d397d4903?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Stone-carved tunnels and chambers of Derinkuyu underground city, Cappadocia"
+    },
+    {
+      "title": "Horseback Ride Through the Rose Valley",
+      "body": "Cappadocia has been horse country for three thousand years — the name itself derives from the Hittite for 'land of beautiful horses'. A private morning ride through the Rose Valley, guided by a local handler and tailored to your riding level, moves through a landscape that no vehicle can reach: narrow trails between pink tuff formations, cave churches still bearing their frescoes, fig trees growing wild from the rock. The route can be extended to include the Red Valley and the panoramic viewpoint above Çavuşin. Horses, tack, and guides are inspected and approved by our team. No group joins your party.",
+      "image": "https://images.unsplash.com/photo-1641958308842-8bfb108a0b57?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Horses trekking through the Rose Valley rock formations of Cappadocia at golden hour"
+    }
+  ],
+  "regionsHeading": "Best of Cappadocia",
+  "regions": [
+    {
+      "name": "Göreme & the Open Air Museum",
+      "body": "Göreme sits at the geographic and spiritual heart of Cappadocia, surrounded by the highest concentration of rock-cut churches in the region, many still bright with eleventh-century Byzantine frescoes. The village has evolved quietly into the most refined base for private stays — boutique cave hotels carved directly into the tuff cliffs, rooftop terraces with unobstructed views across the valley, and walking access to trails that lead through the chimneys without another soul in sight before nine in the morning.",
+      "image": "https://images.unsplash.com/photo-1567797964760-5366be053e70?w=900&q=80&auto=format&fit=crop",
+      "imageAlt": "Rock-cut cave churches and fairy chimneys of Göreme, Cappadocia"
+    },
+    {
+      "name": "Uçhisar & the Castle Rock",
+      "body": "Uçhisar is quieter than Göreme and considerably more elevated — its castle rock rises forty metres above the plateau and commands the widest panorama in all of Cappadocia. The village attracts a more discreet clientele: small luxury estates converted from cave dwellings, private terraces with views stretching to Mount Erciyes, and a handful of exceptional restaurants. For guests who prize seclusion over proximity to the main sites, Uçhisar is the natural choice. Private transfers to all valley trails and the Open Air Museum are included in every itinerary we build here.",
+      "image": "https://images.unsplash.com/photo-1680204412403-73110934f5aa?w=900&q=80&auto=format&fit=crop",
+      "imageAlt": "Uçhisar Castle rising above the Cappadocia plateau at sunset"
+    },
+    {
+      "name": "Ürgüp & the Wine Country",
+      "body": "Ürgüp lies at the eastern edge of the Cappadocian wine region, where volcanic soils and high altitude produce some of Turkey's most characterful reds from Öküzgözü and Boğazkere grapes. The town itself is graceful rather than touristic — Ottoman stone mansions, cave-cellar restaurants, and a weekly market unchanged in character for generations. Private cellar tastings at family estates, including those not open to the general public, can be arranged through our concierge. Ürgüp also offers some of the most spacious private villa rentals in the region, ideal for groups travelling together.",
+      "image": "https://images.unsplash.com/photo-1658850425969-dae4e239e0b3?w=900&q=80&auto=format&fit=crop",
+      "imageAlt": "Stone architecture and vineyard landscape of Ürgüp in Cappadocia wine country"
+    }
+  ],
+  "servicesHeading": "Our Services in Cappadocia",
+  "services": [
+    {
+      "title": "Private Cave Villa & Estate Rentals",
+      "body": "We secure Cappadocia's finest cave estates and boutique properties — many available exclusively through direct relationships, never listed publicly. From intimate two-suite cave hotels to entire hilltop compounds with private pools and staff, every property is personally vetted by our team.",
+      "icon": "villa"
+    },
+    {
+      "title": "Yacht Charter — Aegean & Mediterranean Extensions",
+      "body": "Pair your Cappadocia stay with a private yacht charter departing from Bodrum, Marmaris, or Istanbul. We coordinate seamless transfers by private jet or helicopter, ensuring continuity of service from the plateau to the sea without a single administrative burden falling to you.",
+      "icon": "yacht"
+    },
+    {
+      "title": "Private Jet & Helicopter Charter",
+      "body": "Nevşehir Kapadokya Airport handles private aviation with minimal formality. We arrange charter flights from any European or Middle Eastern gateway, coordinate ground transfers from touchdown, and organise in-region helicopter charters for valley surveys, photography flights, or swift connections to Istanbul.",
+      "icon": "jet"
+    },
+    {
+      "title": "24/7 Dedicated Concierge",
+      "body": "One concierge. Your number. Available at any hour, without membership fees or retainers. Restaurant reservations, last-minute balloon upgrades, private museum access, specialist guides, medical referrals, gift sourcing, translation — handled before you need to ask twice.",
+      "icon": "concierge"
+    }
+  ],
+  "faqsHeading": "Frequently Asked Questions about Cappadocia",
+  "faqs": [
+    {
+      "question": "How much does a private cave villa in Cappadocia cost per night?",
+      "answer": "Exclusive-use cave estates in Cappadocia range from approximately €800 per night for a boutique four-suite property to €4,000 or more for a full hilltop compound with private pool, staff, and unobstructed valley views. Pricing varies significantly by season, property, and inclusions. Private Travel Club accesses off-market properties not listed on standard booking platforms, often at rates that reflect direct relationships rather than rack pricing."
+    },
+    {
+      "question": "What is the best time of year to visit Cappadocia for luxury travel?",
+      "answer": "April through June and September through November offer the finest combination of mild temperatures, clear skies for balloon flights, and reduced crowd density. July and August are warm and busy. Winter — particularly December through February — is dramatically beautiful with snow on the fairy chimneys and far fewer visitors, though balloon flights may be suspended during poor weather windows. We monitor conditions in real time and adjust itineraries accordingly."
+    },
+    {
+      "question": "Can I book a private hot air balloon just for my group in Cappadocia?",
+      "answer": "Yes. Private Travel Club arranges fully exclusive balloon charters carrying your party only — typically two to eight passengers depending on the craft — departing at a time negotiated for your preference rather than the operator's convenience. Private charters cost more than shared flights but provide a categorically different experience: no strangers, no fixed itinerary, and a pilot briefed entirely on your interests and photographic requirements."
+    },
+    {
+      "question": "Is there a private airport in Cappadocia for private jet arrivals?",
+      "answer": "Nevşehir Kapadokya Airport (NAV) handles private jet and business aviation with a dedicated FBO facility. The airport is approximately a 40-minute drive from Göreme and Uçhisar. We coordinate full ground handling, customs clearance, and luxury vehicle transfers from touchdown to your property. For guests preferring a more dramatic arrival, helicopter transfer from Ankara or Kayseri is also available."
+    },
+    {
+      "question": "What private experiences in Cappadocia are not available to the general public?",
+      "answer": "Several of Cappadocia's most compelling experiences are gatekept by access and timing rather than price. These include after-hours entry to the Göreme Open Air Museum with a private archaeologist, exclusive cellar tastings at family-owned Ürgüp estates not open to visitors, private access to certain Byzantine fresco churches in the Ihlara Valley, and dawn balloon departures before commercial operators launch. Private Travel Club maintains the relationships that make these possible."
+    },
+    {
+      "question": "How do I get from Istanbul to Cappadocia by private jet?",
+      "answer": "The flight from Istanbul's Atatürk or Sabiha Gökçen FBO to Nevşehir Kapadokya Airport takes approximately 90 minutes by light jet. We arrange the charter, handle all ground coordination, and have a vehicle and concierge waiting on the apron. Alternatively, Kayseri Erkilet Airport offers a second option for certain aircraft types, with a slightly longer transfer to the main valleys. We recommend the Nevşehir routing for most guests."
+    }
+  ],
+  "ctaHeading": "Plan Your Private Cappadocia Experience",
+  "ctaSubtext": "The best cave suites and private balloon charters in Cappadocia are secured weeks in advance — contact us now and your concierge will have options with you within hours. No membership, no obligation, complete discretion."
+}

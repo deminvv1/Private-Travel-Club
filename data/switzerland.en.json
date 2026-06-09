@@ -1,0 +1,120 @@
+{
+  "slug": "switzerland",
+  "lang": "en",
+  "name": "Switzerland",
+  "seoTitle": "Luxury Switzerland Travel & Private Experiences | PTC",
+  "seoDescription": "Discover private Switzerland with exclusive chalet rentals, helicopter transfers, and 24/7 concierge. No membership fees. Contact Private Travel Club today.",
+  "canonicalPath": "/destinations/switzerland",
+  "heroHeading": "Switzerland: Where the Alps Meet Absolute Privacy",
+  "heroSubheading": "At 4,478 metres, the Matterhorn casts its shadow over a country where discretion is not a courtesy — it is a way of life. Switzerland has long been the refuge of choice for those who require both extraordinary beauty and complete confidentiality. From the frozen silence of a private glacier to the warm glow of a Verbier chalet lit against winter darkness, every moment here is precisely calibrated. Private Travel Club brings you Switzerland on your terms: no crowded lifts, no shared itineraries, no compromise.",
+  "heroImage": "https://images.unsplash.com/photo-1586752488885-6ce47fdfd874?w=1920&q=80&auto=format&fit=crop",
+  "heroImageAlt": "Swiss Alps winter landscape with snow-covered peaks and luxury chalet for private Switzerland travel",
+  "whyUsHeading": "Why Choose Private Travel Club for Switzerland",
+  "whyUsBody": "Switzerland rewards those who know where to look — and we know every door. Private Travel Club arranges exclusive access to the finest chalets in Gstaad, Verbier and St. Moritz, private helicopter transfers between resorts, and bespoke ski guiding with world-class instructors. There are no membership fees, no waiting lists, and no shared excursions. Our advisors are available 24 hours a day, 365 days a year, ensuring that a last-minute powder day or a private Michelin dinner is always within reach. Every arrangement is handled with absolute discretion, from arrival to departure.",
+  "experiencesHeading": "What to See and Do in Switzerland",
+  "experiences": [
+    {
+      "title": "Heli-Skiing the Verbier Backcountry",
+      "body": "Verbier's ski domain is extraordinary by any measure, but the true experience begins where the lifts end. A private helicopter lifts you above the resort crowds and sets you down on untouched couloirs and open glaciers accessible only from the air. Your dedicated guide — a seasoned mountain professional with intimate knowledge of the terrain — leads you through descents that few will ever witness, let alone ski. After the final run, a private fondue awaits in a mountain refuge booked exclusively for your party. No shared groups, no scheduled departures. Just the mountain, the silence, and the snow.",
+      "image": "https://images.unsplash.com/photo-1585951619576-6e961950cb60?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Matterhorn and Zermatt ski slopes in winter for private heli-skiing Switzerland experience"
+    },
+    {
+      "title": "Private Lake Geneva Sailing and Wine Tour",
+      "body": "Lake Geneva stretches between the Vaud vineyards and the French Alps in a panorama that has inspired painters and poets for centuries. Private Travel Club arranges an exclusive sailing charter on the lake — a classic wooden vessel or a sleek modern yacht, crewed and provisioned to your preferences. The itinerary winds along the UNESCO-listed Lavaux terraced vineyards, with private stops at celebrated estates in Epesses and Dezaley for cellar tastings with the winemakers themselves. Lunch is served on deck as the Alps reflect in the water below. An afternoon as unhurried and refined as the wine.",
+      "image": "https://images.unsplash.com/photo-1571274834067-3a24675547b4?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Private yacht sailing on Lake Geneva with Swiss Alps and vineyards in the background"
+    },
+    {
+      "title": "Exclusive Access to St. Moritz's Frozen Polo",
+      "body": "Each winter, the frozen surface of Lake St. Moritz becomes the world's most improbable polo ground for the Snow Polo World Cup — a spectacle of horses, luxury, and spectacle that has defined the Engadin valley's social calendar for decades. Private Travel Club secures private hospitality suites with unobstructed views of the field, arranges VIP introductions to players and organizers, and coordinates your transport by private helicopter from Zurich or Geneva. After the match, an exclusive dinner reservation at one of St. Moritz's legendary establishments completes an afternoon that exists nowhere else on earth.",
+      "image": "https://images.unsplash.com/photo-1492119884860-63772f175a02?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "St. Moritz winter landscape with frozen lake and luxury alpine resort for exclusive Switzerland experiences"
+    },
+    {
+      "title": "Private Glacier Hike on the Aletsch",
+      "body": "The Aletsch Glacier — the largest in the Alps at 23 kilometres long — moves imperceptibly through a UNESCO World Heritage landscape of extraordinary power. A private guided expedition takes you onto the ice itself, equipped and accompanied by a certified glaciologist who brings the geology alive in a way no group tour ever could. The route is tailored to your fitness level, from a gentle walk along the medial moraines to a full-day traverse of the upper ice fields. An overnight stay at a privately booked mountain hut, with dinner and breakfast included, transforms this into an immersive encounter with one of Europe's last great wildernesses.",
+      "image": "https://images.unsplash.com/photo-1636232608972-426a145d3752?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Private jet flying over Swiss Alps for exclusive Switzerland luxury travel experience"
+    },
+    {
+      "title": "A Private Train Journey on the Glacier Express",
+      "body": "The Glacier Express connects Zermatt and St. Moritz across 291 bridges and through 91 tunnels — a journey that condenses the entire drama of the Swiss Alps into eight hours of moving landscape. Private Travel Club arranges the exclusive use of a private panoramic carriage, styled with white-tablecloth dining and a personally curated menu prepared by an onboard chef. Champagne is poured as the train crosses the Landwasser Viaduct; a sommelier presents regional wines from the Valais as the Oberalp Pass slides past the windows. This is not transport — it is the finest moving dining room in Europe.",
+      "image": "https://images.unsplash.com/photo-1533156202583-53a31d245207?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Zermatt Matterhorn view from luxury train for private Glacier Express Switzerland journey"
+    }
+  ],
+  "regionsHeading": "Best of Switzerland",
+  "regions": [
+    {
+      "name": "Valais & Zermatt",
+      "body": "The Valais is Switzerland distilled to its essence: steep vineyards yielding some of the country's finest Fendant and Cornalin, ancient thermal baths at Leukerbad, and, at its dramatic southern tip, Zermatt — the car-free resort town that exists entirely in the shadow of the Matterhorn. The skiing is world-class, the chalets are extraordinary, and the village retains a restraint that money alone cannot manufacture. Private Travel Club places you in properties with direct ski access and arranges everything from private mountain guides to helicopter arrivals.",
+      "image": "https://images.unsplash.com/photo-1546089572-95b941d9368d?w=900&q=80&auto=format&fit=crop",
+      "imageAlt": "Zermatt village and Matterhorn peak in Valais Switzerland for luxury private travel"
+    },
+    {
+      "name": "Engadin Valley & St. Moritz",
+      "body": "At 1,800 metres altitude, the Engadin valley enjoys over 320 days of sunshine a year — a fact that drew European nobility here in the nineteenth century and has never stopped drawing discerning travellers since. St. Moritz is the valley's crown jewel: a resort of legendary hotels, private clubs, and a social calendar that runs from Polo on the frozen lake in January to hiking on the Diavolezza glacier in July. The surrounding villages of Pontresina, Sils Maria, and Silvaplana offer quieter chalet stays with the same extraordinary landscape.",
+      "image": "https://images.unsplash.com/photo-1617395547071-98efcee72011?w=900&q=80&auto=format&fit=crop",
+      "imageAlt": "Engadin valley and St. Moritz luxury resort in winter Switzerland landscape"
+    },
+    {
+      "name": "Lake Geneva & Vaud Riviera",
+      "body": "The northern shore of Lake Geneva — known as the Swiss Riviera — combines the sophistication of Lausanne and Montreux with the serene beauty of the Lavaux wine terraces cascading down to the water's edge. Grand hotels and private lakeside villas command views of the French Alps across the water, while the Vaud countryside offers truffle hunting, private wine estate visits, and the quiet pleasures of towns that have refined the art of the good life for centuries. In summer, the lake is alive with sailing; in winter, the spas and restaurants come into their own.",
+      "image": "https://images.unsplash.com/photo-1706953608349-4333b9707277?w=900&q=80&auto=format&fit=crop",
+      "imageAlt": "Lake Geneva Swiss Riviera with vineyard terraces and Alps in background for luxury Switzerland travel"
+    }
+  ],
+  "servicesHeading": "Our Services in Switzerland",
+  "services": [
+    {
+      "title": "Private Chalet & Villa Rentals",
+      "body": "From ski-in ski-out chalets in Verbier and Gstaad to lakeside villas on Geneva and Lucerne, we curate a portfolio of Switzerland's finest private residences. Each property is personally vetted for location, privacy, and quality of finish. Full staff, private chef, and daily housekeeping are arranged as standard.",
+      "icon": "villa"
+    },
+    {
+      "title": "Lake Yacht Charters",
+      "body": "Switzerland's great lakes — Geneva, Zurich, Lucerne, and Constance — offer private sailing and motor yacht charters of remarkable intimacy. We arrange crewed day charters, sunset dining cruises, and multi-day lake tours with onboard catering tailored precisely to your party.",
+      "icon": "yacht"
+    },
+    {
+      "title": "Private Jet & Helicopter Transfers",
+      "body": "Geneva and Zurich are Switzerland's principal private aviation gateways, with smaller airfields at Sion, Bern, and Lugano for regional access. We coordinate all private jet arrangements and seamless helicopter transfers directly to resort helipads in Zermatt, Verbier, Gstaad, and St. Moritz.",
+      "icon": "jet"
+    },
+    {
+      "title": "24/7 Swiss Concierge",
+      "body": "Restaurant reservations at three-Michelin-star tables, private museum access after hours, exclusive ski instructor bookings, spa reservations at Badrutt's Palace or The Alpina — our Swiss concierge team is available around the clock to handle every request, however specific, with absolute discretion.",
+      "icon": "concierge"
+    }
+  ],
+  "faqsHeading": "Frequently Asked Questions about Switzerland",
+  "faqs": [
+    {
+      "question": "How much does a private chalet rental in Switzerland cost per week?",
+      "answer": "Private chalet rentals in Switzerland typically range from CHF 15,000 to CHF 150,000 per week depending on location, size, and season. Premium ski-in ski-out chalets in Verbier, Gstaad, or St. Moritz at peak winter weeks command the higher end. Private Travel Club works across the full spectrum and negotiates preferred terms with property owners directly — contact us for a tailored quote based on your requirements."
+    },
+    {
+      "question": "What is the best time to visit Switzerland for a luxury trip?",
+      "answer": "Switzerland offers two distinct luxury seasons. Winter (December to March) is ideal for skiing in Verbier, Zermatt, and St. Moritz, with the social season reaching its peak in January and February. Summer (June to September) offers exceptional hiking, lake sailing, mountain cycling, and cultural events such as the Montreux Jazz Festival. Shoulder seasons in May and October provide privacy and availability at reduced rates."
+    },
+    {
+      "question": "Can I arrive in Zermatt by private helicopter?",
+      "answer": "Yes. Zermatt itself is a car-free village, but it has a dedicated helipad accessible by private helicopter from Geneva, Zurich, or Sion airports. Private Travel Club arranges all helicopter transfers with preferred operators, including luggage handling and ground transport within the village. Flight time from Geneva is approximately 45 minutes."
+    },
+    {
+      "question": "Is there a private island available to rent in Switzerland?",
+      "answer": "Switzerland's lakes contain several private islands, though exclusive rental availability is extremely limited and not publicly listed. The most notable are on Lake Zurich and Lake Constance. Private Travel Club has discreet access to off-market properties and private island opportunities in Switzerland. We recommend contacting us directly to discuss current availability, as these arrangements are handled entirely outside public channels."
+    },
+    {
+      "question": "Do I need to be a member to book through Private Travel Club in Switzerland?",
+      "answer": "No membership fee or prior registration is required. Private Travel Club operates on a no-membership model — you contact us with your requirements and we arrange everything. Our advisors are available 24 hours a day, 365 days a year, via WhatsApp or email. We work with a wide network of property owners, aviation operators, and hospitality partners across Switzerland on a direct-access basis."
+    },
+    {
+      "question": "Which Swiss ski resort is best for ultra-high-net-worth privacy: Verbier, St. Moritz, or Gstaad?",
+      "answer": "Each resort has a distinct character. Gstaad is the most discreet — a small, understated village where privacy is the primary luxury, favoured by those who prefer to be anonymous. St. Moritz offers the most vibrant social calendar and the largest chalet inventory. Verbier attracts a younger, more active clientele with exceptional off-piste terrain. Private Travel Club advises on resort selection based on your travel style and arranges exclusive properties in all three."
+    }
+  ],
+  "ctaHeading": "Plan Your Private Switzerland Experience",
+  "ctaSubtext": "The finest chalets, glacier helipads, and Michelin tables do not wait — nor should you. Contact Private Travel Club now and let us arrange Switzerland entirely on your terms."
+}

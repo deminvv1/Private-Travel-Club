@@ -1,0 +1,120 @@
+{
+  "slug": "seychelles",
+  "lang": "en",
+  "name": "Seychelles",
+  "seoTitle": "Luxury Seychelles Private Travel | Private Travel Club",
+  "seoDescription": "Exclusive Seychelles luxury travel — private villa rentals, yacht charters & bespoke concierge. No membership fees. 24/7 service. Contact us to plan your escape.",
+  "canonicalPath": "/destinations/seychelles",
+  "heroHeading": "Seychelles: Where the World Falls Away",
+  "heroSubheading": "The Seychelles archipelago sits atop some of the oldest granite rock on Earth — formations 750 million years old that rise dramatically from an impossibly turquoise sea. Across 115 islands scattered through the western Indian Ocean, you will find powder-white beaches that remain genuinely untouched, coral reefs teeming with life, and private retreats where the ratio of staff to guests rarely falls below two to one. This is not mass-market paradise. It is one of the last places on the planet where true seclusion — the kind that restores rather than simply relaxes — can still be found.",
+  "heroImage": "https://images.unsplash.com/photo-1553829176-61484f865ac3?w=1920&q=80&auto=format&fit=crop",
+  "heroImageAlt": "Crystal-clear turquoise waters and granite boulders of a pristine Seychelles beach",
+  "whyUsHeading": "Why Choose Private Travel Club for Seychelles",
+  "whyUsBody": "The Seychelles rewards those who know where to look — which private island still has availability, which charter captain knows the secret dive sites off Silhouette, which villa kitchen team sources ingredients from their own garden. Private Travel Club brings that insider knowledge without membership fees or retainers. Our team is available every hour of every day, handling arrangements from your first inquiry to your final transfer home. Every detail is managed with complete discretion. You speak with one advisor who knows your preferences — not a call centre rotating through scripts.",
+  "experiencesHeading": "What to See and Do in Seychelles",
+  "experiences": [
+    {
+      "title": "Private Snorkelling at Aldabra Atoll",
+      "body": "A UNESCO World Heritage Site so remote that fewer people visit annually than summit Everest, Aldabra is the world's second-largest coral atoll and home to more than 100,000 giant tortoises. Reaching it requires a private charter — there are no commercial flights and no public accommodation. Slip beneath the surface inside the atoll lagoon and you enter a world of manta rays, reef sharks, and coral formations untouched by mass tourism. Private Travel Club arranges liveaboard yacht access and coordinates with the Seychelles Islands Foundation for the limited research permits that allow extended stays.",
+      "image": "https://images.unsplash.com/photo-1670234069735-a9b32837cee4?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Private yacht anchored near a remote Seychelles atoll with crystal-clear water"
+    },
+    {
+      "title": "Helicopter Exploration of the Inner Islands",
+      "body": "Seen from the air, the Seychelles reveals its true scale — emerald peaks trailing into pale lagoons, deserted sandbars appearing and disappearing with the tide, and the geometric precision of coral reef systems stretching toward the horizon. A private helicopter tour from Mahé or Praslin gives you the perspective no beach lounger ever could. We arrange bespoke routing: overfly Denis Island at sunrise, land on a sandbank for champagne, continue to a private villa on Cousine or Frégate for lunch. Every itinerary is designed around the light, the season, and your schedule.",
+      "image": "https://images.unsplash.com/photo-1618822461310-da1be362e30c?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Private jet and helicopter charter for exploring the Seychelles archipelago from above"
+    },
+    {
+      "title": "Diving the Shark Bank off Mahé",
+      "body": "Approximately four nautical miles northwest of Mahé lies a submerged granite seamount known as the Shark Bank — one of the Indian Ocean's most compelling dive sites. Whitetip and nurse sharks rest on the plateau at around 30 metres, while schooling hammerheads pass through during the right months. Eagle rays glide overhead, and the sheer granite walls drop into the blue in a way that focuses the mind completely. Private Travel Club arranges charter dive boats from Victoria with PADI master instructors, ensuring small groups and unhurried descents. Surface intervals are spent aboard with a private chef and chilled towels.",
+      "image": "https://images.unsplash.com/photo-1706088773588-98152aabeb81?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Pristine Seychelles waters ideal for world-class private diving excursions"
+    },
+    {
+      "title": "Vallée de Mai Nature Reserve, Praslin",
+      "body": "A primordial forest where the Coco de Mer palm — producer of the world's heaviest seed — grows wild and unchanged for millennia. The Vallée de Mai on Praslin Island is a UNESCO World Heritage Site and one of only two places on Earth where this extraordinary tree grows natively. Walking its shaded paths in the early morning, before any other visitors arrive, feels genuinely ancient. The endemic black parrot calls from the canopy; the forest floor is carpeted in fallen palm fronds the size of canoes. Private Travel Club arranges exclusive early access with a private naturalist guide, well before the site opens to the public.",
+      "image": "https://images.unsplash.com/photo-1596250470244-d172e7eb4054?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Lush tropical forest interior of Praslin island Seychelles private nature experience"
+    },
+    {
+      "title": "Sunset Catamaran Cruise from Praslin to La Digue",
+      "body": "The passage between Praslin and La Digue — roughly ten nautical miles of open Indian Ocean — is among the most scenic short crossings in the world, particularly as the afternoon light turns the granite boulders amber and the water shifts from teal to deep indigo. A private catamaran charter departs at your chosen hour, with a curated selection of Seychellois seafood and cold rosé prepared by a private chef. Your crew drops anchor off Anse Source d'Argent as the last swimmers leave, and you have arguably the most photographed beach on Earth entirely to yourselves.",
+      "image": "https://images.unsplash.com/photo-1626085263072-d503e3dea011?w=1400&q=80&auto=format&fit=crop",
+      "imageAlt": "Private catamaran sailing between Praslin and La Digue at sunset Seychelles"
+    }
+  ],
+  "regionsHeading": "Best of Seychelles",
+  "regions": [
+    {
+      "name": "Mahé & the Inner Islands",
+      "body": "The largest island and gateway to the archipelago, Mahé combines Victoria's low-key cosmopolitan energy with some of the most dramatic highland scenery in the Indian Ocean. The Morne Seychellois National Park covers more than a quarter of the island, its cloud forest descending to secluded coves. Surrounding smaller islands — Silhouette, North Island, Denis — offer ultra-private resorts where exclusive buyouts are the norm and resident wildlife outnumbers guests. This is the Seychelles for guests who want controlled access to everything alongside genuine solitude.",
+      "image": "https://images.unsplash.com/photo-1506405211174-1c41d7bc9ed6?w=900&q=80&auto=format&fit=crop",
+      "imageAlt": "Aerial view of Mahé island coastline and lush interior Seychelles"
+    },
+    {
+      "name": "Praslin & La Digue",
+      "body": "Praslin is the archipelago's second island and the gateway to its most iconic imagery: the Vallée de Mai forest and the pale sands of Anse Lazio, consistently ranked among the world's finest beaches. La Digue, reachable by a brief boat crossing, moves at the pace of an ox cart — the island's traditional transport — with Anse Source d'Argent offering photogenic granite formations and shallow turquoise shallows. The two islands together provide the quintessential Seychelles experience, best explored from a private villa or boutique property with a chartered boat at permanent disposal.",
+      "image": "https://images.unsplash.com/photo-1668800477238-0c701ec52be9?w=900&q=80&auto=format&fit=crop",
+      "imageAlt": "Famous granite boulders and white sand beach of La Digue Seychelles"
+    },
+    {
+      "name": "The Outer Islands: Aldabra, Farquhar & Alphonse",
+      "body": "For travellers who regard the inner islands as too accessible, the Outer Islands represent the Seychelles at its most elemental. Alphonse Atoll draws dedicated fly-fishermen for bonefish and permit on the flats. Farquhar offers world-class kite-surfing and near-total isolation. Aldabra, as noted, requires serious logistical planning and rewards with genuinely unspoiled wildlife encounters. Reaching any of these destinations requires private charter — by air from Mahé or by liveaboard yacht — and the effort is precisely the point. Private Travel Club manages every transfer and permit.",
+      "image": "https://images.unsplash.com/photo-1668799229507-6cb083abbe95?w=900&q=80&auto=format&fit=crop",
+      "imageAlt": "Remote outer island atoll Seychelles accessible only by private yacht or charter flight"
+    }
+  ],
+  "servicesHeading": "Our Services in Seychelles",
+  "services": [
+    {
+      "title": "Private Villa & Island Rentals",
+      "body": "From cliffside retreats on Mahé to full island buyouts on North or Cousine, we source and secure the finest private residences in the archipelago. Each property is personally vetted. Staff-to-guest ratios, chef menus, and arrival logistics are confirmed before you depart.",
+      "icon": "villa"
+    },
+    {
+      "title": "Yacht & Catamaran Charters",
+      "body": "Explore the archipelago at your own pace aboard a crewed catamaran, sailing yacht, or motor vessel. We arrange multi-day itineraries across the inner and outer islands, with onboard chefs, dive equipment, and watersports gear included as standard.",
+      "icon": "yacht"
+    },
+    {
+      "title": "Private Jet & Helicopter Transfers",
+      "body": "Direct connections from Europe, the Middle East, or Asia into Seychelles International, with helicopter repositioning to Praslin, La Digue, or the outer atolls. All aircraft arrangements include ground coordination, customs handling, and seamless onward transfers.",
+      "icon": "jet"
+    },
+    {
+      "title": "24/7 Seychelles Concierge",
+      "body": "Restaurant reservations, private naturalist guides, underwater photography sessions, spa bookings, last-minute inter-island logistics — your dedicated advisor is reachable at any hour throughout your stay. No request is forwarded to a third party without your awareness.",
+      "icon": "concierge"
+    }
+  ],
+  "faqsHeading": "Frequently Asked Questions about Seychelles",
+  "faqs": [
+    {
+      "question": "How much does a private villa rental in Seychelles cost per week?",
+      "answer": "Private villa rates in the Seychelles range considerably by location and exclusivity. Entry-level staffed villas on Mahé or Praslin typically begin around €5,000–€10,000 per week. Boutique private island experiences — such as full buyouts on North Island or Cousine — range from €50,000 to over €200,000 per week depending on group size and inclusions. Private Travel Club provides clear, itemised pricing with no hidden fees. Contact us with your group size and preferred dates for a tailored proposal."
+    },
+    {
+      "question": "What is the best time of year to visit Seychelles for luxury travel?",
+      "answer": "The Seychelles enjoys a tropical climate year-round, but two distinct seasons shape the experience. April–May and October–November offer calm seas, light winds, and the best visibility for diving and snorkelling — ideal for yacht charters and water-based activities. June–September brings the southeast trade winds, making conditions on exposed beaches rougher but perfect for kitesurfing on the outer islands. December–March is peak season, with the calmest weather on the inner islands and the highest villa occupancy. We recommend booking six to twelve months ahead for December and January."
+    },
+    {
+      "question": "Can you arrange access to a private island in Seychelles?",
+      "answer": "Yes. Several islands in the Seychelles operate exclusively as private retreats — North Island, Cousine Island, Frégate Island, and Denis Island among them. Some accept individual bookings for suites or villas; others offer full exclusive buyouts. Outer atolls such as Aldabra can be accessed via liveaboard yacht with appropriate permits. Private Travel Club manages the full booking, transfer logistics, and any required coordination with the Seychelles Islands Foundation or island management teams."
+    },
+    {
+      "question": "Do I need a visa to visit Seychelles?",
+      "answer": "Most nationalities do not require a visa in advance to enter the Seychelles. Visitors receive a free Travel Authorisation on arrival valid for up to 30 days, renewable to a maximum of three months. A confirmed accommodation booking, return or onward travel, and proof of sufficient funds are typically required at immigration. We provide all documentation in advance and coordinate arrival formalities to ensure a seamless transition from your private jet or commercial flight directly to your villa or yacht."
+    },
+    {
+      "question": "Is the Seychelles suitable for a private honeymoon or anniversary trip?",
+      "answer": "The Seychelles is consistently ranked among the world's premier honeymoon destinations, and for valid reasons: genuine seclusion, exceptional natural beauty, and a service culture built around discretion. Private villas and private island resorts handle celebratory arrivals with considerable thought — private beach dinners, in-villa spa treatments, and personalized welcome arrangements are all standard. Private Travel Club coordinates every romantic detail, from in-suite floral arrangements to sunset catamaran charters, ensuring nothing is left to chance or generic templates."
+    },
+    {
+      "question": "How do you get between the Seychelles islands privately?",
+      "answer": "Inter-island travel within the Seychelles can be arranged by helicopter, light aircraft, private catamaran, or crewed motor yacht depending on distance and preference. Helicopter transfers between Mahé and Praslin take approximately 15 minutes and offer spectacular aerial views. Yacht passages between the inner islands take between 30 minutes and 3 hours and can be converted into scenic half-day excursions. For the outer islands, private charter flights from Mahé's domestic terminal are the standard option. Private Travel Club coordinates all inter-island logistics as part of your overall itinerary."
+    }
+  ],
+  "ctaHeading": "Plan Your Private Seychelles Experience",
+  "ctaSubtext": "The finest villas and private island dates fill many months in advance — particularly for December, January, and the April shoulder season. Reach out now and your dedicated advisor will respond within the hour, any day of the year."
+}

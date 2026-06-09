@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { headers } from 'next/headers'
+import Script from 'next/script'
 import CookieBanner from '@/components/CookieBanner'
 import './globals.css'
 
@@ -98,11 +99,16 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
+      </head>
+      <body>
+        {children}
+        <CookieBanner />
+
         {/* Google Analytics 4 */}
         {GA4_ID.length > 0 && (
           <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} />
-            <script dangerouslySetInnerHTML={{
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} strategy="afterInteractive" />
+            <Script id="ga4-init" strategy="afterInteractive" dangerouslySetInnerHTML={{
               __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA4_ID}')`,
             }} />
           </>
@@ -110,18 +116,14 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
         {/* Яндекс.Метрика */}
         {YM_ID.length > 0 && (
-          <script dangerouslySetInnerHTML={{
-            __html: `(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(${YM_ID},"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});`,
-          }} />
-        )}
-      </head>
-      <body>
-        {children}
-        <CookieBanner />
-        {YM_ID.length > 0 && (
-          <noscript>
-            <div><img src={`https://mc.yandex.ru/watch/${YM_ID}`} style={{ position: 'absolute', left: '-9999px' }} alt="" /></div>
-          </noscript>
+          <>
+            <Script id="yandex-metrika" strategy="afterInteractive" dangerouslySetInnerHTML={{
+              __html: `(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(${YM_ID},"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});`,
+            }} />
+            <noscript>
+              <div><img src={`https://mc.yandex.ru/watch/${YM_ID}`} style={{ position: 'absolute', left: '-9999px' }} alt="" /></div>
+            </noscript>
+          </>
         )}
       </body>
     </html>

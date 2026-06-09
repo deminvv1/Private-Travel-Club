@@ -17,6 +17,7 @@ function getDefaultCountry(locale: string): Country {
   return countries.find(c => c.code === code) ?? countries[0]
 }
 
+
 export default function ContactForm({ locale = 'en' }: { locale?: string }) {
   const t = getT(locale).form
   const [name, setName] = useState('')
@@ -95,7 +96,9 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
       <input type="text" name="_honey" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
 
       {/* Name */}
-      <label htmlFor="contact-name" style={labelStyle}>{t.nameLabel}</label>
+      <label htmlFor="contact-name" style={labelStyle}>
+        {t.nameLabel}
+      </label>
       <input
         id="contact-name"
         type="text" value={name} onChange={e => setName(e.target.value)}
@@ -106,7 +109,9 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
       />
 
       {/* Email */}
-      <label htmlFor="contact-email" style={labelStyle}>{t.emailLabel}</label>
+      <label htmlFor="contact-email" style={labelStyle}>
+        {t.emailLabel}
+      </label>
       <input
         id="contact-email"
         type="email" value={email} onChange={e => setEmail(e.target.value)}
@@ -117,7 +122,9 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
       />
 
       {/* Direction */}
-      <label htmlFor="contact-direction" style={labelStyle}>{t.directionLabel}</label>
+      <label htmlFor="contact-direction" style={labelStyle}>
+        {t.directionLabel}
+      </label>
       <input
         id="contact-direction"
         type="text" value={direction} onChange={e => setDirection(e.target.value)}
@@ -128,7 +135,10 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
       />
 
       {/* Phone */}
-      <label htmlFor="contact-phone" style={{ ...labelStyle, marginTop: 24 }}>{t.phoneLabel}</label>
+      <label htmlFor="contact-phone" style={{ ...labelStyle, marginTop: 24 }}>
+        {t.phoneLabel}
+        <span style={{ color: '#e8b000', marginLeft: 3 }}>*</span>
+      </label>
       <div style={{ position: 'relative', display: 'flex', alignItems: 'center',
         borderBottom: `1px solid ${phoneError ? '#ff6b6b' : 'rgba(255,255,255,0.3)'}`, paddingBottom: 8, marginBottom: phoneError ? 8 : 32 }}>
 

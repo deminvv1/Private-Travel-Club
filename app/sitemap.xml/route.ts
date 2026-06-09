@@ -8,6 +8,8 @@ const pages = [
   { path: '/yachts',    priority: '0.8', changeFreq: 'monthly' },
   { path: '/jets',      priority: '0.8', changeFreq: 'monthly' },
   { path: '/concierge', priority: '0.8', changeFreq: 'monthly' },
+  ...['maldives','seychelles','greece','italy','french-riviera','switzerland','dubai','cappadocia']
+    .map(slug => ({ path: `/destinations/${slug}`, priority: '0.8', changeFreq: 'monthly' })),
 ]
 
 export const revalidate = 86400
