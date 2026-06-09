@@ -12,7 +12,7 @@ const pages = [
     .map(slug => ({ path: `/destinations/${slug}`, priority: '0.8', changeFreq: 'monthly' })),
 ]
 
-export const revalidate = 86400
+export const revalidate = 0
 
 export async function GET() {
   const lastmod = new Date().toISOString().split('T')[0]
