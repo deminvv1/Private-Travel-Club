@@ -3,13 +3,19 @@ import { NextResponse } from 'next/server'
 const SITE_URL = 'https://private-travel-club.com'
 
 const pages = [
-  { path: '',           priority: '1.0', changeFreq: 'monthly' },
-  { path: '/villas',    priority: '0.8', changeFreq: 'monthly' },
-  { path: '/yachts',    priority: '0.8', changeFreq: 'monthly' },
-  { path: '/jets',      priority: '0.8', changeFreq: 'monthly' },
-  { path: '/concierge', priority: '0.8', changeFreq: 'monthly' },
-  ...['maldives','seychelles','greece','italy','french-riviera','switzerland','dubai','cappadocia']
-    .map(slug => ({ path: `/destinations/${slug}`, priority: '0.8', changeFreq: 'monthly' })),
+  { path: '',                             priority: '1.0', changeFreq: 'monthly' },
+  { path: '/villas',                      priority: '0.8', changeFreq: 'monthly' },
+  { path: '/yachts',                      priority: '0.8', changeFreq: 'monthly' },
+  { path: '/jets',                        priority: '0.8', changeFreq: 'monthly' },
+  { path: '/concierge',                   priority: '0.8', changeFreq: 'monthly' },
+  { path: '/destinations/maldives',       priority: '0.7', changeFreq: 'monthly' },
+  { path: '/destinations/seychelles',     priority: '0.7', changeFreq: 'monthly' },
+  { path: '/destinations/greece',         priority: '0.7', changeFreq: 'monthly' },
+  { path: '/destinations/italy',          priority: '0.7', changeFreq: 'monthly' },
+  { path: '/destinations/french-riviera', priority: '0.7', changeFreq: 'monthly' },
+  { path: '/destinations/switzerland',    priority: '0.7', changeFreq: 'monthly' },
+  { path: '/destinations/dubai',          priority: '0.7', changeFreq: 'monthly' },
+  { path: '/destinations/cappadocia',     priority: '0.7', changeFreq: 'monthly' },
 ]
 
 export const revalidate = 0
