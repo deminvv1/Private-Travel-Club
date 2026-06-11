@@ -53,7 +53,7 @@ export default async function ConciergePage({
 
         {/* ── HERO ── */}
         <section style={{ position: 'relative', width: '100%', minHeight: '100vh', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
-          <div style={{ position: 'absolute', inset: 0, zIndex: 0, backgroundImage: "url('/images/tild6638-6537-4132-a666-383131626462__istock-964566894.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          <div style={{ position: 'absolute', inset: 0, zIndex: 0, backgroundImage: "url('/images/concierge-page.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }} />
           <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'rgba(31,75,133,0.8)' }} />
           <div style={{ position: 'relative', zIndex: 2, padding: 'clamp(120px,14vw,160px) clamp(24px,6vw,100px) 80px', maxWidth: 900, width: '100%', margin: '0 auto', textAlign: 'center' }}>
             <p className="stitch-label" style={{ letterSpacing: '0.4em', color: 'rgba(255,255,255,0.8)', marginBottom: 20 }}>{t.tagline}</p>
