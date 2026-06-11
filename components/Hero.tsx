@@ -24,7 +24,7 @@ export default function Hero({ locale = 'en' }: { locale?: string }) {
       {/* Overlay */}
       <div style={{
         position: 'absolute', inset: 0, zIndex: 1,
-        background: 'linear-gradient(180deg,rgba(10,18,45,0.75) 0%,rgba(10,18,45,0.65) 50%,rgba(10,18,45,0.8) 100%)',
+        background: 'rgba(31,75,133,0.6)',
       }} />
 
       {/* Centered content */}
@@ -36,39 +36,27 @@ export default function Hero({ locale = 'en' }: { locale?: string }) {
       }}>
 
         {/* Tagline */}
-        <p style={{
-          fontFamily: 'PTCSans, Arial, sans-serif',
-          fontSize: 'clamp(10px, 1.1vw, 13px)',
-          fontWeight: 500,
-          letterSpacing: '4px',
-          textTransform: 'uppercase',
-          color: 'rgba(255,255,255,0.55)',
-          marginBottom: 14,
+        <p className="stitch-label" style={{
+          letterSpacing: '0.4em',
+          color: 'rgba(255,255,255,0.8)',
+          marginBottom: 20,
         }}>
           {t.tagline}
         </p>
 
         {/* Main title */}
-        <h1 style={{
-          fontFamily: 'PTCSans, Arial, sans-serif',
-          fontSize: 'clamp(34px, 5.5vw, 68px)',
-          fontWeight: 700,
-          color: 'rgba(255,255,255,0.55)',
-          letterSpacing: '1px',
-          lineHeight: 1.15,
-          marginBottom: 16,
+        <h1 className="stitch-display" style={{
+          color: '#fff',
+          marginBottom: 20,
         }}>
           {t.title}
         </h1>
 
         {/* Subtitle */}
-        <p style={{
-          fontFamily: 'PTCSans, Arial, sans-serif',
-          fontSize: 'clamp(13px, 1.6vw, 18px)',
-          fontWeight: 300,
-          color: 'rgba(255,255,255,0.5)',
-          letterSpacing: '2px',
-          marginBottom: 30,
+        <p className="stitch-label" style={{
+          letterSpacing: '0.25em',
+          color: 'rgba(255,255,255,0.8)',
+          marginBottom: 36,
         }}>
           {t.subtitle}
         </p>

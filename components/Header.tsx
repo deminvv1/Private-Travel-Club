@@ -101,7 +101,7 @@ export default function Header({ locale = 'en' }: { locale?: string }) {
         position: 'absolute',
         left: '50%', top: '50%',
         transform: 'translateY(-50%) translateX(-50%)',
-        display: 'flex', alignItems: 'center', gap: 32,
+        display: 'flex', alignItems: 'center', gap: 20,
         opacity: scrolled ? 1 : 0,
         transition: 'opacity 0.4s 0.1s',
         pointerEvents: scrolled ? 'auto' : 'none',
@@ -111,17 +111,27 @@ export default function Header({ locale = 'en' }: { locale?: string }) {
           { label: t.nav.yachts, href: `/${locale}/yachts` },
           { label: t.nav.villas, href: `/${locale}/villas` },
           { label: t.nav.concierge, href: `/${locale}/concierge` },
-        ].map(({ label, href }) => (
-          <Link key={href} href={href} className="ptc-nav-link"
-            style={{
-              fontFamily: 'PTCSans, Arial, sans-serif',
-              fontSize: 13, fontWeight: 600, letterSpacing: '1.5px',
-              textTransform: 'uppercase', color: 'rgba(255,255,255,0.75)',
-              textDecoration: 'none', transition: 'color 0.2s',
-            }}>
-            {label}
-          </Link>
-        ))}
+          { label: (t.nav as Record<string, string>).about ?? 'About', href: `/${locale}#about`, mobileHide: true },
+        ].map(({ label, href, mobileHide }) => {
+          const isAbout = href.includes('#about')
+          const isHome = pathname === `/${locale}` || pathname === '/'
+          return (
+            <Link key={href} href={href}
+              className={`ptc-nav-link${mobileHide ? ' ptc-nav-link--mobile-hide' : ''}`}
+              onClick={isAbout && isHome ? (e) => {
+                e.preventDefault()
+                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
+              } : undefined}
+              style={{
+                fontFamily: 'PTCSans, Arial, sans-serif',
+                fontSize: 13, fontWeight: 600, letterSpacing: '1.5px',
+                textTransform: 'uppercase', color: 'rgba(255,255,255,0.75)',
+                textDecoration: 'none', transition: 'color 0.2s',
+              }}>
+              {label}
+            </Link>
+          )
+        })}
       </nav>
 
       {/* Right — icons (hidden < 800px, visible only when scrolled) */}
@@ -172,8 +182,8 @@ export default function Header({ locale = 'en' }: { locale?: string }) {
             minWidth: 72, zIndex: 100,
           }}>
             {(['en', 'ru', 'de'] as const).map(lang => {
-              const bare = pathname.replace(/^\/(ru|de)(\/|$)/, '/').replace(/\/$/, '') || '/'
-              const switchedPath = lang === 'en' ? bare : `/${lang}${bare === '/' ? '' : bare}`
+              const bare = pathname.replace(/^\/(en|ru|de)(\/|$)/, '/').replace(/\/$/, '') || '/'
+              const switchedPath = `/${lang}${bare === '/' ? '' : bare}`
               return (
                 <Link key={lang} href={switchedPath}
                   onClick={() => setLangOpen(false)}
@@ -199,11 +209,12 @@ export default function Header({ locale = 'en' }: { locale?: string }) {
         @media (max-width: 900px) {
           .ptc-hdr-icons { display: none !important; }
           .ptc-hdr-logo--scrolled { left: 5px !important; }
+          .ptc-nav-link--mobile-hide { display: none !important; }
         }
         @media (max-width: 700px) {
           .ptc-hdr-tagline { display: none !important; }
           .ptc-hdr-nav { gap: 10px !important; }
-          .ptc-nav-link { font-size: 13px !important; letter-spacing: 0.8px !important; }
+          .ptc-nav-link { font-size: 11px !important; letter-spacing: 0.8px !important; }
         }
         @media (max-width: 400px) {
           .ptc-nav-link { font-size: 10px !important; letter-spacing: 0.8px !important; }

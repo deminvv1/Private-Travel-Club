@@ -27,7 +27,7 @@ export default function IntroSection({ title, body, items, locale }: IntroSectio
 
       <div style={{
         position: 'relative', zIndex: 2,
-        width: '100%', maxWidth: 1100, margin: '0 auto',
+        width: '100%', maxWidth: 1300, margin: '0 auto',
         padding: 'clamp(80px,10vw,120px) clamp(24px,5vw,60px)',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',

@@ -18,7 +18,7 @@ function getDefaultCountry(locale: string): Country {
 }
 
 
-export default function ContactForm({ locale = 'en' }: { locale?: string }) {
+export default function ContactForm({ locale = 'en', submitLabel }: { locale?: string; submitLabel?: string }) {
   const t = getT(locale).form
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -257,7 +257,7 @@ export default function ContactForm({ locale = 'en' }: { locale?: string }) {
         onMouseEnter={e => { if (status !== 'loading') (e.currentTarget.style.background = '#d4a000') }}
         onMouseLeave={e => (e.currentTarget.style.background = '#e8b000')}
       >
-        {status === 'loading' ? t.sending : t.submit}
+        {status === 'loading' ? t.sending : (submitLabel ?? t.submit)}
       </button>
 
       <p style={{ marginTop: 10, fontFamily: 'PTCSans, Arial, sans-serif',

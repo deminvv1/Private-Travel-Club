@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import Image from 'next/image'
 import Header from "@/components/Header";
 import BackToTop from "@/components/BackToTop";
 import MobileFooter from "@/components/MobileFooter";
-import ContactForm from "@/components/ContactForm";
+import PlanTripSection from "@/components/PlanTripSection";
 import Link from "next/link";
 import { getT, isValidLocale, DEFAULT_LOCALE, buildAlternates } from "@/lib/i18n";
 import WhyUsSection from "@/components/WhyUsSection";
@@ -23,23 +22,19 @@ export async function generateMetadata({
   };
 }
 
-const gallery = [
-  {
-    src: "/images/tild3666-3631-4131-a438-323062306632__f7c0a1c0ece10690ecd5.jpg",
-    alt: "Personal concierge service — Private Travel Club luxury assistance",
-  },
-  {
-    src: "/images/glov.webp",
-    alt: "White glove concierge service — premium travel assistance",
-  },
-  {
-    src: "/images/horse-and-car.webp",
-    alt: "Exclusive concierge experience — luxury lifestyle management",
-  },
-];
+const LABEL_STYLE = {
+  fontFamily: 'var(--font-hanken)',
+  fontSize: 11 as const,
+  fontWeight: 600 as const,
+  letterSpacing: '0.2em',
+  textTransform: 'uppercase' as const,
+}
 
-const OVERLAY =
-  "linear-gradient(to bottom, rgba(31,75,133,1) 0%, rgba(31,75,133,0.65) 50%, rgba(31,75,133,1) 100%)";
+const CATS: Record<string, string[]> = {
+  en: ['Curation', 'Access', 'Privacy'],
+  ru: ['Кураторство', 'Доступ', 'Конфиденциальность'],
+  de: ['Kuration', 'Zugang', 'Privatsphäre'],
+}
 
 export default async function ConciergePage({
   params,
@@ -55,395 +50,117 @@ export default async function ConciergePage({
     <>
       <Header locale={lang} />
       <main>
-        <section
-          style={{
-            position: "relative",
-            width: "100%",
-            minHeight: "100vh",
-            overflow: "hidden",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              zIndex: 0,
-              backgroundImage:
-                "url('/images/tild6638-6537-4132-a666-383131626462__istock-964566894.webp')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          />
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              zIndex: 1,
-              backgroundImage: OVERLAY,
-            }}
-          />
-          <div
-            style={{
-              position: "relative",
-              zIndex: 2,
-              textAlign: "center",
-              padding: "120px 24px 80px",
-              maxWidth: 800,
-              margin: "0 auto",
-            }}
-          >
-            <p
-              style={{
-                fontFamily: "PTCSans, Arial, sans-serif",
-                fontSize: "clamp(10px,1.1vw,13px)",
-                fontWeight: 500,
-                letterSpacing: "4px",
-                textTransform: "uppercase",
-                color: "rgba(255,255,255,0.55)",
-                marginBottom: 18,
-              }}
-            >
-              {t.tagline}
-            </p>
-            <h1
-              style={{
-                fontFamily: "PTCSans, Arial, sans-serif",
-                fontSize: "clamp(34px,5vw,64px)",
-                fontWeight: 700,
-                color: "rgba(255,255,255,0.55)",
-                lineHeight: 1.15,
-                marginBottom: 20,
-              }}
-            >
-              {t.title}
-            </h1>
-            <p
-              style={{
-                fontFamily: "PTCSans, Arial, sans-serif",
-                fontSize: "clamp(14px,1.5vw,20px)",
-                fontWeight: 300,
-                color: "rgba(255,255,255,0.55)",
-                lineHeight: 1.7,
-                marginBottom: 40,
-              }}
-            >
-              {t.subtitle}
-            </p>
-            <a href="#contact" className="ptc-cta-btn">
-              {t.cta}
-            </a>
+
+        {/* ── HERO ── */}
+        <section style={{ position: 'relative', width: '100%', minHeight: '100vh', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
+          <div style={{ position: 'absolute', inset: 0, zIndex: 0, backgroundImage: "url('/images/tild6638-6537-4132-a666-383131626462__istock-964566894.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'rgba(31,75,133,0.8)' }} />
+          <div style={{ position: 'relative', zIndex: 2, padding: 'clamp(120px,14vw,160px) clamp(24px,6vw,100px) 80px', maxWidth: 900, width: '100%', margin: '0 auto', textAlign: 'center' }}>
+            <p className="stitch-label" style={{ letterSpacing: '0.4em', color: 'rgba(255,255,255,0.8)', marginBottom: 20 }}>{t.tagline}</p>
+            <h1 className="stitch-display" style={{ color: '#fff', marginBottom: 24 }}>{t.title}</h1>
+            <p className="stitch-body-lg" style={{ color: 'rgba(255,255,255,0.8)', marginBottom: 40, maxWidth: 480, margin: '0 auto 40px' }}>{t.subtitle}</p>
+            <a href="#contact" className="ptc-cta-btn">{t.cta}</a>
           </div>
-          <div
-            style={{
-              position: "absolute",
-              bottom: 28,
-              left: "50%",
-              transform: "translateX(-50%)",
-              zIndex: 2,
-            }}
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              style={{
-                opacity: 0.4,
-                animation: "ptc-bounce 2s ease-in-out infinite",
-              }}
-            >
-              <path
-                d="M6 9l6 6 6-6"
-                stroke="#fff"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+          <div style={{ position: 'absolute', bottom: 28, left: '50%', transform: 'translateX(-50%)', zIndex: 2 }}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style={{ opacity: 0.4, animation: 'ptc-bounce 2s ease-in-out infinite' }}>
+              <path d="M6 9l6 6 6-6" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </section>
 
-        <section
-          style={{ position: "relative", width: "100%", overflow: "hidden" }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              zIndex: 0,
-              backgroundImage: "url('/images/Private-Travel-Club.webp')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundAttachment: "fixed",
-            }}
-          />
-          <div
-            className="ptc-page-bg"
-            style={{
-              position: "absolute",
-              inset: 0,
-              zIndex: 1,
-              background: "linear-gradient(to bottom, rgba(31,75,133,1) 0%, rgba(31,75,133,1) 50%, rgba(31,75,133,1) 100%)",
-            }}
-          />
-          <div
-            style={{
-              position: "relative",
-              zIndex: 2,
-              maxWidth: 1100,
-              margin: "0 auto",
-              padding: "clamp(80px,10vw,120px) clamp(24px,5vw,60px)",
-            }}
-          >
-            <h2
-              style={{
-                fontFamily: "PTCSans, Arial, sans-serif",
-                fontSize: "clamp(22px,2.5vw,36px)",
-                fontWeight: 700,
-                color: "#fff",
-                textAlign: "center",
-                marginBottom: 12,
-              }}
-            >
-              {t.featuresTitle}
-            </h2>
-            <p
-              style={{
-                fontFamily: "PTCSans, Arial, sans-serif",
-                fontSize: 20,
-                fontWeight: 300,
-                color: "rgba(255,255,255,0.7)",
-                textAlign: "center",
-                lineHeight: 1.7,
-                margin: "0 auto 60px",
-                maxWidth: 640,
-              }}
-            >
-              {t.featuresSub}
-            </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-                gap: 32,
-              }}
-            >
-              {t.features.map((f, i) => (
-                <div
-                  key={i}
-                  style={{ display: "flex", gap: 16, alignItems: "flex-start" }}
-                >
-                  <span
-                    style={{
-                      color: "#e8b000",
-                      fontSize: 20,
-                      lineHeight: 1.4,
-                      flexShrink: 0,
-                    }}
-                  >
-                    ❖
-                  </span>
+        {/* ── INTRO — 2-col ── */}
+        <section style={{ background: '#0e1321', padding: 'clamp(80px,10vw,120px) clamp(24px,4vw,80px)' }}>
+          <div style={{ maxWidth: 1300, margin: '0 auto' }} className="ptc-conc-intro">
+            <div>
+              <h2 className="stitch-headline-lg" style={{ color: '#a8c8ff', lineHeight: 1.15 }}>
+                {lang === 'ru' ? <>Определяется<br />дискрецией.</> : lang === 'de' ? <>Definiert durch<br />Diskretion.</> : <>Defined by<br />Discretion.</>}
+              </h2>
+            </div>
+            <div>
+              <p className="stitch-body-lg" style={{ color: 'rgba(255,255,255,0.75)' }}>
+                {lang === 'ru'
+                  ? 'Наш консьерж — это не стойка в лобби. Это глобальная сеть фиксеров, кураторов и специалистов, работающих исключительно для наших клиентов. От бронирования мест в закрытых мишленовских заведениях до организации частных открытий галерей после закрытия — мы управляем логистикой роскоши.'
+                  : lang === 'de'
+                  ? 'Unser Concierge ist kein Empfangstresen. Es ist ein globales Netzwerk aus Fixern, Kuratoren und Spezialisten, die ausschließlich unseren Klienten gewidmet sind. Von der Sicherung von Reservierungen in Michelin-Enklaven bis zur Orchestrierung privater Galerieeröffnungen nach Ladenschluss — wir handhaben die Logistik des Luxus.'
+                  : 'Our concierge is not a desk in a lobby; it is a global network of fixers, curators, and specialists dedicated to our clients. From securing off-menu reservations at Michelin-starred enclaves to orchestrating private gallery openings after hours, we handle the logistics of luxury.'}
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ── FEATURE CARDS ── */}
+        <section style={{ background: '#0e1321', paddingBottom: 'clamp(80px,10vw,120px)', paddingLeft: 'clamp(24px,4vw,80px)', paddingRight: 'clamp(24px,4vw,80px)' }}>
+          <div style={{ maxWidth: 1300, margin: '0 auto' }} className="ptc-conc-cards">
+            {t.features.map((f, i) => {
+              const cats = CATS[lang] ?? CATS.en
+              const cat = cats[i] ?? ''
+              return (
+                <div key={i} className="ptc-conc-card" style={{
+                  background: '#1f4b85',
+                  border: '1px solid rgba(255,255,255,0.12)',
+                  borderLeft: i > 0 ? 'none' : '1px solid rgba(255,255,255,0.12)',
+                  padding: 'clamp(32px,4vw,64px)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                  minHeight: 450,
+                }}>
                   <div>
-                    <h3
-                      style={{
-                        fontFamily: "PTCSans, Arial, sans-serif",
-                        fontSize: 18,
-                        fontWeight: 700,
-                        color: "#fff",
-                        marginBottom: 6,
-                      }}
-                    >
-                      {f.title}
-                    </h3>
-                    <p
-                      style={{
-                        fontFamily: "PTCSans, Arial, sans-serif",
-                        fontSize: 16,
-                        fontWeight: 300,
-                        color: "rgba(255,255,255,0.7)",
-                        lineHeight: 1.65,
-                      }}
-                    >
-                      {f.text}
-                    </p>
+                    <span style={{ ...LABEL_STYLE, color: '#ffce5a', display: 'block', marginBottom: 32 }}>
+                      {String(i + 1).padStart(2, '0')}{cat ? ` / ${cat}` : ''}
+                    </span>
+                    <h3 className="stitch-headline-md" style={{ color: '#fff', marginBottom: 24 }}>{f.title}</h3>
+                    <p className="stitch-body-md" style={{ color: 'rgba(150,188,254,0.85)' }}>{f.text}</p>
                   </div>
                 </div>
-              ))}
-            </div>
+              )
+            })}
           </div>
         </section>
 
-        <section
-          style={{ position: "relative", width: "100%", overflow: "hidden" }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              zIndex: 0,
-              backgroundImage:
-                "url('/images/tild6638-6537-4132-a666-383131626462__istock-964566894.webp')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundAttachment: "fixed",
-            }}
-          />
-          <div
-            className="ptc-page-bg"
-            style={{
-              position: "absolute",
-              inset: 0,
-              zIndex: 1,
-              backgroundImage: OVERLAY,
-            }}
-          />
-          <div
-            style={{
-              position: "relative",
-              zIndex: 2,
-              maxWidth: 1200,
-              margin: "0 auto",
-              padding: "clamp(80px,10vw,120px) clamp(24px,4vw,60px)",
-            }}
-          >
-            <h2
-              style={{
-                fontFamily: "PTCSans, Arial, sans-serif",
-                fontSize: "clamp(22px,2.5vw,36px)",
-                fontWeight: 700,
-                color: "#fff",
-                textAlign: "center",
-                marginBottom: 48,
-              }}
-            >
-              {t.galleryTitle}
+        {/* ── QUOTE SECTION ── */}
+        <section style={{ position: 'relative', height: 530, display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', inset: 0 }}>
+            <img
+              src="/images/glov.webp"
+              alt=""
+              style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.28)' }}
+            />
+          </div>
+          <div style={{ position: 'relative', zIndex: 10, textAlign: 'center', maxWidth: 900, padding: '0 clamp(24px,4vw,80px)' }}>
+            <h2 className="stitch-display" style={{ color: '#fff', fontStyle: 'italic', lineHeight: 1.2, fontSize: 'clamp(24px, 3vw, 42px)' }}>
+              {lang === 'ru'
+                ? '"Настоящая роскошь — не в том, что вы имеете, а в том, о чём вам не нужно думать."'
+                : lang === 'de'
+                ? '"Echter Luxus liegt nicht in dem, was Sie besitzen, sondern in dem, worüber Sie nie nachdenken müssen."'
+                : '"True luxury is not about what you have, but what you never have to think about."'}
             </h2>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-                gap: 16,
-              }}
-            >
-              {gallery.map((photo, i) => (
-                <div
-                  key={i}
-                  style={{
-                    position: 'relative',
-                    aspectRatio: "4/3",
-                    overflow: "hidden",
-                    borderRadius: 8,
-                    boxShadow: "0 6px 24px rgba(0,0,0,0.4)",
-                  }}
-                >
-                  <Image
-                    src={photo.src}
-                    alt={photo.alt}
-                    fill
-                    sizes="(max-width: 520px) 100vw, (max-width: 780px) 50vw, 33vw"
-                    className="ptc-gallery-img"
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
-        <section
-          id="contact"
-          style={{ position: "relative", width: "100%", overflow: "hidden" }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              zIndex: 0,
-              backgroundImage: "url('/images/Private-Travel-Club.webp')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundAttachment: "fixed",
-            }}
+        {/* ── CONTACT ── */}
+        <div id="contact">
+          <PlanTripSection
+            locale={lang}
+            label={lang === 'ru' ? 'Консьерж-Сервис' : lang === 'de' ? 'Concierge-Service' : 'Concierge Private Service'}
+            title={lang === 'ru' ? 'Персональный менеджер.' : lang === 'de' ? 'Dedizierte Betreuung.' : 'Dedicated Management.'}
+            sub={
+              lang === 'ru'
+                ? 'Поделитесь деталями — мы закрепим за вами личного менеджера, который создаст исключительный опыт, полностью подстроенный под вас.'
+                : lang === 'de'
+                ? 'Teilen Sie uns Ihre Angaben mit — wir stellen Ihnen einen persönlichen Manager zur Seite, der ein außergewöhnliches, auf Sie zugeschnittenes Erlebnis gestaltet.'
+                : 'Share your details and we\'ll assign a dedicated manager to curate an extraordinary experience tailored entirely to you.'
+            }
+            submitLabel={lang === 'ru' ? 'Запросить консьерж-сервис' : lang === 'de' ? 'Concierge anfragen' : 'Access Concierge'}
           />
-          <div
-            className="ptc-page-bg"
-            style={{
-              position: "absolute",
-              inset: 0,
-              zIndex: 1,
-              backgroundImage: OVERLAY,
-            }}
-          />
-          <div
-            style={{
-              position: "relative",
-              zIndex: 2,
-              maxWidth: 540,
-              margin: "0 auto",
-              padding: "clamp(80px,10vw,120px) clamp(24px,5vw,40px)",
-            }}
-          >
-            <h2
-              style={{
-                fontFamily: "PTCSans, Arial, sans-serif",
-                fontSize: "clamp(22px,2.5vw,34px)",
-                fontWeight: 700,
-                color: "#fff",
-                textAlign: "center",
-                marginBottom: 12,
-              }}
-            >
-              {t.contactTitle}
-            </h2>
-            <p
-              style={{
-                fontFamily: "PTCSans, Arial, sans-serif",
-                fontSize: 18,
-                fontWeight: 300,
-                color: "rgba(255,255,255,0.65)",
-                textAlign: "center",
-                lineHeight: 1.7,
-                marginBottom: 40,
-              }}
-            >
-              {t.contactSub}
-            </p>
-            <div
-              style={{
-                background: "rgba(10,20,55,0.55)",
-                backdropFilter: "blur(6px)",
-                WebkitBackdropFilter: "blur(6px)",
-                borderRadius: 4,
-                padding: "clamp(24px,3vw,36px)",
-              }}
-            >
-              <ContactForm locale={lang} />
-            </div>
-          </div>
-        </section>
+        </div>
 
-        <div
-          style={{
-            background: "#1f4b85",
-            textAlign: "center",
-            padding: "32px 24px",
-          }}
-        >
+        {/* ── BACK ── */}
+        <div style={{ background: '#1f4b85', textAlign: 'center', padding: '32px 24px' }}>
           <Link
             href={`/${lang}`}
             className="ptc-back-link"
-            style={{
-              fontFamily: "PTCSans, Arial, sans-serif",
-              fontSize: 13,
-              fontWeight: 600,
-              letterSpacing: "2px",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.6)",
-              textDecoration: "none",
-            }}
+            style={{ fontFamily: 'var(--font-hanken)', fontSize: 13, fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}
           >
             {getT(lang).nav.back}
           </Link>
@@ -465,17 +182,28 @@ export default async function ConciergePage({
           locale={lang}
           nav={translations.nav}
         />
+
       </main>
       <MobileFooter />
       <BackToTop />
       <style>{`
-        .ptc-cta-btn { border-radius: 10px; display: inline-block; background: #e8b000; color: #fff; font-family: PTCSans, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 16px 40px; text-decoration: none; transition: background 0.2s; }
+        .ptc-cta-btn { display: inline-block; background: #e8b000; color: #ffffff; font-family: var(--font-hanken); font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 16px 40px; text-decoration: none; transition: background 0.2s; }
         .ptc-cta-btn:hover { background: #d4a000; }
         .ptc-gallery-img { transition: transform 0.5s ease; }
         .ptc-gallery-img:hover { transform: scale(1.05); }
         @keyframes ptc-bounce { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(5px); } }
-        @media (max-width: 1199px) { .ptc-page-bg { background-attachment: scroll !important; } }
         .ptc-back-link:hover { color: #fff !important; }
+        .ptc-conc-intro { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(40px,6vw,100px); align-items: end; }
+        .ptc-conc-cards { display: grid; grid-template-columns: repeat(3,1fr); }
+        .ptc-conc-card { transition: background 0.3s; }
+        .ptc-conc-card:hover { background: #255699 !important; }
+        .ptc-conc-gallery { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+        @media (max-width: 900px) {
+          .ptc-conc-intro { grid-template-columns: 1fr !important; }
+          .ptc-conc-cards { grid-template-columns: 1fr !important; }
+          .ptc-conc-card { border-left: 1px solid rgba(255,255,255,0.12) !important; border-top: none !important; }
+          .ptc-conc-gallery { grid-template-columns: 1fr !important; }
+        }
       `}</style>
     </>
   );

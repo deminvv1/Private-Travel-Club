@@ -28,7 +28,7 @@ export default function ServiceSection({ title, description, bgImage, photos }: 
       {/* Content */}
       <div style={{
         position: 'relative', zIndex: 2,
-        width: '100%', maxWidth: 1100, margin: '0 auto',
+        width: '100%', maxWidth: 1300, margin: '0 auto',
         padding: 'clamp(80px,10vw,120px) clamp(24px,4vw,60px)',
         textAlign: 'center',
       }}>

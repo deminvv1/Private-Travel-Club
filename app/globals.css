@@ -14,6 +14,48 @@
   --font-hanken: 'Hanken Grotesk', Arial, sans-serif;
 }
 
+/* ── Stitch typography system ── */
+.stitch-label {
+  font-family: var(--font-hanken);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.stitch-body-md {
+  font-family: var(--font-hanken);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.stitch-body-lg {
+  font-family: var(--font-hanken);
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+}
+.stitch-headline-md {
+  font-family: var(--font-playfair);
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.stitch-headline-lg {
+  font-family: var(--font-playfair);
+  font-size: clamp(40px, 4.5vw, 56px);
+  line-height: 1.15;
+  font-weight: 400;
+}
+.stitch-display {
+  font-family: var(--font-playfair);
+  font-size: clamp(52px, 7vw, 88px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -33,10 +75,6 @@ img { display: block; max-width: 100%; }
 
 h1, h2, h3, p { margin: 0; }
 
-
-button {
-  border-radius: 10px;
-}
 
 /* @media (max-width: 768px) {
   .ptc-hdr-logo {

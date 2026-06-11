@@ -53,8 +53,8 @@ export default function WhyUsSection({
 
       <div style={{
         position: 'relative', zIndex: 2,
-        maxWidth: 1100, margin: '0 auto',
-        padding: 'clamp(80px,10vw,120px) clamp(24px,4vw,60px)',
+        maxWidth: 1300, margin: '0 auto',
+        padding: 'clamp(80px,10vw,120px) clamp(24px,4vw,80px)',
       }}>
         <h2 style={{
           fontFamily: 'PTCSans, Arial, sans-serif',
@@ -117,22 +117,30 @@ export default function WhyUsSection({
               {locale === 'ru' ? 'Направления' : locale === 'de' ? 'Reiseziele' : 'Destinations'}
             </p>
             {[
-              { slug: 'maldives',       en: 'Maldives',        ru: 'Мальдивы',       de: 'Malediven' },
-              { slug: 'greece',         en: 'Greece',          ru: 'Греция',         de: 'Griechenland' },
-              { slug: 'italy',          en: 'Italy',           ru: 'Италия',         de: 'Italien' },
-              { slug: 'dubai',          en: 'Dubai',           ru: 'Дубай',          de: 'Dubai' },
-              { slug: 'french-riviera', en: 'French Riviera',  ru: 'Лазурный берег', de: 'Côte d\'Azur' },
-              { slug: 'switzerland',    en: 'Switzerland',     ru: 'Швейцария',      de: 'Schweiz' },
-              { slug: 'seychelles',     en: 'Seychelles',      ru: 'Сейшелы',        de: 'Seychellen' },
-              { slug: 'cappadocia',     en: 'Cappadocia',      ru: 'Каппадокия',     de: 'Kappadokien' },
+              { slug: 'maldives',    en: 'Maldives',   ru: 'Мальдивы',  de: 'Malediven' },
+              { slug: 'greece',      en: 'Greece',     ru: 'Греция',    de: 'Griechenland' },
+              { slug: 'italy',       en: 'Italy',      ru: 'Италия',    de: 'Italien' },
+              { slug: 'switzerland', en: 'Switzerland',ru: 'Швейцария', de: 'Schweiz' },
+              { slug: 'seychelles',  en: 'Seychelles', ru: 'Сейшелы',   de: 'Seychellen' },
             ].map(({ slug, en, ru, de }) => (
               <Link key={slug} href={`/${locale}/destinations/${slug}`} className="ptc-footer-nav-link" style={{
-                fontFamily: 'PTCSans, Arial, sans-serif',
-                fontSize: 13, fontWeight: 500,
+                fontFamily: 'PTCSans, Arial, sans-serif', fontSize: 13, fontWeight: 500,
                 letterSpacing: '2px', textTransform: 'uppercase',
-                color: 'rgba(255,255,255,0.55)',
-                textDecoration: 'none',
-                transition: 'color 0.2s',
+                color: 'rgba(255,255,255,0.55)', textDecoration: 'none', transition: 'color 0.2s',
+              }}>
+                {locale === 'ru' ? ru : locale === 'de' ? de : en}
+              </Link>
+            ))}
+            <div style={{ borderTop: '1px solid rgba(255,255,255,0.12)', margin: '4px 0' }} />
+            {[
+              { slug: 'dubai',          en: 'Dubai',          ru: 'Дубай',          de: 'Dubai' },
+              { slug: 'french-riviera', en: 'French Riviera', ru: 'Лазурный берег', de: 'Côte d\'Azur' },
+              { slug: 'cappadocia',     en: 'Cappadocia',     ru: 'Каппадокия',     de: 'Kappadokien' },
+            ].map(({ slug, en, ru, de }) => (
+              <Link key={slug} href={`/${locale}/destinations/${slug}`} className="ptc-footer-nav-link" style={{
+                fontFamily: 'PTCSans, Arial, sans-serif', fontSize: 13, fontWeight: 500,
+                letterSpacing: '2px', textTransform: 'uppercase',
+                color: 'rgba(255,255,255,0.55)', textDecoration: 'none', transition: 'color 0.2s',
               }}>
                 {locale === 'ru' ? ru : locale === 'de' ? de : en}
               </Link>

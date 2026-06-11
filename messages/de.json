@@ -1,7 +1,24 @@
 {
-  "cookieBanner": { "title": "Wir verwenden Cookies", "text": "Um Ihre Erfahrung zu verbessern und unseren Traffic zu analysieren. Ihre Daten bleiben privat.", "accept": "Akzeptieren", "decline": "Ablehnen" },
-  "nav": { "jets": "Jets", "yachts": "Yachten", "villas": "Villen", "concierge": "Concierge", "back": "← Zur Startseite", "navigationTitle": "Navigation", "privacyPolicy": "Datenschutzerklärung", "cookiePolicy": "Cookie-Richtlinie" },
-  "header": { "tagline": "Weltweite exklusive Reisen & Concierge-Services" },
+  "cookieBanner": {
+    "title": "Wir verwenden Cookies",
+    "text": "Um Ihre Erfahrung zu verbessern und unseren Traffic zu analysieren. Ihre Daten bleiben privat.",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen"
+  },
+  "nav": {
+    "jets": "Jets",
+    "yachts": "Yachten",
+    "villas": "Villen",
+    "concierge": "Concierge",
+    "back": "← Zur Startseite",
+    "navigationTitle": "Navigation",
+    "privacyPolicy": "Datenschutzerklärung",
+    "cookiePolicy": "Cookie-Richtlinie",
+    "about": "Über uns"
+  },
+  "header": {
+    "tagline": "Weltweite exklusive Reisen & Concierge-Services"
+  },
   "hero": {
     "tagline": "Weltweite Reise- & Concierge-Services",
     "title": "Private Travel Club",
@@ -96,12 +113,30 @@
     "contactTitle": "Plan My Trip",
     "contactSub": "Teilen Sie uns Ihre Details mit und wir erstellen innerhalb weniger Stunden einen vollständig personalisierten VIP-Flugplan.",
     "features": [
-      { "title": "Jedes Ziel", "text": "Über 40.000 Flughäfen weltweit — einschließlich solcher, die für Linienflüge nicht erreichbar sind." },
-      { "title": "Komplette Planung", "text": "Von Route und Zeitplan bis zu Catering und Bodentransfers — wir kümmern uns um jedes Detail." },
-      { "title": "Flottenvielfalt", "text": "Leichte Jets für Kurzstrecken, schwere Jets für Interkontinentalflüge und alles dazwischen." },
-      { "title": "Privatsphäre & Komfort", "text": "Ihr Zeitplan, Ihre Regeln. Keine Warteschlangen, keine Massen — nur Sie und Ihre Begleitung." },
-      { "title": "VIP-Bodenservice", "text": "Private Terminals, Schnellkontrolle, Limousine direkt zum Flugzeug." },
-      { "title": "24/7-Support", "text": "Unser Team ist rund um die Uhr erreichbar für jede Anfrage oder kurzfristige Änderung." }
+      {
+        "title": "Jedes Ziel",
+        "text": "Über 40.000 Flughäfen weltweit — einschließlich solcher, die für Linienflüge nicht erreichbar sind."
+      },
+      {
+        "title": "Komplette Planung",
+        "text": "Von Route und Zeitplan bis zu Catering und Bodentransfers — wir kümmern uns um jedes Detail."
+      },
+      {
+        "title": "Flottenvielfalt",
+        "text": "Leichte Jets für Kurzstrecken, schwere Jets für Interkontinentalflüge und alles dazwischen."
+      },
+      {
+        "title": "Privatsphäre & Komfort",
+        "text": "Ihr Zeitplan, Ihre Regeln. Keine Warteschlangen, keine Massen — nur Sie und Ihre Begleitung."
+      },
+      {
+        "title": "VIP-Bodenservice",
+        "text": "Private Terminals, Schnellkontrolle, Limousine direkt zum Flugzeug."
+      },
+      {
+        "title": "24/7-Support",
+        "text": "Unser Team ist rund um die Uhr erreichbar für jede Anfrage oder kurzfristige Änderung."
+      }
     ]
   },
   "villasPage": {
@@ -116,12 +151,30 @@
     "contactTitle": "Curate My Stay",
     "contactSub": "Teilen Sie uns Ihr Ziel und Ihre Vorlieben mit — Ihr persönlicher Manager wählt die perfekte Unterkunft aus und arrangiert jedes Detail.",
     "features": [
-      { "title": "Villen & private Residenzen", "text": "Strandvillen auf den Malediven, Felsrückzugsorte auf Santorini oder Landhäuser in der Toskana." },
-      { "title": "Chalets & Bergresorts", "text": "Erstklassige Chalets in Zermatt, Courchevel, St. Moritz und darüber hinaus — ski-in/ski-out." },
-      { "title": "Schlösser & historische Anwesen", "text": "Erleben Sie die Pracht eines privaten Schlosses in Italien, Frankreich oder Schottland." },
-      { "title": "Luxushotels & Suiten", "text": "Präsidentensuiten und exklusive Hotelresidenzen an den besten Adressen weltweit." },
-      { "title": "Vollständiger Concierge", "text": "Privatkoch, Personal, Transfer, Aktivitäten — alles vor Ihrer Ankunft organisiert." },
-      { "title": "Maßgeschneiderte Aufenthalte", "text": "Jedes Detail abgestimmt auf Ihre Vorlieben. Dauer, Lage, Stil und Budget — wir übernehmen alles." }
+      {
+        "title": "Privater Concierge & Hauspersonal rund um die Uhr",
+        "text": "Strandvillen auf den Malediven, Felsrückzugsorte auf Santorini oder Landhäuser in der Toskana."
+      },
+      {
+        "title": "Exklusiver Zugang zu Members-Only Beach Clubs",
+        "text": "Erstklassige Chalets in Zermatt, Courchevel, St. Moritz und darüber hinaus — ski-in/ski-out."
+      },
+      {
+        "title": "Maßgeschneiderte Wellness- & Spa-Programme",
+        "text": "Erleben Sie die Pracht eines privaten Schlosses in Italien, Frankreich oder Schottland."
+      },
+      {
+        "title": "Luxushotels & Suiten",
+        "text": "Präsidentensuiten und exklusive Hotelresidenzen an den besten Adressen weltweit."
+      },
+      {
+        "title": "Vollständiger Concierge",
+        "text": "Privatkoch, Personal, Transfer, Aktivitäten — alles vor Ihrer Ankunft organisiert."
+      },
+      {
+        "title": "Maßgeschneiderte Aufenthalte",
+        "text": "Jedes Detail abgestimmt auf Ihre Vorlieben. Dauer, Lage, Stil und Budget — wir übernehmen alles."
+      }
     ]
   },
   "conciergePage": {
@@ -136,12 +189,18 @@
     "contactTitle": "Access Concierge",
     "contactSub": "Beschreiben Sie Ihren Wunsch — Ihr persönlicher Manager kümmert sich darum und hält Sie über jeden Schritt informiert.",
     "features": [
-      { "title": "Exklusive Events & Tickets", "text": "Formel 1, Wimbledon, Champions-League-Finale, Galas und Premieren — wir besorgen die besten Plätze." },
-      { "title": "Fine Dining & Reservierungen", "text": "Tische in Michelin-Stern-Restaurants, private Speisesäle und kulinarische Erlebnisse weltweit." },
-      { "title": "Luxusgeschenke & Überraschungen", "text": "Seltene Weine, maßgefertigter Schmuck, Blumen und außergewöhnliche Geschenkpakete." },
-      { "title": "VIP-Flughafen & Lounge-Zugang", "text": "Private Terminals, beschleunigte Einwanderung, Premium-Lounges und Begrüßungsservice." },
-      { "title": "Lifestyle-Management", "text": "Personal Shopping, Hausverwaltung, Arzttermine, Schulanmeldung — wir übernehmen den Alltag." },
-      { "title": "Last-Minute-Anfragen", "text": "Keine Anfrage ist zu komplex oder zu kurzfristig. Unser Team arbeitet 24/7/365." }
+      {
+        "title": "Kulinarische Expeditionen",
+        "text": "Direkter Zugang zu weltbekannten Köchen und exklusiven Kulinarik-Erlebnissen, die der Öffentlichkeit verborgen bleiben."
+      },
+      {
+        "title": "Globale Logistik",
+        "text": "Privatluftfahrt, Transfers in gepanzerten Fahrzeugen und Prioritäts-Einlass in internationalen Häfen."
+      },
+      {
+        "title": "Diskrete Unterkünfte",
+        "text": "Nicht gelistete Villen und Penthouse-Suiten, geprüft auf vollständige akustische und visuelle Privatsphäre."
+      }
     ]
   },
   "yachtsPage": {
@@ -156,12 +215,30 @@
     "contactTitle": "Tailor My Cruise",
     "contactSub": "Teilen Sie uns Ihr Ziel mit — Ihr persönlicher Manager erstellt ein maßgeschneidertes VIP-Charter-Angebot.",
     "features": [
-      { "title": "Komplette Routenplanung", "text": "Von Ziel und Reiseroute bis zu täglichen Stopps und Aktivitäten — wir planen die gesamte Reise." },
-      { "title": "Professionelle Crew", "text": "Erfahrene Kapitäne, Stewards, Köche und Hostessen — alle geprüft und handverlesen." },
-      { "title": "Individuelles Catering", "text": "Gourmet-Menüs abgestimmt auf Ihre Vorlieben, Ernährungsanforderungen und besondere Anlässe." },
-      { "title": "Jedes Ziel", "text": "Mittelmeer, Karibik, Indischer Ozean, Adria — wohin Sie auch segeln möchten, wir machen es möglich." },
-      { "title": "Tender & Wasserattraktionen", "text": "Jetskis, Schlauchboote, Tauch- und Schnorchelausrüstung — alles für den Wasserspaß inklusive." },
-      { "title": "24/7-Support", "text": "Unser Team ist vor und während des Charters rund um die Uhr erreichbar." }
+      {
+        "title": "Komplette Routenplanung",
+        "text": "Von Ziel und Reiseroute bis zu täglichen Stopps und Aktivitäten — wir planen die gesamte Reise."
+      },
+      {
+        "title": "Professionelle Crew",
+        "text": "Erfahrene Kapitäne, Stewards, Köche und Hostessen — alle geprüft und handverlesen."
+      },
+      {
+        "title": "Individuelles Catering",
+        "text": "Gourmet-Menüs abgestimmt auf Ihre Vorlieben, Ernährungsanforderungen und besondere Anlässe."
+      },
+      {
+        "title": "Jedes Ziel",
+        "text": "Mittelmeer, Karibik, Indischer Ozean, Adria — wohin Sie auch segeln möchten, wir machen es möglich."
+      },
+      {
+        "title": "Tender & Wasserattraktionen",
+        "text": "Jetskis, Schlauchboote, Tauch- und Schnorchelausrüstung — alles für den Wasserspaß inklusive."
+      },
+      {
+        "title": "24/7-Support",
+        "text": "Unser Team ist vor und während des Charters rund um die Uhr erreichbar."
+      }
     ]
   },
   "cookies": {
@@ -169,7 +246,9 @@
     "sections": [
       {
         "heading": "1. Was sind Cookies",
-        "body": ["Cookies sind kleine Textdateien, die beim Besuch einer Website auf Ihrem Gerät gespeichert werden. Sie helfen der Website, Ihre Einstellungen zu speichern und Ihr Browsererlebnis zu verbessern."]
+        "body": [
+          "Cookies sind kleine Textdateien, die beim Besuch einer Website auf Ihrem Gerät gespeichert werden. Sie helfen der Website, Ihre Einstellungen zu speichern und Ihr Browsererlebnis zu verbessern."
+        ]
       },
       {
         "heading": "2. Von uns verwendete Cookies",
@@ -181,7 +260,9 @@
       },
       {
         "heading": "3. Cookies von Drittanbietern",
-        "body": ["Unsere Website kann Dienste von Drittanbietern (z. B. Google Analytics) nutzen, die eigene Cookies setzen. Diese unterliegen der Datenschutzrichtlinie des jeweiligen Drittanbieters. Wir haben keine Kontrolle über Cookies von Drittanbietern."]
+        "body": [
+          "Unsere Website kann Dienste von Drittanbietern (z. B. Google Analytics) nutzen, die eigene Cookies setzen. Diese unterliegen der Datenschutzrichtlinie des jeweiligen Drittanbieters. Wir haben keine Kontrolle über Cookies von Drittanbietern."
+        ]
       },
       {
         "heading": "4. Cookie-Verwaltung",
@@ -192,7 +273,9 @@
       },
       {
         "heading": "5. Kontakt",
-        "body": ["Bei Fragen zur Verwendung von Cookies kontaktieren Sie uns bitte unter: office@private-travel-club.com."]
+        "body": [
+          "Bei Fragen zur Verwendung von Cookies kontaktieren Sie uns bitte unter: office@private-travel-club.com."
+        ]
       }
     ]
   },

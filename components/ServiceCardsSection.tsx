@@ -16,7 +16,7 @@ const CARDS = [
   },
   {
     key: 'yachts',
-    image: '/images/Premium-yacht.webp',
+    image: '/images/yachts.webp',
     href: '/yachts',
     offset: true,
     desc: {
@@ -27,7 +27,7 @@ const CARDS = [
   },
   {
     key: 'jets',
-    image: '/images/tild6533-3237-4136-b130-303762323166__private_jet_charter_.jpg',
+    image: '/images/jets.webp',
     href: '/jets',
     offset: false,
     desc: {
@@ -38,7 +38,7 @@ const CARDS = [
   },
   {
     key: 'concierge',
-    image: '/images/Premium-concierge.webp',
+    image: '/images/concierge.webp',
     href: '/concierge',
     offset: true,
     desc: {
@@ -130,7 +130,7 @@ export default function ServiceCardsSection({ locale }: { locale: string }) {
         }
         .ptc-scard-label {
           font-family: PTCSans, Arial, sans-serif;
-          font-size: 11px;
+          font-size: 12px;
           font-weight: 600;
           letter-spacing: 0.22em;
           text-transform: uppercase;
@@ -139,7 +139,7 @@ export default function ServiceCardsSection({ locale }: { locale: string }) {
         }
         .ptc-scard-desc {
           font-family: PTCSans, Arial, sans-serif;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 300;
           color: rgba(255,255,255,0.6);
           line-height: 1.65;

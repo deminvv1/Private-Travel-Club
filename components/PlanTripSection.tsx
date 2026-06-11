@@ -18,47 +18,51 @@ const COPY: Record<string, { label: string; title: string; sub: string }> = {
   },
 }
 
-export default function PlanTripSection({ locale }: { locale: string }) {
-  const copy = COPY[locale] ?? COPY.en
+export default function PlanTripSection({
+  locale,
+  label: labelOverride,
+  title: titleOverride,
+  sub: subOverride,
+  submitLabel,
+}: {
+  locale: string
+  label?: string
+  title?: string
+  sub?: string
+  submitLabel?: string
+}) {
+  const base = COPY[locale] ?? COPY.en
+  const copy = {
+    label: labelOverride ?? base.label,
+    title: titleOverride ?? base.title,
+    sub: subOverride ?? base.sub,
+  }
 
   return (
     <section style={{
       background: '#0e1321',
-      padding: 'clamp(80px,10vw,120px) clamp(24px,4vw,80px)',
       borderTop: '1px solid rgba(255,255,255,0.08)',
     }}>
-      <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+      <div style={{
+        maxWidth: 1300, margin: '0 auto',
+        padding: 'clamp(80px,10vw,120px) clamp(24px,4vw,80px)',
+      }}>
         <div className="ptc-plantrip-grid">
 
           <div>
-            <span style={{
-              fontFamily: 'var(--font-hanken)',
-              fontSize: 11, fontWeight: 600,
-              letterSpacing: '0.2em', textTransform: 'uppercase',
-              color: '#e8b000', display: 'block', marginBottom: 20,
-            }}>
+            <span className="stitch-label" style={{ color: '#e8b000', display: 'block', marginBottom: 20 }}>
               {copy.label}
             </span>
-            <h2 style={{
-              fontFamily: 'var(--font-playfair)',
-              fontSize: 'clamp(28px,3.5vw,52px)',
-              fontWeight: 300, color: '#fff',
-              lineHeight: 1.15, marginBottom: 24,
-            }}>
+            <h2 className="stitch-headline-lg" style={{ color: '#fff', marginBottom: 24 }}>
               {copy.title}
             </h2>
-            <p style={{
-              fontFamily: 'var(--font-hanken)',
-              fontSize: 'clamp(14px,1.3vw,17px)',
-              fontWeight: 300, color: 'rgba(255,255,255,0.55)',
-              lineHeight: 1.75, maxWidth: 400,
-            }}>
+            <p className="stitch-body-lg" style={{ color: 'rgba(255,255,255,0.55)', maxWidth: 400 }}>
               {copy.sub}
             </p>
           </div>
 
           <div>
-            <ContactForm locale={locale} />
+            <ContactForm locale={locale} submitLabel={submitLabel} />
           </div>
 
         </div>
