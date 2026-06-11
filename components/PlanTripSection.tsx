@@ -32,7 +32,7 @@ export default function PlanTripSection({ locale }: { locale: string }) {
 
           <div>
             <span style={{
-              fontFamily: 'PTCSans, Arial, sans-serif',
+              fontFamily: 'var(--font-hanken)',
               fontSize: 11, fontWeight: 600,
               letterSpacing: '0.2em', textTransform: 'uppercase',
               color: '#e8b000', display: 'block', marginBottom: 20,
@@ -40,7 +40,7 @@ export default function PlanTripSection({ locale }: { locale: string }) {
               {copy.label}
             </span>
             <h2 style={{
-              fontFamily: 'Georgia, "Times New Roman", serif',
+              fontFamily: 'var(--font-playfair)',
               fontSize: 'clamp(28px,3.5vw,52px)',
               fontWeight: 300, color: '#fff',
               lineHeight: 1.15, marginBottom: 24,
@@ -48,7 +48,7 @@ export default function PlanTripSection({ locale }: { locale: string }) {
               {copy.title}
             </h2>
             <p style={{
-              fontFamily: 'PTCSans, Arial, sans-serif',
+              fontFamily: 'var(--font-hanken)',
               fontSize: 'clamp(14px,1.3vw,17px)',
               fontWeight: 300, color: 'rgba(255,255,255,0.55)',
               lineHeight: 1.75, maxWidth: 400,

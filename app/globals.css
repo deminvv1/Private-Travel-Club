@@ -9,6 +9,11 @@
   src: url('/fonts/ptc-sans.woff2') format('woff2');
 }
 
+:root {
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-hanken: 'Hanken Grotesk', Arial, sans-serif;
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }

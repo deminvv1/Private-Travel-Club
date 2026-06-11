@@ -1,8 +1,23 @@
 import type { Metadata } from 'next'
 import { headers } from 'next/headers'
 import Script from 'next/script'
+import { Playfair_Display, Hanken_Grotesk } from 'next/font/google'
 import CookieBanner from '@/components/CookieBanner'
 import './globals.css'
+
+const playfair = Playfair_Display({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '700'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
+
+const hanken = Hanken_Grotesk({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['300', '400', '600'],
+  variable: '--font-hanken',
+  display: 'swap',
+})
 
 const SITE_URL = 'https://private-travel-club.com'
 const SITE_TITLE = 'PRIVATE TRAVEL CLUB ❖ Worldwide Travel & Concierge Services'
@@ -87,7 +102,7 @@ verification: GOOGLE_VERIFICATION.length > 0 ? { google: GOOGLE_VERIFICATION } :
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const locale = (await headers()).get('x-locale') ?? 'en'
   return (
-    <html lang={locale}>
+    <html lang={locale} className={`${playfair.variable} ${hanken.variable}`}>
       <head>
         <link rel="preload" href="/fonts/ptc-sans.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <meta name="format-detection" content="telephone=no" />
