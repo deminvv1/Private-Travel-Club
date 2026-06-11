@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import IntroSection from '@/components/IntroSection'
 import ServiceSection from '@/components/ServiceSection'
 import GalleryStrip from '@/components/GalleryStrip'
 import WhyUsSection from '@/components/WhyUsSection'
@@ -77,12 +76,6 @@ export default async function HomePage({
         <Hero locale={lang} />
         <ServiceCardsSection locale={lang} />
         <PlanTripSection locale={lang} />
-        <IntroSection
-          title={t.intro.title}
-          body={t.intro.body}
-          items={t.intro.items}
-          locale={lang}
-        />
         <GalleryStrip title={t.gallery.title} body={t.gallery.body} />
         {services.map((service, i) => (
           <ServiceSection key={i} {...service} />
