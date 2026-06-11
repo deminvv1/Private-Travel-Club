@@ -5,6 +5,7 @@ import IntroSection from '@/components/IntroSection'
 import ServiceSection from '@/components/ServiceSection'
 import GalleryStrip from '@/components/GalleryStrip'
 import WhyUsSection from '@/components/WhyUsSection'
+import ServiceCardsSection from '@/components/ServiceCardsSection'
 import MobileFooter from '@/components/MobileFooter'
 import BackToTop from '@/components/BackToTop'
 import { getT, isValidLocale, DEFAULT_LOCALE, buildAlternates } from '@/lib/i18n'
@@ -73,6 +74,7 @@ export default async function HomePage({
       <Header locale={lang} />
       <main>
         <Hero locale={lang} />
+        <ServiceCardsSection locale={lang} />
         <IntroSection
           title={t.intro.title}
           body={t.intro.body}
