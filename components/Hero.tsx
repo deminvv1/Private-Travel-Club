@@ -41,7 +41,14 @@ export default function Hero({ locale = 'en' }: { locale?: string }) {
           color: 'rgba(255,255,255,0.8)',
           marginBottom: 20,
         }}>
-          {t.tagline}
+          {t.tagline.includes(' & ') ? (
+            <>
+              {t.tagline.split(' & ')[0]}
+              <span className="ptc-tagline-amp"> & </span>
+              <br className="ptc-tagline-br" />
+              {t.tagline.split(' & ')[1]}
+            </>
+          ) : t.tagline}
         </p>
 
         {/* Main title */}
@@ -94,6 +101,11 @@ export default function Hero({ locale = 'en' }: { locale?: string }) {
       <style>{`
         .ptc-hero-icon { transition: opacity 0.2s; display: flex; }
         .ptc-hero-icon:hover img { opacity: 0.9 !important; }
+        .ptc-tagline-br { display: none; }
+        @media (max-width: 768px) {
+          .ptc-tagline-amp { display: none; }
+          .ptc-tagline-br { display: inline; }
+        }
         @keyframes ptc-bounce {
           0%, 100% { transform: translateY(0); }
           50% { transform: translateY(5px); }
