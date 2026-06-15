@@ -16,7 +16,7 @@ import { CTAFooter } from '@/components/CTAFooter'
 import type { DestinationData } from '@/lib/types'
 
 const WHATSAPP = '+49 151 40365107'
-const EMAIL = 'office@private-travel-club.com'
+const EMAIL = 'contact@private-travel-club.com'
 
 const SLUGS = [
   'maldives', 'seychelles', 'greece', 'italy',

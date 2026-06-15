@@ -8,7 +8,7 @@ const links = [
   { icon: '/images/tild3364-6330-4262-a132-636137613838__call.svg', label: 'Call', href: 'tel:+4915140365107' },
   { icon: '/images/tild6530-3739-4066-b261-376433386235__whatsapp-logo.svg', label: 'WhatsApp', href: 'https://wa.me/4915140365107' },
   { icon: '/images/tild3734-6262-4535-b331-303738623866__instagram-logo.svg', label: 'Instagram', href: 'https://www.instagram.com/private_travel_club_' },
-  { icon: '/images/tild3163-6165-4130-a565-666331336339__email-mail-sent-whit.svg', label: 'Email', href: 'mailto:office@private-travel-club.com' },
+  { icon: '/images/tild3163-6165-4130-a565-666331336339__email-mail-sent-whit.svg', label: 'Email', href: 'mailto:contact@private-travel-club.com' },
 ]
 
 export default function MobileFooter() {

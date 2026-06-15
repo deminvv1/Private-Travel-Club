@@ -26,8 +26,8 @@ const SITE_DESCRIPTION =
 const OG_IMAGE = '/images/tild6439-3935-4165-b833-643364353265__bage.webp'
 
 const GOOGLE_VERIFICATION = process.env.GOOGLE_VERIFICATION ?? ''
-const GA4_ID             = process.env.GA4_ID ?? ''
 const YM_ID              = process.env.YANDEX_METRIKA_ID ?? ''
+const GTM_ID             = 'GTM-NB3K76VH'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -40,7 +40,7 @@ const jsonLd = {
     'Planning of exclusive and luxurious trips. Villas, chalets, castles, apartments & hotels. Yacht charter and private jets. Premium car and helicopter transfers. Concierge services.',
   priceRange: '$$$',
   telephone: '+4915140365107',
-  email: 'office@private-travel-club.com',
+  email: 'contact@private-travel-club.com',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Sudetenstraße 12',
@@ -107,27 +107,16 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link rel="preload" href="/fonts/ptc-sans.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="theme-color" content="#0d0d0d" />
-
-        {/* Schema.org structured data */}
+        <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');` }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-
       </head>
       <body>
+        <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`} height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} /></noscript>
         {children}
         <CookieBanner />
-
-        {/* Google Analytics 4 */}
-        {GA4_ID.length > 0 && (
-          <>
-            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} strategy="afterInteractive" />
-            <Script id="ga4-init" strategy="afterInteractive" dangerouslySetInnerHTML={{
-              __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA4_ID}')`,
-            }} />
-          </>
-        )}
 
         {/* Яндекс.Метрика */}
         {YM_ID.length > 0 && (

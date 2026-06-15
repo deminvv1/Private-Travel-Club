@@ -67,7 +67,7 @@ export default function Hero({ locale = 'en' }: { locale?: string }) {
             { src: '/images/tild6338-6432-4131-b064-313838333833__call.svg', href: 'tel:+4915140365107', alt: 'Call' },
             { src: '/images/tild3330-3064-4430-a236-636435613633__whatsapp-logo.svg', href: 'https://wa.me/4915140365107', alt: 'WhatsApp' },
             { src: '/images/tild3661-3734-4236-b036-643739363765__instagram-logo.svg', href: 'https://www.instagram.com/private_travel_club_', alt: 'Instagram' },
-            { src: '/images/tild3163-6165-4130-a565-666331336339__email-mail-sent-whit.svg', href: 'mailto:office@private-travel-club.com', alt: 'Email' }
+            { src: '/images/tild3163-6165-4130-a565-666331336339__email-mail-sent-whit.svg', href: 'mailto:contact@private-travel-club.com', alt: 'Email' }
           ].map((item, i) => (
             <a key={i} href={item.href}
               target={item.href.startsWith('http') ? '_blank' : undefined}
