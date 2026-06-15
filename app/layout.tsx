@@ -25,8 +25,9 @@ const SITE_DESCRIPTION =
   'Planning of exclusive and luxurious trips ❖ Villas, chalets, castles, apartments & hotels ❖ Yacht charter and private jets ❖ Premium car and helicopter transfers ❖ Concierge services'
 const OG_IMAGE = '/images/tild6439-3935-4165-b833-643364353265__bage.webp'
 
-const GOOGLE_VERIFICATION = process.env.GOOGLE_VERIFICATION ?? ''
-const YM_ID              = process.env.YANDEX_METRIKA_ID ?? ''
+const GOOGLE_VERIFICATION  = process.env.GOOGLE_VERIFICATION ?? ''
+const YANDEX_VERIFICATION  = process.env.YANDEX_VERIFICATION ?? ''
+const YM_ID                = process.env.YANDEX_METRIKA_ID ?? ''
 const GTM_ID             = 'GTM-NB3K76VH'
 
 const jsonLd = {
@@ -107,6 +108,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link rel="preload" href="/fonts/ptc-sans.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="theme-color" content="#0d0d0d" />
+        {YANDEX_VERIFICATION.length > 0 && <meta name="yandex-verification" content={YANDEX_VERIFICATION} />}
         <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');` }} />
         <script
           type="application/ld+json"
