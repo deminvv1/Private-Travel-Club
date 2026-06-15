@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Preloader from '@/components/Preloader'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import ServiceCardsSection from '@/components/ServiceCardsSection'
@@ -29,6 +30,7 @@ export default async function HomePage({
 
   return (
     <>
+      <Preloader />
       <Header locale={lang} />
       <main>
         <Hero locale={lang} />
