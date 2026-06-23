@@ -49,10 +49,29 @@ interface ServiceCardProps {
 
 export function ServiceCard({ title, body, icon }: ServiceCardProps) {
   return (
-    <div className="p-8 border border-stone-200 hover:border-stone-400 transition-colors">
-      <div className="text-stone-700 mb-6">{icons[icon]}</div>
-      <h3 className="text-lg font-light text-stone-900 mb-3">{title}</h3>
-      <p className="text-stone-500 text-sm leading-relaxed">{body}</p>
+    <div style={{
+      padding: 32, border: '1px solid rgba(255,255,255,0.1)',
+      transition: 'border-color 0.2s',
+    }}
+      className="hover:border-white/30"
+    >
+      <div style={{ color: 'rgba(255,255,255,0.6)', marginBottom: 24 }}>{icons[icon]}</div>
+      <h3 style={{
+        fontFamily: 'var(--font-playfair)',
+        fontSize: 'clamp(14px,1.2vw,18px)',
+        fontWeight: 400, color: '#fff',
+        lineHeight: 1.4, marginBottom: 12,
+      }}>
+        {title}
+      </h3>
+      <p style={{
+        fontFamily: 'var(--font-hanken)',
+        fontSize: 'clamp(12px,1vw,14px)',
+        fontWeight: 300, color: 'rgba(255,255,255,0.75)',
+        lineHeight: 1.7,
+      }}>
+        {body}
+      </p>
     </div>
   )
 }

@@ -49,8 +49,8 @@ export default function Header({ locale = 'en' }: { locale?: string }) {
     <header style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 9000,
       height: scrolled ? 100 : 100,
-      background: scrolled ? 'rgba(10,20,50,0.96)' : 'transparent',
-      backdropFilter: scrolled ? 'blur(10px)' : 'none',
+      background: scrolled ? '' : 'transparent',
+      backdropFilter: scrolled ? 'blur(1000px)' : 'none',
       WebkitBackdropFilter: scrolled ? 'blur(10px)' : 'none',
       borderBottom: scrolled ? '1px solid rgba(255,255,255,0.07)' : 'none',
       transition: 'background 0.4s, backdrop-filter 0.4s, height 0.4s',

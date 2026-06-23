@@ -16,7 +16,7 @@ export function CTAFooter({
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}`
 
   return (
-    <section className="bg-stone-950 text-white py-24 px-6">
+    <section style={{ background: 'rgb(14, 19, 33)' }} className="text-white py-24 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <span className="text-xs tracking-[0.2em] uppercase text-stone-400 mb-6 block">
           Private Travel Club

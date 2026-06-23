@@ -6,9 +6,37 @@ import ServiceCardsSection from '@/components/ServiceCardsSection'
 import PlanTripSection from '@/components/PlanTripSection'
 import AboutSection from '@/components/AboutSection'
 import WhyUsSection from '@/components/WhyUsSection'
+import ClientsCarousel from '@/components/ClientsCarousel'
 import MobileFooter from '@/components/MobileFooter'
 import BackToTop from '@/components/BackToTop'
 import { getT, isValidLocale, DEFAULT_LOCALE, buildAlternates } from '@/lib/i18n'
+
+const CLIENT_LOGOS = [
+  { type: 'image' as const, src: '/images/clients/Anantara.webp', alt: 'Anantara' },
+  { type: 'text'  as const, name: 'Dorchester' },
+  { type: 'image' as const, src: '/images/clients/Atlantis.webp', alt: 'Atlantis' },
+  { type: 'text'  as const, name: 'Cheval Blanc' },
+  { type: 'image' as const, src: '/images/clients/Belmond.webp', alt: 'Belmond' },
+  { type: 'text'  as const, name: 'Le Reserve' },
+  { type: 'image' as const, src: '/images/clients/Bvlgari.webp', alt: 'Bvlgari' },
+  { type: 'text'  as const, name: 'Rocco Forte' },
+  { type: 'image' as const, src: '/images/clients/Four-Seasons.webp', alt: 'Four Seasons' },
+  { type: 'text'  as const, name: 'Joali' },
+  { type: 'image' as const, src: '/images/clients/Jumeirah.webp', alt: 'Jumeirah' },
+  { type: 'text'  as const, name: 'Banyan Tree' },
+  { type: 'image' as const, src: '/images/clients/Mandarin-Oriental.webp', alt: 'Mandarin Oriental' },
+  { type: 'text'  as const, name: 'Six Senses' },
+  { type: 'image' as const, src: '/images/clients/Maxx-Royal.webp', alt: 'Maxx Royal' },
+  { type: 'text'  as const, name: 'Rosewood' },
+  { type: 'image' as const, src: '/images/clients/Oetker-Collection.webp', alt: 'Oetker Collection' },
+  { type: 'text'  as const, name: 'Peninsula' },
+  { type: 'image' as const, src: '/images/clients/One-Only.webp', alt: 'One&Only' },
+  { type: 'image' as const, src: '/images/clients/St-Regis.webp', alt: 'St. Regis' },
+  { type: 'image' as const, src: '/images/clients/The-Leading-Hotels.webp', alt: 'The Leading Hotels' },
+  { type: 'image' as const, src: '/images/clients/The-Ritz.webp', alt: 'The Ritz' },
+  { type: 'image' as const, src: '/images/clients/V-Man.webp', alt: 'V-Man' },
+  { type: 'image' as const, src: '/images/clients/Waldorf-Astoria.webp', alt: 'Waldorf Astoria' },
+]
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -40,6 +68,7 @@ export default async function HomePage({
           submitLabel={lang === 'ru' ? 'Запланировать поездку' : lang === 'de' ? 'Reise planen' : 'Plan My Trip'}
         />
         <AboutSection locale={lang} />
+        <ClientsCarousel items={CLIENT_LOGOS} speed={55} />
         <WhyUsSection
           title={t.whyus.title}
           body={t.whyus.body}

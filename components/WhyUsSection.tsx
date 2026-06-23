@@ -7,6 +7,8 @@ interface WhyUsSectionProps {
   col1: string[]
   col2: string[]
   contactsTitle: string
+  hideHeader?: boolean
+  noBackground?: boolean
   address?: string
   email: string
   phone: string
@@ -23,7 +25,7 @@ export default function WhyUsSection({
   title, body, col1, col2, contactsTitle,
   address, email, phone, phoneTel,
   whatsapp, whatsappLink, instagram, instagramLink,
-  locale, nav,
+  locale, nav, hideHeader = false, noBackground = false,
 }: WhyUsSectionProps) {
   const contacts = [
     { icon: '/images/tild6338-6432-4131-b064-313838333833__call.svg', text: phone, href: phoneTel },
@@ -40,45 +42,58 @@ export default function WhyUsSection({
 
   return (
     <section style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
-      <div className="ptc-whyus-bg" style={{
-        position: 'absolute', inset: 0, zIndex: 0,
-        backgroundImage: "url('/images/tild6638-6537-4132-a666-383131626462__istock-964566894.webp')",
-        backgroundSize: 'cover', backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-      }} />
-      <div style={{
-        position: 'absolute', inset: 0, zIndex: 1,
-        backgroundImage: 'linear-gradient(to bottom, rgba(31,75,133,1) 0%, rgba(31,75,133,0.65) 50%, rgba(31,75,133,1) 100%)',
-      }} />
+      {noBackground ? (
+        <div style={{
+          position: 'absolute', inset: 0, zIndex: 0,
+          backgroundImage: 'linear-gradient(rgb(31,75,133) 0%, rgba(31,75,133,0.65) 50%, rgb(31,75,133) 100%)',
+        }} />
+      ) : (
+        <>
+          <div className="ptc-whyus-bg" style={{
+            position: 'absolute', inset: 0, zIndex: 0,
+            backgroundImage: "url('/images/tild6638-6537-4132-a666-383131626462__istock-964566894.webp')",
+            backgroundSize: 'cover', backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+          }} />
+          <div style={{
+            position: 'absolute', inset: 0, zIndex: 1,
+            backgroundImage: 'linear-gradient(to bottom, rgba(31,75,133,1) 0%, rgba(31,75,133,0.65) 50%, rgba(31,75,133,1) 100%)',
+          }} />
+        </>
+      )}
 
       <div style={{
         position: 'relative', zIndex: 2,
         maxWidth: 1300, margin: '0 auto',
         padding: 'clamp(80px,10vw,120px) clamp(24px,4vw,80px)',
       }}>
-        <h2 style={{
-          fontFamily: 'PTCSans, Arial, sans-serif',
-          fontSize: 'clamp(22px,2.8vw,38px)',
-          fontWeight: 700, color: '#fff', marginBottom: 18,
-        }}>
-          {title}
-        </h2>
-        <p style={{
-          fontFamily: 'PTCSans, Arial, sans-serif',
-          fontSize: 'clamp(13px,1.4vw,20px)',
-          fontWeight: 300, color: 'rgba(255,255,255,0.75)',
-          lineHeight: 1.7, marginBottom: 56, maxWidth: 680,
-        }}>
-          {body}
-        </p>
+        {!hideHeader && (
+          <>
+            <h2 style={{
+              fontFamily: 'PTCSans, Arial, sans-serif',
+              fontSize: 'clamp(22px,2.8vw,38px)',
+              fontWeight: 700, color: '#fff', marginBottom: 18,
+            }}>
+              {title}
+            </h2>
+            <p style={{
+              fontFamily: 'PTCSans, Arial, sans-serif',
+              fontSize: 'clamp(13px,1.4vw,20px)',
+              fontWeight: 300, color: 'rgba(255,255,255,0.75)',
+              lineHeight: 1.7, marginBottom: 56, maxWidth: 680,
+            }}>
+              {body}
+            </p>
 
-        <div style={{
-          display: 'grid', gridTemplateColumns: '1fr 1fr',
-          gap: '14px 60px', marginBottom: 80,
-        }} className="ptc-whyus-benefits">
-          {col1.map((item, i) => <BenefitItem key={'a' + i} text={item} />)}
-          {col2.map((item, i) => <BenefitItem key={'b' + i} text={item} />)}
-        </div>
+            <div style={{
+              display: 'grid', gridTemplateColumns: '1fr 1fr',
+              gap: '14px 60px', marginBottom: 80,
+            }} className="ptc-whyus-benefits">
+              {col1.map((item, i) => <BenefitItem key={'a' + i} text={item} />)}
+              {col2.map((item, i) => <BenefitItem key={'b' + i} text={item} />)}
+            </div>
+          </>
+        )}
 
         <div style={{
           display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr',
@@ -177,7 +192,17 @@ export default function WhyUsSection({
                   fontFamily: 'PTCSans, Arial, sans-serif',
                   fontSize: 17, fontWeight: 400, color: '#fff',
                 }}>
-                <Image src={c.icon} alt="" width={28} height={28} style={{ flexShrink: 0 }} />
+                <div style={{ position: 'relative', flexShrink: 0 }}>
+                  <Image src={c.icon} alt="" width={28} height={28} />
+                  {locale === 'ru' && i === 2 && (
+                    <span style={{
+                      position: 'absolute', top: -5, right: -6,
+                      fontSize: 15, lineHeight: 1,
+                      color: 'rgb(232,176,0)',
+                      fontWeight: 700,
+                    }}>*</span>
+                  )}
+                </div>
                 {c.text}
               </a>
             ))}
@@ -191,13 +216,25 @@ export default function WhyUsSection({
           alignItems: 'center', justifyContent: 'space-between',
           gap: 12,
         }}>
-          <p style={{
-            fontFamily: 'PTCSans, Arial, sans-serif',
-            fontSize: 12, fontWeight: 300,
-            color: 'rgba(255,255,255,0.3)',
-          }}>
-            © {new Date().getFullYear()} Private Travel Club
-          </p>
+          <div>
+            <p style={{
+              fontFamily: 'PTCSans, Arial, sans-serif',
+              fontSize: 12, fontWeight: 300,
+              color: 'rgba(255,255,255,0.3)',
+            }}>
+              © {new Date().getFullYear()} Private Travel Club
+            </p>
+            {locale === 'ru' && (
+              <p style={{
+                fontFamily: 'PTCSans, Arial, sans-serif',
+                fontSize: 11, fontWeight: 300,
+                color: 'rgba(255,255,255,0.25)',
+                marginTop: 6, maxWidth: 480,
+              }}>
+                <span style={{ color: 'rgb(232,176,0)' }}>*</span> Instagram — продукт компании Meta Platforms Inc., деятельность которой признана экстремистской и запрещена на территории Российской Федерации.
+              </p>
+            )}
+          </div>
           <div style={{ display: 'flex', gap: 24 }}>
             <Link href={`/${locale}/privacy`} className="ptc-footer-nav-link" style={{
               fontFamily: 'PTCSans, Arial, sans-serif',
@@ -232,7 +269,7 @@ export default function WhyUsSection({
 function BenefitItem({ text }: { text: string }) {
   return (
     <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-      <span style={{ color: '#7aa3d4', fontSize: 16, lineHeight: 1.6, flexShrink: 0 }}>❖</span>
+      <span style={{ color: '#e8b000', fontSize: 16, lineHeight: 1.6, flexShrink: 0 }}>❖</span>
       <span style={{
         fontFamily: 'PTCSans, Arial, sans-serif',
         fontSize: 'clamp(13px,1.3vw,18px)',

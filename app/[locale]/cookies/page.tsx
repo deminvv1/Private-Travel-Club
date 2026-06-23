@@ -31,7 +31,7 @@ export default async function CookiesPage({ params }: { params: Promise<{ locale
         <section style={{ position: 'relative', width: '100%', minHeight: '100vh', overflow: 'hidden' }}>
           <div style={{
             position: 'absolute', inset: 0, zIndex: 0,
-            backgroundImage: "url('/images/luxurious-travel-des.webp')",
+            // backgroundImage: "url('/images/luxurious-travel-des.webp')",
             backgroundSize: 'cover', backgroundPosition: 'center',
           }} />
           <div style={{ position: 'absolute', inset: 0, zIndex: 1, backgroundImage: OVERLAY }} />
@@ -104,6 +104,8 @@ export default async function CookiesPage({ params }: { params: Promise<{ locale
           instagramLink={t.whyus.instagramLink}
           locale={lang}
           nav={t.nav}
+          hideHeader
+          noBackground
         />
       </main>
       <MobileFooter />

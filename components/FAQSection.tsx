@@ -12,7 +12,7 @@ export function FAQSection({ heading, faqs }: FAQSectionProps) {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
-    <section style={{ background: '#fafaf9', padding: 'clamp(64px,8vw,120px) 0' }}>
+    <section style={{ background: 'transparent', padding: 'clamp(64px,8vw,120px) 0' }}>
       <div style={{ maxWidth: 860, margin: '0 auto', padding: '0 clamp(24px,5vw,60px)' }}>
 
         <div style={{ marginBottom: 64 }}>
@@ -21,16 +21,16 @@ export function FAQSection({ heading, faqs }: FAQSectionProps) {
             fontSize: 11,
             letterSpacing: '0.22em',
             textTransform: 'uppercase',
-            color: '#a8a29e',
+            color: 'rgb(232,176,0)',
             marginBottom: 16,
           }}>
             FAQ
           </span>
           <h2 style={{
-            fontFamily: 'PTCSans, Arial, sans-serif',
+            fontFamily: 'var(--font-playfair)',
             fontSize: 'clamp(22px,2.6vw,36px)',
-            fontWeight: 300,
-            color: '#1c1917',
+            fontWeight: 400,
+            color: '#ffffff',
             lineHeight: 1.2,
             margin: 0,
           }}>
@@ -45,8 +45,8 @@ export function FAQSection({ heading, faqs }: FAQSectionProps) {
               <div
                 key={i}
                 style={{
-                  borderTop: i === 0 ? '1px solid #e7e5e4' : 'none',
-                  borderBottom: '1px solid #e7e5e4',
+                  borderTop: i === 0 ? '1px solid rgba(255,255,255,0.1)' : 'none',
+                  borderBottom: '1px solid rgba(255,255,255,0.1)',
                 }}
               >
                 <button
@@ -65,10 +65,10 @@ export function FAQSection({ heading, faqs }: FAQSectionProps) {
                   }}
                 >
                   <span style={{
-                    fontFamily: 'PTCSans, Arial, sans-serif',
+                    fontFamily: 'var(--font-hanken)',
                     fontSize: 'clamp(14px,1.2vw,17px)',
                     fontWeight: 400,
-                    color: '#1c1917',
+                    color: '#ffffff',
                     lineHeight: 1.4,
                     flex: 1,
                   }}>
@@ -79,14 +79,13 @@ export function FAQSection({ heading, faqs }: FAQSectionProps) {
                     flexShrink: 0,
                     width: 32,
                     height: 32,
-                    border: '1px solid #d6d3d1',
+                    border: `1px solid ${isOpen ? '#ffffff' : 'rgba(255,255,255,0.2)'}`,
                     borderRadius: '50%',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     transition: 'border-color 0.2s, background 0.2s',
-                    background: isOpen ? '#1c1917' : 'transparent',
-                    borderColor: isOpen ? '#1c1917' : '#d6d3d1',
+                    background: isOpen ? '#ffffff' : 'transparent',
                   }}>
                     <svg
                       width="12"
@@ -98,8 +97,8 @@ export function FAQSection({ heading, faqs }: FAQSectionProps) {
                         transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)',
                       }}
                     >
-                      <line x1="6" y1="0" x2="6" y2="12" stroke={isOpen ? '#fff' : '#78716c'} strokeWidth="1.2"/>
-                      <line x1="0" y1="6" x2="12" y2="6" stroke={isOpen ? '#fff' : '#78716c'} strokeWidth="1.2"/>
+                      <line x1="6" y1="0" x2="6" y2="12" stroke={isOpen ? '#0d0d0d' : 'rgba(255,255,255,0.5)'} strokeWidth="1.2"/>
+                      <line x1="0" y1="6" x2="12" y2="6" stroke={isOpen ? '#0d0d0d' : 'rgba(255,255,255,0.5)'} strokeWidth="1.2"/>
                     </svg>
                   </span>
                 </button>
@@ -110,10 +109,10 @@ export function FAQSection({ heading, faqs }: FAQSectionProps) {
                   transition: 'max-height 0.4s cubic-bezier(0.4,0,0.2,1)',
                 }}>
                   <p style={{
-                    fontFamily: 'PTCSans, Arial, sans-serif',
+                    fontFamily: 'var(--font-hanken)',
                     fontSize: 'clamp(13px,1.1vw,16px)',
                     fontWeight: 300,
-                    color: '#78716c',
+                    color: 'rgba(255,255,255,0.75)',
                     lineHeight: 1.75,
                     margin: 0,
                     paddingBottom: 28,
