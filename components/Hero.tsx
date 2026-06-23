@@ -16,7 +16,7 @@ export default function Hero({ locale = 'en' }: { locale?: string }) {
           width: '100%', height: '100%',
           objectFit: 'cover', zIndex: 0,
         }}>
-        <source src="/video/hero-new.mp4" type="video/mp4" />
+        <source src="/video/hero.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}
