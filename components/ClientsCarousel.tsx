@@ -13,7 +13,7 @@ interface ClientsCarouselProps {
 }
 
 export default function ClientsCarousel({
-  label = 'OUR CLIENTS',
+  label = 'OUR PARTNERS',
   items,
   speed = 30,
 }: ClientsCarouselProps) {

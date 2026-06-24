@@ -146,7 +146,7 @@ export default function WhyUsSection({
                 {locale === 'ru' ? ru : locale === 'de' ? de : en}
               </Link>
             ))}
-            <div style={{ borderTop: '1px solid rgba(255,255,255,0.12)', margin: '4px 0' }} />
+            <div style={{ borderTop: '1px solid rgba(255,255,255,0.65)', margin: '4px 0' }} />
             {[
               { slug: 'dubai',          en: 'Dubai',          ru: 'Дубай',          de: 'Dubai' },
               { slug: 'french-riviera', en: 'French Riviera', ru: 'Лазурный берег', de: 'Côte d\'Azur' },
