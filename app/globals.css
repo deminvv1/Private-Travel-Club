@@ -9,6 +9,14 @@
   src: url('/fonts/ptc-sans.woff2') format('woff2');
 }
 
+section {
+  margin: 0;
+}
+
+main > * + * {
+  margin-top: -5px;
+}
+
 :root {
   --font-playfair: 'Playfair Display', Georgia, serif;
   --font-hanken: 'Hanken Grotesk', Arial, sans-serif;

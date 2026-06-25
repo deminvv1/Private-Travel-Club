@@ -40,8 +40,8 @@ export default function PlanTripSection({
 
   return (
     <section style={{
-      background: '#0e1321',
-      borderTop: '1px solid rgba(255,255,255,0.08)',
+      background: 'linear-gradient(to bottom, rgb(31,75,133) 0%, #0e1321 320px, #0e1321 calc(100% - 320px), rgb(31,75,133) 100%)',
+      position: 'relative',
     }}>
       <div style={{
         maxWidth: 1300, margin: '0 auto',

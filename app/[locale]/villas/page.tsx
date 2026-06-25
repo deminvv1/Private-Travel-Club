@@ -72,7 +72,7 @@ export default async function VillasPage({ params }: { params: Promise<{ locale:
         </section>
 
         {/* ── CONTACT ── */}
-        <div id="contact">
+        <div id="contact" style={{ background: 'rgb(31,75,133)' }}>
           <PlanTripSection
             locale={lang}
             label={lang === 'ru' ? 'Виллы и резиденции' : lang === 'de' ? 'Villen & Residenzen' : 'Private Residences & Villas'}
@@ -89,7 +89,7 @@ export default async function VillasPage({ params }: { params: Promise<{ locale:
         </div>
 
         {/* ── BACK ── */}
-        <div style={{ background: '#1f4b85', textAlign: 'center', padding: '32px 24px' }}>
+        <div style={{ background: '#1f4b85', textAlign: 'center', padding: '32px 24px', borderBottom: '6px solid #1f4b85' }}>
           <Link href={`/${lang}`} className="ptc-back-link" style={{ fontFamily: 'var(--font-hanken)', fontSize: 13, fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>
             {getT(lang).nav.back}
           </Link>

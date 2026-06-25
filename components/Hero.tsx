@@ -25,6 +25,14 @@ export default function Hero({ locale = 'en' }: { locale?: string }) {
         background: 'rgba(31,75,133,0.6)',
       }} />
 
+      {/* Bottom fade to next section */}
+      <div style={{
+        position: 'absolute', bottom: 0, left: 0, right: 0,
+        height: '20%', zIndex: 2,
+        background: 'linear-gradient(to bottom, transparent, rgb(31,75,133))',
+        pointerEvents: 'none',
+      }} />
+
       {/* Centered content */}
       <div style={{
         position: 'relative', zIndex: 2,

@@ -30,6 +30,11 @@ export function HeroSection({
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+      <div style={{
+        position: 'absolute', bottom: 0, left: 0, right: 0,
+        height: '35%', pointerEvents: 'none',
+        background: 'linear-gradient(to bottom, transparent, rgb(31,75,133))',
+      }} />
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-6 pb-16 md:pb-24">
         <h1 className="text-4xl md:text-6xl font-light text-white mb-6 leading-tight">

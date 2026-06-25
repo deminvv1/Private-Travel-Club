@@ -3,20 +3,20 @@ import Link from 'next/link'
 import { getT } from '@/lib/i18n'
 
 const CARDS = [
-  {
-    key: 'villas',
-    image: '/images/Premium-villas.webp',
-    href: '/villas',
+    {
+    key: 'jets',
+    image: '/images/jets.webp',
+    href: '/jets',
     offset: false,
     desc: {
-      en: 'Architecturally significant estates in the world\'s most coveted locations.',
-      ru: 'Архитектурно выдающиеся резиденции в самых желанных уголках мира.',
-      de: 'Architektonisch bedeutende Anwesen an den begehrtesten Orten der Welt.',
+      en: 'Seamless global transit tailored to your most demanding itineraries.',
+      ru: 'Безупречные перелёты по всему миру под самые требовательные маршруты.',
+      de: 'Nahtlose weltweite Transfers, zugeschnitten auf Ihre anspruchsvollsten Reisepläne.',
     },
   },
   {
     key: 'yachts',
-    image: '/images/yachts.webp',
+    image: '/images/yachts1.webp',
     href: '/yachts',
     offset: true,
     desc: {
@@ -26,14 +26,14 @@ const CARDS = [
     },
   },
   {
-    key: 'jets',
-    image: '/images/jets.webp',
-    href: '/jets',
+    key: 'villas',
+    image: '/images/Premium-villas.webp',
+    href: '/villas',
     offset: false,
     desc: {
-      en: 'Seamless global transit tailored to your most demanding itineraries.',
-      ru: 'Безупречные перелёты по всему миру под самые требовательные маршруты.',
-      de: 'Nahtlose weltweite Transfers, zugeschnitten auf Ihre anspruchsvollsten Reisepläne.',
+      en: 'Architecturally significant estates in the world\'s most coveted locations.',
+      ru: 'Архитектурно выдающиеся резиденции в самых желанных уголках мира.',
+      de: 'Architektonisch bedeutende Anwesen an den begehrtesten Orten der Welt.',
     },
   },
   {
@@ -102,7 +102,6 @@ export default function ServiceCardsSection({ locale }: { locale: string }) {
         .ptc-scard {
           position: relative;
           aspect-ratio: 3 / 4;
-          border: 1px solid rgba(255,255,255,0.12);
           overflow: hidden;
           display: block;
           text-decoration: none;

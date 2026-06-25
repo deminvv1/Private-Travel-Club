@@ -42,7 +42,8 @@ export default async function YachtsPage({ params }: { params: Promise<{ locale:
             <p className="stitch-body-lg" style={{ color: 'rgba(255,255,255,0.8)', marginBottom: 40, maxWidth: 480, margin: '0 auto 40px' }}>{t.subtitle}</p>
             <a href="#contact" className="ptc-cta-btn">{t.cta}</a>
           </div>
-          <div style={{ position: 'absolute', bottom: 28, left: '50%', transform: 'translateX(-50%)', zIndex: 2 }}>
+          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '35%', zIndex: 1, pointerEvents: 'none', background: 'linear-gradient(to bottom, transparent, rgb(31,75,133))' }} />
+          <div style={{ position: 'absolute', bottom: 28, left: '50%', transform: 'translateX(-50%)', zIndex: 3 }}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style={{ opacity: 0.4, animation: 'ptc-bounce 2s ease-in-out infinite' }}>
               <path d="M6 9l6 6 6-6" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -53,7 +54,7 @@ export default async function YachtsPage({ params }: { params: Promise<{ locale:
         <YachtFleetSection locale={lang} />
 
         {/* ── CONTACT ── */}
-        <div id="contact">
+        <div id="contact" style={{ background: 'rgb(31,75,133)' }}>
           <PlanTripSection
             locale={lang}
             label={lang === 'ru' ? 'Премиальные Яхты ' : lang === 'de' ? 'Luxusyachten' : 'Luxury Yachts'}
@@ -70,7 +71,7 @@ export default async function YachtsPage({ params }: { params: Promise<{ locale:
         </div>
 
         {/* ── BACK ── */}
-        <div style={{ background: '#1f4b85', textAlign: 'center', padding: '32px 24px' }}>
+        <div style={{ background: '#1f4b85', textAlign: 'center', padding: '32px 24px', borderBottom: '2px solid #1f4b85' }}>
           <Link href={`/${lang}`} className="ptc-back-link" style={{ fontFamily: 'PTCSans, Arial, sans-serif', fontSize: 13, fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>
             {getT(lang).nav.back}
           </Link>

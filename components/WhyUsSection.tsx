@@ -34,14 +34,14 @@ export default function WhyUsSection({
   ]
 
   const navLinks = [
-    { label: nav.villas, href: `/${locale}/villas` },
-    { label: nav.yachts, href: `/${locale}/yachts` },
     { label: nav.jets, href: `/${locale}/jets` },
+    { label: nav.yachts, href: `/${locale}/yachts` },
+    { label: nav.villas, href: `/${locale}/villas` },
     { label: nav.concierge, href: `/${locale}/concierge` },
   ]
 
   return (
-    <section style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
+    <section style={{ position: 'relative', width: '100%', overflow: 'hidden', background: 'rgb(31,75,133)' }}>
       {noBackground ? (
         <div style={{
           position: 'absolute', inset: 0, zIndex: 0,
@@ -78,7 +78,7 @@ export default function WhyUsSection({
             </h2>
             <p style={{
               fontFamily: 'PTCSans, Arial, sans-serif',
-              fontSize: 'clamp(13px,1.4vw,20px)',
+              fontSize: 'clamp(17px,1.4vw,20px)',
               fontWeight: 300, color: 'rgba(255,255,255,0.75)',
               lineHeight: 1.7, marginBottom: 56, maxWidth: 680,
             }}>
@@ -272,7 +272,7 @@ function BenefitItem({ text }: { text: string }) {
       <span style={{ color: '#e8b000', fontSize: 16, lineHeight: 1.6, flexShrink: 0 }}>❖</span>
       <span style={{
         fontFamily: 'PTCSans, Arial, sans-serif',
-        fontSize: 'clamp(13px,1.3vw,18px)',
+        fontSize: 'clamp(15px,1.3vw,18px)',
         fontWeight: 600, color: '#fff', lineHeight: 1.6,
       }}>
         {text}

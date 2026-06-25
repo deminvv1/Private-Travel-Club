@@ -3,7 +3,7 @@
 import Image from 'next/image'
 
 type CarouselItem =
-  | { type: 'image'; src: string; alt: string }
+  | { type: 'image'; src: string; alt: string; imgStyle?: React.CSSProperties; imgWidth?: number; imgHeight?: number }
   | { type: 'text'; name: string }
 
 interface ClientsCarouselProps {
@@ -20,7 +20,7 @@ export default function ClientsCarousel({
   const track = [...items, ...items]
 
   return (
-    <section style={{ background: 'rgb(14, 19, 33)', overflow: 'hidden', padding: '48px 0' }}>
+    <section style={{ background: 'linear-gradient(to bottom, rgb(31,75,133) 0%, rgb(27,60,110) 10%, rgb(20,42,80) 20%, rgb(16,28,55) 30%, rgb(14,19,33) 42%, rgb(14,19,33) 58%, rgb(16,28,55) 70%, rgb(20,42,80) 80%, rgb(27,60,110) 90%, rgb(31,75,133) 100%)', overflow: 'hidden', padding: '10px 0 80px 0px',  }}>
       {label && (
         <p style={{
           textAlign: 'center',
@@ -39,12 +39,10 @@ export default function ClientsCarousel({
       <div style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
         <div style={{
           position: 'absolute', left: 0, top: 0, bottom: 0, width: 120, zIndex: 2,
-          background: 'linear-gradient(to right, rgb(14,19,33), transparent)',
           pointerEvents: 'none',
         }} />
         <div style={{
           position: 'absolute', right: 0, top: 0, bottom: 0, width: 120, zIndex: 2,
-          background: 'linear-gradient(to left, rgb(14,19,33), transparent)',
           pointerEvents: 'none',
         }} />
 
@@ -54,37 +52,41 @@ export default function ClientsCarousel({
           width: 'max-content',
           animation: `ptc-scroll ${speed}s linear infinite`,
         }}>
-          {track.map((item, i) => (
-            <div key={i} style={{
-              flexShrink: 0,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              height: 100,
-            }}>
-              {'src' in item ? (
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  width={160}
-                  height={100}
-                  style={{ objectFit: 'contain', maxHeight: 100 }}
-                />
-              ) : (
-                <span style={{
-                  fontFamily: 'var(--font-hanken)',
-                  fontSize: 15,
-                  fontWeight: 400,
-                  letterSpacing: '0.15em',
-                  textTransform: 'uppercase',
-                  color: '#ffffff',
-                  whiteSpace: 'nowrap',
-                }}>
-                  {item.name}
-                </span>
-              )}
-            </div>
-          ))}
+          {track.map((item, i) => {
+            const w = 'imgWidth' in item && item.imgWidth ? item.imgWidth : 280
+            const h = 'imgHeight' in item && item.imgHeight ? item.imgHeight : 180
+            return (
+              <div key={i} style={{
+                flexShrink: 0,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                height: 180,
+              }}>
+                {'src' in item ? (
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    width={w}
+                    height={h}
+                    style={{ objectFit: 'contain', ...item.imgStyle }}
+                  />
+                ) : (
+                  <span style={{
+                    fontFamily: 'var(--font-hanken)',
+                    fontSize: 15,
+                    fontWeight: 400,
+                    letterSpacing: '0.15em',
+                    textTransform: 'uppercase',
+                    color: '#ffffff',
+                    whiteSpace: 'nowrap',
+                  }}>
+                    {item.name}
+                  </span>
+                )}
+              </div>
+            )
+          })}
         </div>
       </div>
 

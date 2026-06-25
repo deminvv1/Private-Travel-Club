@@ -61,7 +61,8 @@ export default async function ConciergePage({
             <p className="stitch-body-lg" style={{ color: 'rgba(255,255,255,0.8)', marginBottom: 40, maxWidth: 480, margin: '0 auto 40px' }}>{t.subtitle}</p>
             <a href="#contact" className="ptc-cta-btn">{t.cta}</a>
           </div>
-          <div style={{ position: 'absolute', bottom: 28, left: '50%', transform: 'translateX(-50%)', zIndex: 2 }}>
+          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '35%', zIndex: 1, pointerEvents: 'none', background: 'linear-gradient(to bottom, transparent, #0e1321)' }} />
+          <div style={{ position: 'absolute', bottom: 28, left: '50%', transform: 'translateX(-50%)', zIndex: 3 }}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style={{ opacity: 0.4, animation: 'ptc-bounce 2s ease-in-out infinite' }}>
               <path d="M6 9l6 6 6-6" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -72,7 +73,7 @@ export default async function ConciergePage({
         <section style={{ background: '#0e1321', padding: 'clamp(80px,10vw,120px) clamp(24px,4vw,80px)' }}>
           <div style={{ maxWidth: 1300, margin: '0 auto' }} className="ptc-conc-intro">
             <div>
-              <h2 className="stitch-headline-lg" style={{ color: '#a8c8ff', lineHeight: 1.15 }}>
+              <h2 className="stitch-headline-lg" style={{lineHeight: 1.15 }}>
                 {lang === 'ru' ? <>Определяется<br />дискрецией.</> : lang === 'de' ? <>Definiert durch<br />Diskretion.</> : <>Defined by<br />Discretion.</>}
               </h2>
             </div>
@@ -110,7 +111,7 @@ export default async function ConciergePage({
                       {String(i + 1).padStart(2, '0')}{cat ? ` / ${cat}` : ''}
                     </span>
                     <h3 className="stitch-headline-md" style={{ color: '#fff', marginBottom: 24 }}>{f.title}</h3>
-                    <p className="stitch-body-md" style={{ color: 'rgba(150,188,254,0.85)' }}>{f.text}</p>
+                    <p className="stitch-body-md">{f.text}</p>
                   </div>
                 </div>
               )
@@ -127,6 +128,8 @@ export default async function ConciergePage({
               style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.28)' }}
             />
           </div>
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '40%', zIndex: 2, pointerEvents: 'none', background: 'linear-gradient(to bottom, #0e1321, transparent)' }} />
+          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '40%', zIndex: 2, pointerEvents: 'none', background: 'linear-gradient(to bottom, transparent, rgb(31,75,133))' }} />
           <div style={{ position: 'relative', zIndex: 10, textAlign: 'center', maxWidth: 900, padding: '0 clamp(24px,4vw,80px)' }}>
             <h2 className="stitch-display" style={{ color: '#fff', fontStyle: 'italic', lineHeight: 1.2, fontSize: 'clamp(24px, 3vw, 42px)' }}>
               {lang === 'ru'
@@ -139,7 +142,7 @@ export default async function ConciergePage({
         </section>
 
         {/* ── CONTACT ── */}
-        <div id="contact">
+        <div id="contact" style={{ background: 'rgb(31,75,133)' }}>
           <PlanTripSection
             locale={lang}
             label={lang === 'ru' ? 'Консьерж-Сервис' : lang === 'de' ? 'Concierge-Service' : 'Concierge Private Service'}
@@ -156,7 +159,7 @@ export default async function ConciergePage({
         </div>
 
         {/* ── BACK ── */}
-        <div style={{ background: '#1f4b85', textAlign: 'center', padding: '32px 24px' }}>
+        <div style={{ background: '#1f4b85', textAlign: 'center', padding: '32px 24px', borderBottom: '5px solid #1f4b85' }}>
           <Link
             href={`/${lang}`}
             className="ptc-back-link"

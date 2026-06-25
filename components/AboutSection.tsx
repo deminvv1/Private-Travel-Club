@@ -7,7 +7,6 @@ export default function AboutSection({ locale }: { locale: string }) {
   return (
     <section id="about" style={{
       background: '#1f4b85',
-      borderTop: '1px solid rgba(255,255,255,0.08)',
     }}>
       <div style={{
         maxWidth: 1300, margin: '0 auto',
