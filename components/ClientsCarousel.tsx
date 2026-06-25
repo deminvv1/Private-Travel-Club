@@ -52,8 +52,8 @@ export default function ClientsCarousel({
           width: 'max-content',
           animation: `ptc-scroll ${speed}s linear infinite`,
           willChange: 'transform',
-          transform: 'translateZ(0)',
           backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
         }}>
           {track.map((item, i) => {
             const w = 'imgWidth' in item && item.imgWidth ? item.imgWidth : 280
@@ -95,8 +95,8 @@ export default function ClientsCarousel({
 
       <style>{`
         @keyframes ptc-scroll {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          0%   { transform: translate3d(0, 0, 0); }
+          100% { transform: translate3d(-50%, 0, 0); }
         }
       `}</style>
     </section>
