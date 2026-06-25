@@ -18,7 +18,7 @@ const CLIENT_LOGOS = [
   { type: 'image' as const, src: '/images/clients/Cheval-Blanc.svg', alt: 'Cheval-Blanc' },
   { type: 'image' as const, src: '/images/clients/Belmond.webp', alt: 'Belmond' },
   { type: 'image' as const, src: '/images/clients/Le-Reserve.svg', alt: 'Le-Reserve' },
-  { type: 'image' as const, src: '/images/clients/Bvlgari.webp', alt: 'Bvlgari' },
+  { type: 'image' as const, src: '/images/clients/Bvlgari.svg', alt: 'Bvlgari' },
   { type: 'image' as const, src: '/images/clients/Rocco-Forte-Hotels.svg', alt: 'Rocco-Forte-Hotels' },
   { type: 'image' as const, src: '/images/clients/Four-Seasons.webp', alt: 'Four Seasons' },
   { type: 'image' as const, src: '/images/clients/Joali.svg', alt: 'Joali' },

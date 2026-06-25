@@ -4,6 +4,7 @@ const nextConfig = {
   poweredByHeader: false,
   images: {
     formats: ['image/webp', 'image/avif'],
+    qualities: [75, 100],
     remotePatterns: [
       { protocol: 'https', hostname: 'flagcdn.com' },
       { protocol: 'https', hostname: 'images.unsplash.com' },

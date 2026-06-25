@@ -26,15 +26,23 @@ export default function ClientsCarousel({
     const track = trackRef.current
     if (!track) return
 
-    let halfWidth = track.scrollWidth / 2 + 32 // 32 = gap/2 (gap is 64px)
+    // Measure exact loop width: distance from first item to its duplicate
+    const firstItem = track.children[0] as HTMLElement
+    const firstCopy = track.children[items.length] as HTMLElement
+    if (!firstItem || !firstCopy) return
+
+    const loopWidth = firstCopy.getBoundingClientRect().left - firstItem.getBoundingClientRect().left
+    if (loopWidth <= 0) return
+
+    const pxPerMs = loopWidth / (speed * 1000)
     let lastTime: number | null = null
 
     const animate = (time: number) => {
       if (lastTime !== null) {
-        const pxPerMs = halfWidth / (speed * 1000)
-        offsetRef.current += pxPerMs * (time - lastTime)
-        if (offsetRef.current >= halfWidth) {
-          offsetRef.current -= halfWidth
+        const delta = Math.min(time - lastTime, 100)
+        offsetRef.current += pxPerMs * delta
+        if (offsetRef.current >= loopWidth) {
+          offsetRef.current -= loopWidth
         }
         track.style.transform = `translateX(-${offsetRef.current}px)`
       }
@@ -44,7 +52,7 @@ export default function ClientsCarousel({
 
     rafRef.current = requestAnimationFrame(animate)
     return () => cancelAnimationFrame(rafRef.current)
-  }, [speed])
+  }, [speed, items.length])
 
   const doubled = [...items, ...items]
 
@@ -98,7 +106,8 @@ export default function ClientsCarousel({
                     alt={item.alt}
                     width={w}
                     height={h}
-                    style={{ objectFit: 'contain', ...item.imgStyle }}
+                    quality={100}
+                    style={{ objectFit: 'contain', filter: 'contrast(1.15)', ...item.imgStyle }}
                   />
                 ) : (
                   <span style={{
