@@ -68,7 +68,7 @@ export default async function HomePage({
           submitLabel={lang === 'ru' ? 'Запланировать поездку' : lang === 'de' ? 'Reise planen' : 'Plan My Trip'}
         />
         <AboutSection locale={lang} />
-        <ClientsCarousel items={CLIENT_LOGOS} speed={55} />
+        <ClientsCarousel items={CLIENT_LOGOS} speed={80} />
         <WhyUsSection
           title={t.whyus.title}
           body={t.whyus.body}

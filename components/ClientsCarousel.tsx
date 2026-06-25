@@ -26,25 +26,28 @@ export default function ClientsCarousel({
     const track = trackRef.current
     if (!track) return
 
-    // Measure exact loop width: distance from first item to its duplicate
-    const firstItem = track.children[0] as HTMLElement
-    const firstCopy = track.children[items.length] as HTMLElement
-    if (!firstItem || !firstCopy) return
-
-    const loopWidth = firstCopy.getBoundingClientRect().left - firstItem.getBoundingClientRect().left
-    if (loopWidth <= 0) return
-
-    const pxPerMs = loopWidth / (speed * 1000)
+    // Measure after first paint so layout is stable
+    let loopWidth = 0
+    let pxPerMs = 0
     let lastTime: number | null = null
 
     const animate = (time: number) => {
-      if (lastTime !== null) {
+      if (loopWidth === 0) {
+        const firstItem = track.children[0] as HTMLElement
+        const firstCopy = track.children[items.length] as HTMLElement
+        if (firstItem && firstCopy) {
+          loopWidth = Math.round(firstCopy.getBoundingClientRect().left - firstItem.getBoundingClientRect().left)
+          pxPerMs = loopWidth / (speed * 1000)
+        }
+      }
+
+      if (lastTime !== null && loopWidth > 0) {
         const delta = Math.min(time - lastTime, 100)
         offsetRef.current += pxPerMs * delta
         if (offsetRef.current >= loopWidth) {
-          offsetRef.current -= loopWidth
+          offsetRef.current = offsetRef.current % loopWidth
         }
-        track.style.transform = `translateX(-${offsetRef.current}px)`
+        track.style.transform = `translate3d(-${Math.round(offsetRef.current)}px, 0, 0)`
       }
       lastTime = time
       rafRef.current = requestAnimationFrame(animate)
