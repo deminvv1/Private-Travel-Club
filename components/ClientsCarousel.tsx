@@ -51,6 +51,9 @@ export default function ClientsCarousel({
           gap: 64,
           width: 'max-content',
           animation: `ptc-scroll ${speed}s linear infinite`,
+          willChange: 'transform',
+          transform: 'translateZ(0)',
+          backfaceVisibility: 'hidden',
         }}>
           {track.map((item, i) => {
             const w = 'imgWidth' in item && item.imgWidth ? item.imgWidth : 280
