@@ -47,7 +47,7 @@ export default function ClientsCarousel({
       <div style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
         <div style={{
           display: 'flex',
-          gap: 32,
+          gap: 64,
           width: 'max-content',
           animation: `ptc-marquee ${duration} linear infinite`,
         }}>
