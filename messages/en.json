@@ -14,6 +14,7 @@
     "navigationTitle": "Navigation",
     "privacyPolicy": "Privacy Policy",
     "cookiePolicy": "Cookie Policy",
+    "impressum": "Legal Notice",
     "about": "About"
   },
   "header": {
@@ -282,42 +283,6 @@
   "privacy": {
     "title": "Privacy Policy",
     "sections": [
-      {
-        "heading": "Legal Notice (Impressum)",
-        "body": [
-          "Jürgen Eberth",
-          "Private Travel Club",
-          "Sudetenstr. 12",
-          "96250 Ebensfeld"
-        ]
-      },
-      {
-        "heading": "Contact",
-        "body": [
-          "Phone: +49 151 42357021",
-          "Email: contact@private-travel-club.com"
-        ]
-      },
-      {
-        "heading": "VAT Identification Number",
-        "body": [
-          "VAT Identification Number in accordance with § 27 a of the German VAT Act: DE332077689"
-        ]
-      },
-      {
-        "heading": "Editorially Responsible",
-        "body": [
-          "Jürgen Eberth",
-          "Sudetenstr. 12",
-          "96250 Ebensfeld"
-        ]
-      },
-      {
-        "heading": "Consumer Dispute Resolution",
-        "body": [
-          "We participate in a dispute resolution procedure before a consumer arbitration board. The responsible body is the Universalschlichtungsstelle des Zentrums für Schlichtung e.V., Straßburger Straße 8, 77694 Kehl am Rhein (https://www.verbraucher-schlichter.de)."
-        ]
-      },
       {
         "heading": "1. Privacy at a Glance",
         "body": [

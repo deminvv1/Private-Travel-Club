@@ -18,7 +18,7 @@ interface WhyUsSectionProps {
   instagram: string
   instagramLink: string
   locale: string
-  nav: { villas: string; yachts: string; jets: string; concierge: string; navigationTitle: string; privacyPolicy: string; cookiePolicy: string }
+  nav: { villas: string; yachts: string; jets: string; concierge: string; navigationTitle: string; privacyPolicy: string; cookiePolicy: string; impressum: string }
 }
 
 export default function WhyUsSection({
@@ -243,6 +243,14 @@ export default function WhyUsSection({
               textDecoration: 'none', transition: 'color 0.2s',
             }}>
               {nav.privacyPolicy}
+            </Link>
+            <Link href={`/${locale}/impressum`} className="ptc-footer-nav-link" style={{
+              fontFamily: 'PTCSans, Arial, sans-serif',
+              fontSize: 12, fontWeight: 400,
+              color: 'rgba(255,255,255,0.35)',
+              textDecoration: 'none', transition: 'color 0.2s',
+            }}>
+              {nav.impressum}
             </Link>
             <Link href={`/${locale}/cookies`} className="ptc-footer-nav-link" style={{
               fontFamily: 'PTCSans, Arial, sans-serif',
