@@ -5,7 +5,7 @@ import { getT } from '@/lib/i18n'
 const CARDS = [
     {
     key: 'jets',
-    image: '/images/jets.webp',
+    image: '/images/jets-new.webp',
     href: '/jets',
     offset: false,
     desc: {
