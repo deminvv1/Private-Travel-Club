@@ -283,6 +283,42 @@
     "title": "Privacy Policy",
     "sections": [
       {
+        "heading": "Legal Notice (Impressum)",
+        "body": [
+          "Jürgen Eberth",
+          "Private Travel Club",
+          "Sudetenstr. 12",
+          "96250 Ebensfeld"
+        ]
+      },
+      {
+        "heading": "Contact",
+        "body": [
+          "Phone: +49 151 42357021",
+          "Email: contact@private-travel-club.com"
+        ]
+      },
+      {
+        "heading": "VAT Identification Number",
+        "body": [
+          "VAT Identification Number in accordance with § 27 a of the German VAT Act: DE332077689"
+        ]
+      },
+      {
+        "heading": "Editorially Responsible",
+        "body": [
+          "Jürgen Eberth",
+          "Sudetenstr. 12",
+          "96250 Ebensfeld"
+        ]
+      },
+      {
+        "heading": "Consumer Dispute Resolution",
+        "body": [
+          "We participate in a dispute resolution procedure before a consumer arbitration board. The responsible body is the Universalschlichtungsstelle des Zentrums für Schlichtung e.V., Straßburger Straße 8, 77694 Kehl am Rhein (https://www.verbraucher-schlichter.de)."
+        ]
+      },
+      {
         "heading": "1. Privacy at a Glance",
         "body": [
           "General information: The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data by which you can be personally identified. For detailed information on data protection, please refer to our Privacy Policy below.",
@@ -307,7 +343,7 @@
         "heading": "3. General Information and Mandatory Disclosures",
         "body": [
           "Data protection: The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with statutory data protection regulations and this Privacy Policy. When you use this website, various personal data is collected. Personal data is data with which you can be personally identified. This Privacy Policy explains what data we collect and what we use it for. It also explains how and for what purpose this takes place. We would like to point out that data transmission over the internet (e.g. when communicating by email) may be subject to security vulnerabilities. Complete protection of data against access by third parties is not possible.",
-          "Notice regarding the responsible party: The party responsible for data processing on this website is: Jürgen Eberth, Private Travel Club, Sudetenstr. 12, 96250 Ebensfeld, Germany. Phone: +49 (0) 151-42357021. E-mail: contact@private-travel-club.com. The responsible party is the natural or legal person who, alone or jointly with others, decides on the purposes and means of processing personal data (e.g. names, email addresses).",
+          "Notice regarding the responsible party: The party responsible for data processing on this website is: Jürgen Eberth, Private Travel Club, Sudetenstr. 12, 96250 Ebensfeld, Germany. Phone: +49 151 42357021. E-mail: contact@private-travel-club.com. The responsible party is the natural or legal person who, alone or jointly with others, decides on the purposes and means of processing personal data (e.g. names, email addresses).",
           "Storage duration: Unless a more specific storage period has been stated in this Privacy Policy, your personal data will remain with us until the purpose for data processing no longer applies. If you assert a legitimate request for deletion or revoke your consent to data processing, your data will be deleted unless we have other legally permissible reasons for storing your personal data (e.g. retention periods under tax or commercial law); in the latter case, deletion takes place after these reasons cease to apply.",
           "Legal bases for data processing on this website: Where you have consented to data processing, we process your personal data on the basis of Art. 6(1)(a) GDPR or Art. 9(2)(a) GDPR where special categories of data are processed pursuant to Art. 9(1) GDPR. In the case of an express consent to the transfer of personal data to third countries, data processing is also carried out on the basis of Art. 49(1)(a) GDPR. Where you have consented to the storage of cookies or access to information on your device (e.g. via device fingerprinting), processing is additionally based on § 25(1) TDDDG. Consent can be revoked at any time. Where data is required for the performance of a contract or for pre-contractual measures, we process your data on the basis of Art. 6(1)(b) GDPR. Furthermore, we process your data where required to fulfil a legal obligation on the basis of Art. 6(1)(c) GDPR. Data processing may also be carried out on the basis of our legitimate interests pursuant to Art. 6(1)(f) GDPR.",
           "Recipients of personal data: In the course of our business activities, we work with various external parties. In doing so, it is sometimes necessary to transfer personal data to these external parties. We only pass on personal data to external parties where this is necessary for the performance of a contract, where we are legally obliged to do so (e.g. disclosure to tax authorities), where we have a legitimate interest in doing so pursuant to Art. 6(1)(f) GDPR, or where another legal basis permits the transfer. When using processors, we only pass on personal data of our customers on the basis of a valid data processing agreement. In the case of joint processing, a joint processing agreement is concluded.",
@@ -345,7 +381,8 @@
         "body": [
           "Google Tag Manager / Google Analytics: This website uses Google Tag Manager and Google Analytics, services provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Google Analytics uses cookies that enable analysis of your use of the website. The information generated by the cookie about your use of this website is generally transmitted to and stored on a server of Google in the USA.",
           "The use of Google Analytics is based on Art. 6(1)(f) GDPR. The website operator has a legitimate interest in analysing user behaviour in order to optimise both its website and its advertising. Where appropriate consent has been obtained, processing is carried out exclusively on the basis of Art. 6(1)(a) GDPR. Consent can be revoked at any time.",
-          "The company holds a certification under the 'EU-US Data Privacy Framework' (DPF). For further information on how Google handles user data, please refer to Google's Privacy Policy: https://policies.google.com/privacy"
+          "The company holds a certification under the 'EU-US Data Privacy Framework' (DPF). For further information on how Google handles user data, please refer to Google's Privacy Policy: https://policies.google.com/privacy",
+          "Yandex.Metrica: This website also uses Yandex.Metrica, a web analytics service provided by Yandex LLC, Ulitsa Lva Tolstogo 16, Moscow, Russia. Yandex.Metrica uses cookies to analyse user behaviour. Data collected is stored on Yandex servers in Russia. As Russia does not provide an equivalent level of data protection to the EU, the transfer of data is carried out on the basis of your explicit consent in accordance with Art. 49(1)(a) GDPR. Consent may be withdrawn at any time. For more information: https://yandex.ru/legal/confidential"
         ]
       }
     ]

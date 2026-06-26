@@ -16,8 +16,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   }
 }
 
-const OVERLAY = 'linear-gradient(to bottom, rgba(31,75,133,1) 0%, rgba(31,75,133,0.65) 50%, rgba(31,75,133,1) 100%)'
-
 export default async function PrivacyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const lang = isValidLocale(locale) ? locale : DEFAULT_LOCALE
@@ -28,16 +26,8 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
     <>
       <Header locale={lang} />
       <main>
-        <section style={{ position: 'relative', width: '100%', minHeight: '100vh', overflow: 'hidden' }}>
+        <section style={{ background: 'rgb(31,75,133)' }}>
           <div style={{
-            position: 'absolute', inset: 0, zIndex: 0,
-            // backgroundImage: "url('/images/tild6638-6537-4132-a666-383131626462__istock-964566894.webp')",
-            backgroundSize: 'cover', backgroundPosition: 'center',
-          }} />
-          <div style={{ position: 'absolute', inset: 0, zIndex: 1, backgroundImage: OVERLAY }} />
-
-          <div style={{
-            position: 'relative', zIndex: 2,
             maxWidth: 860, margin: '0 auto',
             padding: 'clamp(120px,14vw,160px) clamp(24px,5vw,60px) clamp(80px,10vw,120px)',
           }}>

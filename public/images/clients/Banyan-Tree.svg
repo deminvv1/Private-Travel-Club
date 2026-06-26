@@ -41,8 +41,4 @@ c0 -20 -10 -40 -29 -60 -41 -41 -61 -38 -61 8 0 43 32 83 67 83 19 0 23 -5 23
   font-family="Georgia, 'Times New Roman', serif"
   font-size="20" font-weight="400" letter-spacing="5"
   fill="white">BANYAN TREE</text>
-<text x="100" y="180" text-anchor="middle"
-  font-family="Georgia, 'Times New Roman', serif"
-  font-size="13" font-weight="300" letter-spacing="4"
-  fill="rgba(255,255,255,0.75)">CABO MARQUÉS</text>
 </svg>
