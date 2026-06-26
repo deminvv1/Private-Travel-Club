@@ -21,8 +21,7 @@ export default async function ImpressumPage({ params }: { params: Promise<{ loca
   const lang = isValidLocale(locale) ? locale : DEFAULT_LOCALE
   const t = getT(lang)
 
-  // Impressum sections are the first 5 sections in privacy
-  const impressumSections = t.privacy.sections.slice(0, 5)
+  const impressumSections = t.impressum.sections
 
   return (
     <>

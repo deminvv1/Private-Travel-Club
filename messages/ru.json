@@ -279,6 +279,46 @@
       }
     ]
   },
+  "impressum": {
+    "sections": [
+      {
+        "heading": "Юридическая информация (Impressum)",
+        "body": [
+          "Jürgen Eberth",
+          "Private Travel Club",
+          "Sudetenstr. 12",
+          "96250 Ebensfeld"
+        ]
+      },
+      {
+        "heading": "Контакт",
+        "body": [
+          "Телефон: +49 151 42357021",
+          "E-Mail: contact@private-travel-club.com"
+        ]
+      },
+      {
+        "heading": "Идентификационный номер НДС",
+        "body": [
+          "Идентификационный номер плательщика НДС в соответствии с § 27 a Закона об НДС Германии: DE332077689"
+        ]
+      },
+      {
+        "heading": "Редакционная ответственность",
+        "body": [
+          "Jürgen Eberth",
+          "Sudetenstr. 12",
+          "96250 Ebensfeld"
+        ]
+      },
+      {
+        "heading": "Урегулирование потребительских споров",
+        "body": [
+          "Мы участвуем в процедуре урегулирования споров через организацию по защите прав потребителей. Ответственный орган: Universalschlichtungsstelle des Zentrums für Schlichtung e.V., Straßburger Straße 8, 77694 Kehl am Rhein (https://www.verbraucher-schlichter.de)."
+        ]
+      }
+    ]
+  },
   "privacy": {
     "title": "Политика конфиденциальности",
     "sections": [
