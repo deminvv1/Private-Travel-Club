@@ -1,4 +1,5 @@
 import { getT } from '@/lib/i18n'
+import HeroVideo from './HeroVideo'
 
 export default function Hero({ locale = 'en' }: { locale?: string }) {
   const t = getT(locale).hero
@@ -8,17 +9,7 @@ export default function Hero({ locale = 'en' }: { locale?: string }) {
       minHeight: 600, overflow: 'hidden', background: '#0a1428',
     }}>
       {/* Video */}
-      <video
-        autoPlay muted loop playsInline
-        preload="none"
-        poster="/images/first-cadr.webp"
-        style={{
-          position: 'absolute', top: 0, left: 0,
-          width: '100%', height: '100%',
-          objectFit: 'cover', zIndex: 0,
-        }}>
-        <source src="/video/hero.mp4" type="video/mp4" />
-      </video>
+      <HeroVideo />
 
       {/* Overlay */}
       <div style={{
