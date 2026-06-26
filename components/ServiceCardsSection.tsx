@@ -38,7 +38,7 @@ const CARDS = [
   },
   {
     key: 'concierge',
-    image: '/images/concierge.webp',
+    image: '/images/concierge-new.webp',
     href: '/concierge',
     offset: true,
     desc: {
