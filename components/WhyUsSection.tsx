@@ -222,7 +222,7 @@ export default function WhyUsSection({
               fontSize: 12, fontWeight: 300,
               color: 'rgba(255,255,255,0.3)',
             }}>
-              © {new Date().getFullYear()} Private Travel Club
+              © 2020 – {new Date().getFullYear()} Private Travel Club
             </p>
             {locale === 'ru' && (
               <p style={{
