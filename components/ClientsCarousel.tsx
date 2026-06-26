@@ -110,7 +110,7 @@ export default function ClientsCarousel({
                     width={w}
                     height={h}
                     quality={100}
-                    style={{ objectFit: 'contain', filter: 'contrast(1.15)', ...item.imgStyle }}
+                    style={{ objectFit: 'contain', ...item.imgStyle }}
                   />
                 ) : (
                   <span style={{
