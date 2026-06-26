@@ -10,6 +10,7 @@ export default function Hero({ locale = 'en' }: { locale?: string }) {
       {/* Video */}
       <video
         autoPlay muted loop playsInline
+        preload="none"
         poster="/images/first-cadr.webp"
         style={{
           position: 'absolute', top: 0, left: 0,
