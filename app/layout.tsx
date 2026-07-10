@@ -27,7 +27,8 @@ const OG_IMAGE = '/images/tild6439-3935-4165-b833-643364353265__bage.webp'
 const GOOGLE_VERIFICATION  = process.env.GOOGLE_VERIFICATION ?? ''
 const YANDEX_VERIFICATION  = process.env.YANDEX_VERIFICATION ?? ''
 const YM_ID                = process.env.YANDEX_METRIKA_ID ?? ''
-const GTM_ID             = 'GTM-NB3K76VH'
+const GTM_ID             = 'GTM-P98B23LC'
+const GA_ID              = 'G-7L449TL3SM'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -114,6 +115,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <meta name="theme-color" content="#0d0d0d" />
         {YANDEX_VERIFICATION.length > 0 && <meta name="yandex-verification" content={YANDEX_VERIFICATION} />}
         <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');` }} />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');` }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
