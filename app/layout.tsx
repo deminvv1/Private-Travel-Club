@@ -121,6 +121,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var p=new URLSearchParams(location.search),k=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','yclid'],o={},h=false;for(var i=0;i<k.length;i++){var v=p.get(k[i]);if(v){o[k[i]]=v;h=true}}if(h){o._landing=location.pathname;sessionStorage.setItem('ptc_utm',JSON.stringify(o))}}catch(e){}})();` }} />
       </head>
       <body>
         <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`} height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} /></noscript>

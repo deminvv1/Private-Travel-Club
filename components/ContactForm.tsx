@@ -66,10 +66,20 @@ export default function ContactForm({ locale = 'en', submitLabel }: { locale?: s
     setPhoneError(false)
     setStatus('loading')
     try {
+      let utm: Record<string, string> = {}
+      try { utm = JSON.parse(sessionStorage.getItem('ptc_utm') ?? '{}') } catch { /* ignore */ }
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, direction, phone: selected.dial + ' ' + phone, country: selected.name, _honey: '' }),
+        body: JSON.stringify({
+          name, email, direction,
+          phone: selected.dial + ' ' + phone,
+          country: selected.name,
+          page: window.location.pathname,
+          referrer: document.referrer,
+          utm,
+          _honey: '',
+        }),
       })
       setStatus(res.ok ? 'ok' : 'error')
     } catch {

@@ -32,6 +32,20 @@ function isRateLimited(ip: string): boolean {
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
+const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'yclid', '_landing'] as const
+
+async function sendTelegram(text: string): Promise<void> {
+  const token = process.env.TELEGRAM_BOT_TOKEN
+  const chatId = process.env.TELEGRAM_CHAT_ID
+  if (!token || !chatId) return
+  const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ chat_id: chatId, text }),
+  })
+  if (!res.ok) throw new Error(`Telegram API ${res.status}: ${await res.text()}`)
+}
+
 export async function POST(req: NextRequest) {
   try {
     const ct = req.headers.get('content-type') ?? ''
@@ -51,7 +65,7 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    const { name, email, direction, phone, country, _honey } = await req.json()
+    const { name, email, direction, phone, country, page, referrer, utm, _honey } = await req.json()
 
     if (_honey) return NextResponse.json({ ok: true })
 
@@ -68,6 +82,36 @@ export async function POST(req: NextRequest) {
     if (safeEmail && !EMAIL_RE.test(safeEmail)) {
       return NextResponse.json({ error: 'Invalid email' }, { status: 400 })
     }
+
+    const safePage     = typeof page === 'string' ? page.trim().slice(0, 200) : ''
+    const safeReferrer = typeof referrer === 'string' ? referrer.trim().slice(0, 300) : ''
+    const safeUtm: Record<string, string> = {}
+    if (utm && typeof utm === 'object') {
+      for (const key of UTM_KEYS) {
+        const v = (utm as Record<string, unknown>)[key]
+        if (typeof v === 'string' && v.trim()) safeUtm[key] = v.trim().slice(0, 200)
+      }
+    }
+
+    const tgLines = [
+      '📩 Новая заявка — Private Travel Club',
+      '',
+      `Имя: ${safeName || '—'}`,
+      `Email: ${safeEmail || '—'}`,
+      `Телефон: ${safePhone}`,
+      `Направление: ${safeDirection || '—'}`,
+      `Страна: ${safeCountry || '—'}`,
+      '',
+      `Страница: https://private-travel-club.com${safePage || '/'}`,
+    ]
+    if (safeReferrer) tgLines.push(`Источник перехода: ${safeReferrer}`)
+    if (safeUtm._landing) tgLines.push(`Страница входа: ${safeUtm._landing}`)
+    for (const key of UTM_KEYS) {
+      if (key !== '_landing' && safeUtm[key]) tgLines.push(`${key.replace('utm_', 'UTM ')}: ${safeUtm[key]}`)
+    }
+    const tgPromise = sendTelegram(tgLines.join('\n')).catch((err) => {
+      console.error('Telegram notify error:', err)
+    })
 
     await resend.emails.send({
       from: 'Private Travel Club <contact@private-travel-club.com>',
@@ -97,6 +141,15 @@ export async function POST(req: NextRequest) {
               <td style="padding:8px 12px;background:#f5f7fa;font-weight:600">Country</td>
               <td style="padding:8px 12px">${esc(safeCountry)}</td>
             </tr>
+            <tr>
+              <td style="padding:8px 12px;background:#f5f7fa;font-weight:600">Page</td>
+              <td style="padding:8px 12px">${esc(safePage) || '—'}</td>
+            </tr>
+            ${Object.entries(safeUtm).map(([k, v]) => `
+            <tr>
+              <td style="padding:8px 12px;background:#f5f7fa;font-weight:600">${esc(k)}</td>
+              <td style="padding:8px 12px">${esc(v)}</td>
+            </tr>`).join('')}
           </table>
           <p style="margin:16px 0 0;font-size:12px;color:#999">
             Sent: ${new Date().toLocaleString('en-GB', { timeZone: 'Europe/Berlin' })} (CET)
@@ -104,6 +157,8 @@ export async function POST(req: NextRequest) {
         </div>
       `,
     })
+
+    await tgPromise
 
     return NextResponse.json({ ok: true })
   } catch (err) {
