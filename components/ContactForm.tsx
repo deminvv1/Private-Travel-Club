@@ -29,6 +29,8 @@ export default function ContactForm({ locale = 'en', submitLabel }: { locale?: s
   const [open, setOpen] = useState(false)
   const [status, setStatus] = useState<'idle' | 'loading' | 'ok' | 'error'>('idle')
   const [phoneError, setPhoneError] = useState(false)
+  const [honey, setHoney] = useState('')
+  const mountedAt = useRef(Date.now())
   const dropdownRef = useRef<HTMLDivElement>(null)
   const searchRef = useRef<HTMLInputElement>(null)
 
@@ -78,7 +80,8 @@ export default function ContactForm({ locale = 'en', submitLabel }: { locale?: s
           page: window.location.pathname,
           referrer: document.referrer,
           utm,
-          _honey: '',
+          _honey: honey,
+          _elapsed: Date.now() - mountedAt.current,
         }),
       })
       setStatus(res.ok ? 'ok' : 'error')
@@ -103,7 +106,7 @@ export default function ContactForm({ locale = 'en', submitLabel }: { locale?: s
   return (
     <form onSubmit={handleSubmit}>
       {/* Honeypot — скрыто от людей, заполняется ботами */}
-      <input type="text" name="_honey" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
+      <input type="text" name="_honey" value={honey} onChange={e => setHoney(e.target.value)} tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
 
       {/* Name */}
       <label htmlFor="contact-name" style={labelStyle}>

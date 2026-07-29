@@ -65,9 +65,14 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    const { name, email, direction, phone, country, page, referrer, utm, _honey } = await req.json()
+    const { name, email, direction, phone, country, page, referrer, utm, _honey, _elapsed } = await req.json()
 
+    // Бот-фильтры: заполненный honeypot или отправка быстрее 3 секунд после
+    // открытия страницы. Отвечаем «успехом», чтобы бот не подбирал обход.
     if (_honey) return NextResponse.json({ ok: true })
+    if (typeof _elapsed !== 'number' || _elapsed < 3000) {
+      return NextResponse.json({ ok: true })
+    }
 
     if (!phone?.trim()) {
       return NextResponse.json({ error: 'Phone is required' }, { status: 400 })
